@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Developer Studio - Support & Legal Portal</title>
+  <style>
+    :root {
+      --bg: #090a0f;
+      --card: #121520;
+      --card-border: #1e2438;
+      --accent: #3b82f6;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    header {
+      border-bottom: 1px solid var(--card-border);
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .logo {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 20px;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      width: 100%;
+      flex: 1;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      color: #60a5fa;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #2e3856;
+    }
+    .card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .card-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">App Developer Studio</div>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="app-ads.txt">app-ads.txt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">Official Developer Portal</div>
+      <h1>Mobile Software & Privacy Information</h1>
+      <p class="subtitle">Official support, compliance documentation, and developer disclosures for our mobile applications.</p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <div>
+          <h3>App Support & Help</h3>
+          <p>Get in touch with customer support, submit bug reports, or check device compatibility and FAQs.</p>
+        </div>
+        <a href="support.html" class="card-link">Visit Support Center →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Privacy Policy</h3>
+          <p>Learn how our applications protect user data, adhere to on-device privacy standards, and comply with Apple ATT and GDPR.</p>
+        </div>
+        <a href="privacy.html" class="card-link">Read Privacy Policy →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Advertising Authorization</h3>
+          <p>Official IAB app-ads.txt verification file for authorized digital advertising partners (Google AdMob).</p>
+        </div>
+        <a href="app-ads.txt" class="card-link">View app-ads.txt →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 App Developer Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

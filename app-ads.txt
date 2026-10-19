@@ -1,0 +1,4 @@
+# Google AdMob app-ads.txt
+# Replace pub-XXXXXXXXXXXXXXXX with your actual 16-digit AdMob Publisher ID 
+# (Found in AdMob Console > Settings > Account information > Publisher ID)
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
