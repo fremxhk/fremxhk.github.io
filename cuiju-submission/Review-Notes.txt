@@ -1,0 +1,25 @@
+PREPARATION DRAFT — PHYSICAL-DEVICE QA AND VIDEO PENDING. Do not treat simulator tests as physical-device evidence. We will attach the requested recording and complete physical iPhone/iPad testing before submitting for review.
+
+1. Physical-device demonstration
+Pending device availability. The final video will begin by launching the exact submitted build on the latest public OS and show typical gameplay, rules, exchange, scoring, history, settings and multiplayer. Device/OS/build/date and reviewer-accessible recording URL will be added here before review.
+
+2. Purpose and audience
+Cuiju / 翠局 is a recreational Hong Kong-style sixteen-tile Mahjong game for Mahjong enthusiasts and friends. Offline bots, optional multiplayer, configurable house rules, legal-action prompts and score breakdowns make it easier to play and keep score. It is not designed for children or enterprise distribution. Points have no money value, transfer, redemption or prizes; there is no real-money betting.
+
+3. Access and features
+No developer-service account, credentials or sample files are needed. Launch and tap 單機雀局 for offline play with three bots. Play in landscape. Tap a legal tile to discard. 胡/槓/碰/上 appear only when legal; 過 declines a claim. 公開牌面 shows exposed tiles. Receipts show hand patterns, dealer fan, base and settlement. In the lobby, 自訂雀例 edits supported rules; the clock opens local history; settings opens themes, privacy and support.
+Optional 網上連線 uses the reviewer's own Game Center account and Apple matchmaker/friend invitations. Nearby play requires two devices, Wi-Fi/Bluetooth, Local Network permission and a shared table code. Host starts with 2–4 humans; bots fill empty seats. Private party-code matchmaking is disabled.
+No app-provided registration/deletion, public posting/chat, ads or paid-content/purchase flows exist in this free version. Game Center identity belongs to Apple.
+
+4. External services
+Apple Game Center/GameKit: optional authentication, invitations, matchmaking and transport. Apple MultipeerConnectivity: nearby discovery/encrypted peer transport. Local Mahjong engine and bots; no external AI or game-data provider. SwiftData/UserDefaults: local records/settings. CloudKit game sync is disabled. GitHub Pages hosts static policy/support pages opened on request; developer email handles voluntary support. No developer game server, advertising/analytics SDK or payment processor is used. Peers exchange complete game state for synchronization; this version is intended for trusted friends.
+
+5. Regions
+Same features and player-selectable rules in every enabled storefront; no location-based content or rules. Interface is Traditional Chinese; English listing text does not imply an English game UI. Storefront availability/rating may differ to satisfy Apple and regional requirements; affected storefronts will be enabled only after required approvals.
+
+6. Regulated services / material
+Recreational board/card game; no medical/financial or real-money gambling services, deposits, cash-out or valuable prizes. Programmatically drawn Mahjong/table artwork and Apple platform components. Unmodified LXGW WenKai TC font uses SIL OFL 1.1; copyright/license are bundled. Regional game approvals, if required, must be completed before distribution there.
+
+Support: chkchkchkc@gmail.com
+Privacy: https://fremxhk.github.io/cuiju-privacy.html
+Support page: https://fremxhk.github.io/cuiju-support.html

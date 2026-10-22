@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "build": "1",
+  "bundle_id": "com.hktwmahjong.app",
+  "sku_suggestion": "cuiju-ios-001",
+  "primary_language": "zh-Hant",
+  "primary_category": "Games",
+  "game_subcategories": [
+    "Board",
+    "Card"
+  ],
+  "price": "Free",
+  "copyright": "2026 Ho Kit Cheung",
+  "privacy_url": "https://fremxhk.github.io/cuiju-privacy.html",
+  "support_url": "https://fremxhk.github.io/cuiju-support.html",
+  "marketing_url": "https://fremxhk.github.io/cuiju-support.html",
+  "localizations": {
+    "zh-Hant": {
+      "name": "翠局・港式台牌",
+      "subtitle": "十六張麻雀，好友同檯，雀例自訂",
+      "keywords": "麻雀,麻將,台牌,港式,十六張,單機,好友,番表,換牌,拉踢,桌上遊戲",
+      "promotional_text": "熟悉的十六張雀局，清楚的叫牌與結算。單機開檯，或與好友一起玩。",
+      "description": "翠局，把熟悉的港式台牌帶到 iPhone 與 iPad。十六張起手、橫向牌桌，與三名電腦雀友開一檯，或透過 Game Center 及附近連線與朋友同樂。\n\n像坐在真實牌桌前\n四家各據一角，棄牌依次排在中央，上、碰、槓及花牌清楚展示。新摸牌放在手牌旁邊，輕按選牌即可打出；保留的新牌會自動排序。\n\n叫牌選項一目了然\n自動判斷合法的胡、槓、碰、上，展示組牌預覽，也可選「過」。電腦玩家按自己的手牌與公開牌面作決策。\n\n照自己的雀例開檯\n選擇經典、進階或家用番表，調整雀例與牌桌外觀。啟用換牌時，擲一次骰決定四家共用張數，各自選牌，再隨機交換。\n\n清楚看懂每鋪結算\n結算列出牌型、適用莊番與底分，並處理拉踢與即時花獎。牌局紀錄儲存在本機，方便回看。\n\n版本 1.0 免費、無廣告及無內購。單機模式毋須帳戶或上網；網上連線需要 Apple Game Center。所有分數只屬遊戲記分，不設真金投注、有價獎品或現金兌換。\n\n本 App 採用港式台牌及可設定的家用雀例，請在開局前閱讀「玩法」及番表。"
+    },
+    "en-US": {
+      "name": "Cuiju: Hong Kong Mahjong",
+      "subtitle": "Sixteen tiles. House rules.",
+      "keywords": "mahjong,hong kong,sixteen tiles,board,offline,friends,chow,pung,kong,house rules",
+      "promotional_text": "A familiar Mahjong table, clear claims and detailed scoring. Play offline or gather your friends.",
+      "description": "Enjoy Hong Kong-style sixteen-tile Mahjong on iPhone and iPad. Start an offline game with three computer opponents, or play with friends through Game Center and nearby connections.\n\nA familiar table\nPlay in landscape with four players around the table. Discards stay in order at the center, while exposed melds and flowers remain visible. A newly drawn tile sits beside your hand; tap a legal tile to discard, and a retained draw sorts automatically.\n\nClear choices\nSee legal win, kong, pung and chow options with tile previews, or pass. Computer opponents decide from their own hand and public information.\n\nYour house rules\nChoose classic, advanced or casual scoring and adjust supported house rules and table themes. Optional tile exchange uses a shared die roll, player-selected packets and random redistribution.\n\nReadable scoring\nReview hand patterns, applicable dealer fan, base points, running debts and immediate flower awards. Completed game records are stored on your device.\n\nVersion 1.0 is free, with no ads or in-app purchases. Offline play needs no account or internet connection. Online play requires Apple Game Center. Scores have no cash value; there is no real-money betting, cash-out or valuable prize.\n\nThis app uses Hong Kong-style sixteen-tile Mahjong and configurable house rules. Please review the in-app rules before starting a table.\n\nGame interface: Traditional Chinese."
+    }
+  }
+}

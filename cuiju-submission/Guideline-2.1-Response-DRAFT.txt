@@ -1,0 +1,29 @@
+DRAFT — do not send until physical-device QA and the recording below are completed.
+
+Thank you for reviewing Cuiju / 翠局. The following describes version 1.0.
+
+1. Physical-device demonstration and quality assurance
+PENDING. We will provide a recording captured on a supported physical iPhone or iPad running the latest publicly released operating system, beginning with launching the exact submitted build and showing the normal user flow. Physical-device testing is not yet complete. No simulator capture is presented as physical-device evidence.
+Recording URL / attachment: PENDING
+Device / OS / tested version and build / test date: PENDING
+
+2. Purpose and audience
+Cuiju is a recreational Hong Kong-style sixteen-tile Mahjong game for Mahjong enthusiasts and friends who want to play a familiar table game on iPhone and iPad. It provides offline computer opponents, optional multiplayer, configurable house rules, legal-action prompts and detailed score breakdowns. It helps players run and understand their house-rule games without keeping score manually. It is not designed for children, enterprise use or real-money gambling. Points have no monetary value, cannot be transferred or redeemed, and do not provide prizes.
+
+3. Setup and main features
+No developer-service account, registration, demo credentials or sample files are needed. Launch and select 單機雀局 for offline play with three computer players. The table rotates to landscape. Tap a legal tile to discard; win/kong/pung/chow options appear only when legal, and 過 declines a claim. 公開牌面 shows exposed tiles; the end-of-hand receipt shows hand patterns, dealer fan, base points and settlement. Return to the lobby for 自訂雀例 (supported rules and exchange options), the top-left clock (completed local game history), and the top-right settings (table appearance, privacy and support).
+Optional online play: select 網上連線 and authenticate with the reviewer's own Apple Game Center account; use Apple's matchmaker or friend invitations. Nearby play requires two devices on the same nearby network with Wi-Fi/Bluetooth enabled, Local Network permission and the same entered table code. The host starts with two to four humans; bots fill empty seats. Review Notes will identify any limitations found during physical QA before submission.
+There is no app-provided account creation/deletion flow, public content posting, chat, paid content or purchasing in this free release. Apple Game Center identity is managed by Apple. No separate credentials should be shared with us.
+
+4. Services, tools and platforms
+Apple Game Center / GameKit provides optional player authentication, invitations, matchmaking and peer game transport. Apple's MultipeerConnectivity provides optional nearby peer discovery and encrypted transport. The Mahjong engine and computer opponents run locally; no external AI service is used. SwiftData and UserDefaults store records and settings locally. CloudKit game sync is disabled. GitHub Pages hosts the static support and privacy pages, opened only when selected; it is not a game backend. Support email is handled through the developer's existing email service. No advertising, analytics, payment service, external data provider or developer-operated game server is used in this release.
+
+5. Regional behavior
+The application has the same functionality and house-rule options in all enabled storefronts. Rule choices are selected by the player and are not changed based on location. The app interface is Traditional Chinese; the English store description is a localization of the listing, not a claim of an English game interface. Storefront availability and age-rating displays may differ as required by Apple or local distribution requirements. We will enable only storefronts whose submission requirements we have completed.
+
+6. Regulated services and third-party material
+The app is a recreational board/card game and does not provide financial, medical or real-money gambling services. There are no money deposits, redeemable points, cash-out or valuable prizes. The game uses programmatically drawn Mahjong tile/table artwork and Apple platform components. The bundled, unmodified LXGW WenKai TC font is distributed under the SIL Open Font License 1.1; its copyright and license are included in the app and available with the submission documentation. We do not claim ownership of the font. Any requested regional game classification or publication permissions will be completed before enabling the affected storefront.
+
+Privacy policy: https://fremxhk.github.io/cuiju-privacy.html
+Support: https://fremxhk.github.io/cuiju-support.html
+Contact: chkchkchkc@gmail.com
