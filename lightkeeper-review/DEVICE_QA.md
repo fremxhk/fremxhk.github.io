@@ -1,0 +1,15 @@
+# Physical iPhone QA — 2026-10-23
+
+Device: iPhone 18 Pro Max, iOS 27.2, build 24B115. The owner identifies this as the release candidate and explicitly approved using this OS. Developer tooling reports the release channel as Beta; no OS change is requested.
+
+The development-signed 1.0 (1) app has passed **23 app tests on the physical device**: 3 StoreKit Test checks plus 20 app/functionality tests. One opt-in screenshot test was skipped. StoreKit Test covers the product catalogue, verified entitlements and restore, and a purchase followed by explicit acknowledgement. These local test transactions require no Apple ID authentication and do not validate the TestFlight sandbox storefront.
+
+The first purchase run failed because the normal app host was concurrently consuming the unit tests' transactions. The Debug test host now uses an isolated in-memory composition, configured explicitly by the test plan. The three purchase tests then passed. This host isolation does not change the Release binary.
+
+The package suites were already verified on the simulator; Xcode does not support their unhosted runner on physical destinations. They are not counted as physical-device tests.
+
+Private result bundles: `/tmp/Lightkeeper-device-iap-isolated.xcresult` (3 passed) and `/tmp/Lightkeeper-device-functional.xcresult` (20 passed, 1 skipped). These paths are local evidence, not public downloadable files.
+
+`Tools/DeviceQA` is an independent UI test runner that can launch the installed app by bundle ID. It leaves purchase confirmation and credentials to the owner. Walkthrough gestures are short and slow. Physical recording remains in progress; no completed video is claimed here.
+
+Still required: approved TestFlight-copy purchasing/restore and Apple-hosted pack delivery; optional Game Center and two-device iCloud integration checks where credentials/devices are needed; a verified walkthrough recording and reviewer-accessible video URL. Production review remains an unsubmitted draft.
