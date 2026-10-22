@@ -1,6 +1,6 @@
 # 翠局 1.0 — App Store submission package
 
-Prepared 2026-10-22. **Draft preparation; not submitted for review.** Physical-device QA and Apple's requested video remain pending.
+Prepared 2026-10-22. **Draft preparation; not submitted for review.** iPhone XCTest and Release walkthrough passed; remaining device coverage and Apple's clean review video remain pending.
 
 ## Product and public documents
 
@@ -29,7 +29,7 @@ App-specific policy and support pages are in the developer's [GitHub Pages repos
 - `Review-Notes.txt`: under 4,000 characters, staged as preparation notes; explicitly identifies pending physical QA/video.
 - `Guideline-2.1-Response-DRAFT.txt`: full six-part response draft. Do not send before completing evidence.
 - `Physical-Device-QA.md`: recording shot list, physical testing checklist and evidence record.
-- `Privacy-and-Rating.md`: source-based privacy, age-rating, encryption and regional worksheet. Final questionnaire declarations remain pending.
+- `Privacy-and-Rating.md`: source-based privacy, age-rating, encryption and regional worksheet. Age/content and storefront declarations saved; privacy remains a saved draft.
 - `LXGW-OFL.txt`: third-party font copyright/license; also bundled in the app.
 - `ExportOptions.template.plist`: export template. Never place API private keys in this directory or commit them.
 - `Screenshots/`: local iPhone 6.9-inch and iPad 13-inch native simulator captures; `capture.log` records the UI tests. These are listing assets, not the physical-device recording Apple requested.
@@ -47,14 +47,14 @@ App Store Connect integration uses the locally supplied API key, with tokens gen
 - [ ] Complete the physical iPhone/iPad testing and latest-public-OS device recording in `Physical-Device-QA.md`.
 - [ ] Attach the recording, identify exact device/OS/build/date, finish the six-part response, and replace the pending note in App Review Information. Simulator assets do not satisfy this request.
 - [x] Review contact name, telephone and email have been provided and saved privately in App Store Connect.
-- [ ] Publish the saved Data Not Collected privacy draft after the final practices check, and complete the age-rating questionnaire against the final binary and actual practices. The conservative simulated-gambling recommendation and regional implications are explained in `Privacy-and-Rating.md`.
-- [ ] Choose storefronts and satisfy any regional game classification/publication requirements. EU availability also needs the account holder's trader-status declaration/verification.
+- [ ] Publish the saved Data Not Collected privacy draft after the final practices check, Age rating saved and verified as 18+ globally with regional exceptions. The conservative simulated-gambling recommendation and regional implications are explained in `Privacy-and-Rating.md`.
+- [x] Initial storefront declarations saved and verified: 145 enabled, EU27/mainland China/South Korea/Vietnam excluded pending applicable declarations/licences; new-region automatic availability off.
 - [x] Prepared free pricing and limited the launch scope to iPhone/iPad (Mac and Vision Pro compatibility distribution disabled).
 - [ ] Confirm agreements/account requirements and assess Apple's current accessibility declaration questions. Do not claim unverified accessibility support.
 - [x] Candidate 1.0 (1) uploaded to App Store Connect with no errors after Apple package validation passed; Apple processing is VALID and non-exempt encryption is false.
 - [ ] Complete physical TestFlight and production Game Center tests, and select the final tested build for the version.
 - [x] Six screenshots uploaded and processed successfully (three iPhone, three iPad); the iPad table is landscape. Recheck these against the final binary if it changes.
-- [ ] Run final Apple validation and review the complete staged metadata. Keep release manual until launch is deliberately approved.
+- [x] Apple package validation passed. Review the updated staged metadata after physical evidence is completed; release remains manual.
 
 ## Local commands
 
@@ -68,7 +68,7 @@ python3 Scripts/store-preflight.py --archive build/AppStore/Cuiju-1.0-ready.xcar
 
 The first two commands require the private local configuration in `~/.config/cuiju-appstore/config.json`; it references the API key in Downloads. The scripts do not submit to review or release the app. `archive-appstore.sh` accepts `CUIJU_TEAM_ID`, `CUIJU_PROFILE_NAME` and optional archive/export paths. It archives, checks the signed bundle and exports a local IPA. `capture-store-screenshots.py <simulator-udid> iphone|ipad` captures native pixels from an opt-in UI test.
 
-Gameplay logic already has a separate 100,000-hand audit stored with the application project. That audit verifies scoring/ledger behavior and does not replace device or production multiplayer testing.
+Gameplay logic already has a separate [100,000-hand audit](../Audit/updated-rules-100000/Report.md). That audit verifies scoring/ledger behavior and does not replace device or production multiplayer testing.
 
 ## Apple references
 

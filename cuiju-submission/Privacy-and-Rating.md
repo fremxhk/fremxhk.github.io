@@ -13,9 +13,11 @@ Support URL: https://fremxhk.github.io/cuiju-support.html
 
 ## Age rating and content
 
-Do not assume 4+ merely because no money is involved. The app has a Mahjong scoring/debt/settlement system. Conservative proposed questionnaire answer: **Frequent simulated gambling**, **no real-money gambling**, **no loot boxes**, no advertising, violence, sexual content, substance references or medical content. Competitive gameplay is present; evaluate the contest question from the current questionnaire. There is no app-provided chat, unrestricted browser or user-posted media; Game Center display names/avatars are Apple-managed identity.
+Do not assume 4+ merely because no money is involved. The app has a Mahjong scoring/debt/settlement system. Saved questionnaire answer (2026-10-22): **Frequent simulated gambling**, **no real-money gambling**, **no loot boxes**, no advertising, violence, sexual content, substance references or medical content. Frequent competitive contests declared. There is no app-provided chat, unrestricted browser or user-posted media; Game Center display names/avatars are Apple-managed identity.
 
-Apple distinguishes simulated gambling (wagering without redeemable money) from gambling. The points are not staked/purchased, so disclose the actual scoring flow in Review Notes and request clarification if App Review classifies it differently. Let App Store Connect compute the final rating; current definitions assign frequent simulated gambling an 18+ global rating, with region-specific restrictions. Do not select Kids Category. For Korea, obtain any required classification number before enabling distribution if this answer is used. Select storefronts deliberately rather than accepting worldwide availability without checking regional eligibility.
+Apple distinguishes simulated gambling (wagering without redeemable money) from gambling. The points are not staked/purchased, so disclose the actual scoring flow in Review Notes and request clarification if App Review classifies it differently. App Store Connect computed **18+** globally, **R18+ Australia**, **18+ Brazil**, and **19+ South Korea**; older operating systems show 17+ with regional exceptions. The actual portal result was checked after saving. Do not select Kids Category. For Korea, obtain any required classification number before enabling distribution if this answer is used. Initial availability saved and read back: **145 enabled / 30 excluded** of 175. Excluded: the 27 EU member states at the user's direction, mainland China, South Korea and Vietnam pending regional game approvals. Automatic availability in new territories is disabled. Public App Store distribution, free pricing, no pre-order; Mac and Vision Pro distribution disabled. The app has no real-money gambling, cash-out or prizes.
+
+Content rights declared as third-party content with necessary rights, because the app bundles the unmodified LXGW WenKai TC font under SIL OFL 1.1. The font copyright and licence are retained; Mahjong/table artwork is programmatic.
 
 ## Export, commerce and accessibility
 
@@ -31,5 +33,6 @@ Do not claim VoiceOver, Larger Text, reduced motion or other Accessibility Nutri
 - [Manage privacy answers](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy/)
 - [Age-rating definitions and regional ratings](https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions/)
 - [Review guidelines, including privacy-policy access](https://developer.apple.com/app-store/review/guidelines/)
+- [Vietnam game licence requirement](https://developer.apple.com/news/?id=06h4gf33)
 - [Submission overview and current SDK requirements](https://developer.apple.com/app-store/submitting/)
 - [Screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications)

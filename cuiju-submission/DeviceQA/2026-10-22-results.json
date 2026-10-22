@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-22",
+  "device": "iPhone 18 Pro Max",
+  "os": "iOS 27.2 RC",
+  "osBuild": "24B115",
+  "candidate": "1.0 (1)",
+  "integrationTestsPassed": 11,
+  "gameplayUITestsPassed": 8,
+  "releaseWalkthroughPassed": 1,
+  "releaseWalkthroughDurationSeconds": 116.234,
+  "releaseWalkthroughDiscards": 7,
+  "releaseWalkthroughSettlement": "win",
+  "initialInterruption": "iOS Trust This Computer prompt; ready-declaration test passed after device trust approval and rerun",
+  "releaseSigning": "Archived App Store candidate re-signed for development; __TEXT sections and bundled resources verified unchanged",
+  "videoSHA256": "32e232bb77be5a0e903a37c4b87a21377bcdd9214f4f216504e9a9558a0c2e9a",
+  "videoStatus": "Local QA evidence only; private Home Screen/Live Activity and rotation/capture issues; not published or attached as review-ready evidence",
+  "remaining": [
+    "physical iPad",
+    "two-device nearby and production Game Center",
+    "TestFlight install of uploaded build",
+    "clean reviewer-accessible recording"
+  ]
+}

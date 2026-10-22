@@ -1,6 +1,6 @@
 # Submission preparation verification — 2026-10-22
 
-This is a **prepared candidate**, not a completed physical-device QA report or App Review submission.
+This is a **prepared candidate**, not complete device coverage or App Review submission.
 
 | Check | Result |
 | --- | --- |
@@ -23,7 +23,12 @@ This is a **prepared candidate**, not a completed physical-device QA report or A
 | Screenshot UI flow | Passed on both iPhone and iPad; iPad table captured in landscape |
 | App integration tests | 11 passed, zero failures |
 | Gameplay audit | Existing independent 100,000-hand scoring/settlement audit retained; no game-engine changes made during submission preparation |
-| Physical-device QA / requested video | Pending; no device currently available |
+| Physical iPhone QA | 11 integration + 8 gameplay UI tests passed; one initial trust-prompt interruption passed on targeted rerun |
+| Release physical walkthrough | Passed normal unseeded hand through settlement/base/dealer/history on iPhone 18 Pro Max, iOS 27.2 RC 24B115; archived Release re-signed for development, code/resources matched |
+| Requested review video | Raw 116-second physical recording retained privately; clean orientation/privacy version and reviewer attachment pending |
+| Age rating | Saved: 18+ globally, R18+ Australia, 18+ Brazil; older OS 17+ with exceptions; Korea 19+ excluded |
+| Storefronts | API and website verified: 145 enabled / 30 excluded (EU27, mainland China, South Korea, Vietnam); automatic new territories off |
+| Content rights | Third-party font rights declared; bundled SIL OFL licence retained |
 | Review submission / release | Not performed |
 
 Local evidence: `/private/tmp/cuiju-store-ready-archive.log`, `/private/tmp/cuiju-store-ready-export.log`, `/private/tmp/cuiju-apple-validation.log`, `/private/tmp/cuiju-store-integration-tests.log`, the screenshot capture logs, and `build/AppStore/` status/checksum records. Upload processing status is tracked separately from validation; do not interpret validation success as a TestFlight installation test.

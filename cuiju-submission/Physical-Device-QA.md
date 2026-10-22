@@ -1,10 +1,10 @@
 # Physical-device QA and Guideline 2.1 recording
 
-Status: **pending — no physical device currently available**. Simulator UI captures and the 100,000-hand engine audit are supporting evidence only. Do not submit for review with pending evidence or paste the unfinished response as if testing had occurred.
+Status: **physical iPhone automation completed; remaining device coverage and review-ready video pending**. Simulator UI captures and the 100,000-hand engine audit are supporting evidence only. Do not submit for review with pending evidence or paste the unfinished response as if testing had occurred.
 
 ## Record the exact candidate
 
-Install the signed candidate using TestFlight when available. Record version/build, device model, latest public OS version, date, and whether it is the same build selected in App Store Connect. Re-test after any binary change. Test at least physical iPhone and iPad because both platforms are supported; use the latest public OS for the requested video, and cover minimum-supported OS and a small iPhone as device access permits.
+Install the signed candidate using TestFlight when available. Record version/build, device model, exact OS version/build (record RC status when applicable), date, and whether it is the same build selected in App Store Connect. Re-test after any binary change. Test at least physical iPhone and iPad because both platforms are supported; use the latest public OS for the requested video, and cover minimum-supported OS and a small iPhone as device access permits.
 
 ## Video shot list
 
@@ -35,11 +35,21 @@ Keep the recording legible and complete from launch. Use iOS screen recording or
 | Item | Value |
 | --- | --- |
 | App Store Connect app ID | 6825805178 |
-| Version / build | 1.0 / 1 (candidate; confirm exact uploaded build) |
-| Physical iPhone / OS / result | Pending |
+| Version / build | 1.0 / 1 archived candidate; development re-signed for physical XCTest |
+| Physical iPhone / OS / result | iPhone 18 Pro Max, iOS 27.2 RC (24B115), 2026-10-22: 11 integration + 8 gameplay UI + 1 Release walkthrough passed |
 | Physical iPad / OS / result | Pending |
 | Multiplayer device tests | Pending |
-| Recording URL / attachment | Pending |
+| Recording URL / attachment | 116-second physical XCTest recording retained locally; review-ready recording/attachment pending |
 | Recording access verified | Pending |
 | TestFlight build selected for review | Pending |
 | Completed review-response date | Pending |
+
+## Completed iPhone run — 2026-10-22
+
+The user approved testing on iOS 27.2 RC (24B115). Record that exact build; do not describe it as a stable public release. The initial physical run passed all 11 integration tests and seven gameplay UI tests. The remaining ready-declaration test was interrupted by iOS's “Trust This Computer?” prompt. After the user approved trust, the targeted rerun passed. One screenshot-only opt-in test was intentionally skipped.
+
+The archived 1.0 (1) Release app was copied and re-signed with the existing development profile solely for installation by XCTest. The executable's `__TEXT` code/constants sections and bundled resources were compared with the submitted archive and matched. This is Release-code device testing, not a TestFlight installation or production Game Center verification.
+
+The additional Release walkthrough passed in 116.234 seconds: normal launch, rules/settings, offline privacy, a genuine unseeded single-player hand with seven human-seat discards, winning settlement, base/dealer receipt, next hand, exit and local history. No debug fixtures were used. The test source is `UITests/ReleaseDeviceFlowTests.swift`; the only integration-test adjustment uses the app's sandbox temporary directory for a rendered atlas, replacing a Mac-specific `/private/tmp` path.
+
+The raw video remains local at `build/PhysicalQA/Cuiju-1.0-1-iPhone-27.2-XCTest-raw.mp4`. It includes private Home Screen/Live Activity content and has rotation/capture defects in some screens. It has **not** been published or presented as Apple's finished demonstration. A clean recording with private overlays suppressed and readable orientation must replace it. Physical iPad, multi-device nearby/production Game Center, TestFlight installation and accessibility coverage remain pending. Sanitized results: `DeviceQA/2026-10-22-results.json`; raw device identifiers/logs are not published.

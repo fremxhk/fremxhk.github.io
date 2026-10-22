@@ -1,7 +1,7 @@
-PREPARATION DRAFT — PHYSICAL-DEVICE QA AND VIDEO PENDING. Do not treat simulator tests as physical-device evidence. We will attach the requested recording and complete physical iPhone/iPad testing before submitting for review.
+PREPARATION DRAFT — iPhone XCTest passed; clean review video, iPad and multiplayer QA pending. Not yet cleared for review.
 
 1. Physical-device demonstration
-Pending device availability. The final video will begin by launching the exact submitted build on the latest public OS and show typical gameplay, rules, exchange, scoring, history, settings and multiplayer. Device/OS/build/date and reviewer-accessible recording URL will be added here before review.
+2026-10-22: iPhone 18 Pro Max, iOS 27.2 RC (24B115), 1.0 (1). Passed 11 integration and 8 gameplay UI tests (one trust-prompt interruption passed on rerun), plus a normal Release walkthrough through a real hand, score/base/dealer and history. The archived Release app was development re-signed for device installation; code/resources matched. TestFlight/production Game Center and physical iPad testing remain pending. A raw physical recording exists locally but needs replacement for privacy/orientation; reviewer-accessible video will be added before review.
 
 2. Purpose and audience
 Cuiju / 翠局 is a recreational Hong Kong-style sixteen-tile Mahjong game for Mahjong enthusiasts and friends. Offline bots, optional multiplayer, configurable house rules, legal-action prompts and score breakdowns make it easier to play and keep score. It is not designed for children or enterprise distribution. Points have no money value, transfer, redemption or prizes; there is no real-money betting.
@@ -15,7 +15,7 @@ No app-provided registration/deletion, public posting/chat, ads or paid-content/
 Apple Game Center/GameKit: optional authentication, invitations, matchmaking and transport. Apple MultipeerConnectivity: nearby discovery/encrypted peer transport. Local Mahjong engine and bots; no external AI or game-data provider. SwiftData/UserDefaults: local records/settings. CloudKit game sync is disabled. GitHub Pages hosts static policy/support pages opened on request; developer email handles voluntary support. No developer game server, advertising/analytics SDK or payment processor is used. Peers exchange complete game state for synchronization; this version is intended for trusted friends.
 
 5. Regions
-Same features and player-selectable rules in every enabled storefront; no location-based content or rules. Interface is Traditional Chinese; English listing text does not imply an English game UI. Storefront availability/rating may differ to satisfy Apple and regional requirements; affected storefronts will be enabled only after required approvals.
+Same features and player-selectable rules in every enabled storefront; no location-based content or rules. Interface is Traditional Chinese; English listing text does not imply an English game UI. Storefront availability/rating may differ to satisfy Apple and regional requirements; 145 storefronts enabled; EU, mainland China, South Korea and Vietnam excluded pending declarations/approvals.
 
 6. Regulated services / material
 Recreational board/card game; no medical/financial or real-money gambling services, deposits, cash-out or valuable prizes. Programmatically drawn Mahjong/table artwork and Apple platform components. Unmodified LXGW WenKai TC font uses SIL OFL 1.1; copyright/license are bundled. Regional game approvals, if required, must be completed before distribution there.
