@@ -1,6 +1,6 @@
 # Submission preparation verification — 2026-10-22
 
-This is a **prepared candidate**, not complete device coverage or App Review submission.
+**Current status: version 1.0 (1) submitted on 2026-10-23; Waiting for Review; automatic release after approval enabled.** Completed evidence is listed below; earlier dated preparation records remain historical.
 
 | Check | Result |
 | --- | --- |
@@ -8,10 +8,10 @@ This is a **prepared candidate**, not complete device coverage or App Review sub
 | App record | 6825805178, bundle com.hktwmahjong.app, version 1.0 in Prepare for Submission |
 | Listing metadata | Traditional Chinese and English saved; field lengths checked |
 | Review information | Six-part preparation notes and supplied review contact saved privately; physical evidence explicitly pending |
-| Release mode | Manual |
+| Release mode | Automatically release after approval — verified through API and UI |
 | Game Center | Bundle capability, App Store provisioning profile and version setting enabled; real-device production testing pending |
 | Pricing | Free price schedule prepared; Mac/Vision Pro compatibility distribution disabled |
-| Privacy | App-specific URL saved; Data Not Collected answer saved as a draft, not published |
+| Privacy | App-specific URL saved; Data Not Collected published with user confirmation, 2026-10-23 |
 | Public documents | App-specific policy/support pages and submission drafts committed/pushed to GitHub; updated support email verified at public URLs |
 | Icon | 1024×1024 RGB PNG; removed an unused alpha channel without changing the artwork |
 | Signed device archive | Passed Release archive with distribution signing, Game Center entitlement, no debugging entitlement or inactive CloudKit entitlement |
@@ -30,8 +30,10 @@ This is a **prepared candidate**, not complete device coverage or App Review sub
 | Storefronts | API and website verified: 145 enabled / 30 excluded (EU27, mainland China, South Korea, Vietnam); automatic new territories off |
 | Content rights | Third-party font rights declared; bundled SIL OFL licence retained |
 | TestFlight QA | Owner tester INSTALLED; 1.0 (1) selected for App Store version; 3/3 UI tests passed in-place, target installation unchanged |
-| Review submission / release | Not performed |
+| Review submission / release | Submitted 2026-10-23 01:13 HKT; WAITING_FOR_REVIEW; AFTER_APPROVAL; app not yet live |
 
 Local evidence: `/private/tmp/cuiju-store-ready-archive.log`, `/private/tmp/cuiju-store-ready-export.log`, `/private/tmp/cuiju-apple-validation.log`, `/private/tmp/cuiju-store-integration-tests.log`, the screenshot capture logs, and `build/AppStore/` status/checksum records. Upload processing status is tracked separately from validation; do not interpret validation success as a TestFlight installation test.
 
 Outstanding final declarations and distribution decisions are listed in README.md and Privacy-and-Rating.md. Replace the pending video/device entries in both the response and App Review Notes only after performing that work on the exact selected build.
+
+The final response is `Guideline-2.1-Response.txt`, saved as App Review Notes. Privacy publication and the automatic-release choice were verified in App Store Connect. Submission status is in `Submission-Status.json`.

@@ -1,3 +1,5 @@
+**Submission update, 2026-10-23:** version 1.0 (1) is Waiting for Review with automatic release after approval. The final submitted response is `Guideline-2.1-Response.txt`; dated preparation/pending entries below are historical and are not claims of completed testing.
+
 # Physical-device QA and Guideline 2.1 recording
 
 Status: **physical iPhone TestFlight QA and clean video completed; physical iPad and multi-device coverage pending**. Simulator UI captures and the 100,000-hand engine audit are supporting evidence only. Do not submit for review with pending evidence or paste the unfinished response as if testing had occurred.

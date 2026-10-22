@@ -1,0 +1,15 @@
+{
+  "appId": "6825805178",
+  "version": "1.0",
+  "build": "1",
+  "reviewSubmissionId": "2a64ea18-8fb1-426d-9320-4dcd35e90103",
+  "submittedAtHongKong": "2026-10-23T01:13:44.001000+08:00",
+  "state": "WAITING_FOR_REVIEW",
+  "releaseType": "AFTER_APPROVAL",
+  "privacy": "Data Not Collected — published with user confirmation",
+  "reviewVideo": "Cuiju-1.0-1-TestFlight-review.mp4 — direct Apple attachment COMPLETE",
+  "reviewResponse": "Final six-part response saved with submission",
+  "physicalTestFlightTestsPassed": 3,
+  "physicalTestFlightTestsFailed": 0,
+  "appStoreLive": false
+}

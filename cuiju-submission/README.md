@@ -1,6 +1,6 @@
 # 翠局 1.0 — App Store submission package
 
-Prepared 2026-10-22. **Draft preparation; not submitted for review.** iPhone XCTest and Release walkthrough passed; physical iPhone TestFlight QA and clean video complete; iPad and multiplayer coverage remain pending.
+**Submitted for App Review on 2026-10-23 at 01:13 HKT. Version 1.0 (1): Waiting for Review. Automatic release after approval is enabled.**
 
 ## Product and public documents
 
@@ -26,10 +26,10 @@ App-specific policy and support pages are in the developer's [GitHub Pages repos
 
 - `metadata.json` and `Metadata/`: copy-ready Traditional Chinese and English listing fields, with length checks.
 - `Verification.md`: completed preparation checks and the limits of that evidence.
-- `Review-Notes.txt`: under 4,000 characters, staged as preparation notes; explicitly identifies pending physical QA/video.
-- `Guideline-2.1-Response-DRAFT.txt`: full six-part response draft. Do not send before completing evidence.
+- `Review-Notes.txt`: final six-part notes, saved and included in the review submission.
+- `Guideline-2.1-Response.txt`: submitted six-part response; the older DRAFT file is historical.
 - `Physical-Device-QA.md`: recording shot list, physical testing checklist and evidence record.
-- `Privacy-and-Rating.md`: source-based privacy, age-rating, encryption and regional worksheet. Age/content and storefront declarations saved; privacy remains a saved draft.
+- `Privacy-and-Rating.md`: source-based privacy, age-rating, encryption and regional worksheet. Age/content/storefront declarations saved; privacy declaration published.
 - `LXGW-OFL.txt`: third-party font copyright/license; also bundled in the app.
 - `ExportOptions.template.plist`: export template. Never place API private keys in this directory or commit them.
 - `Screenshots/`: local iPhone 6.9-inch and iPad 13-inch native simulator captures; `capture.log` records the UI tests. These are listing assets, not the physical-device recording Apple requested.
@@ -42,20 +42,11 @@ Cloud saves are disabled and the free build requests only Game Center entitlemen
 
 App Store Connect integration uses the locally supplied API key, with tokens generated in memory and no private-key contents stored in source, GitHub or logs. The matching distribution certificate is installed. The corrected signed archive and exported IPA are stored locally under `build/AppStore/Cuiju-1.0-ready.xcarchive` and `build/AppStore/ReadyExport/`. The app icon is fully opaque with no alpha channel. The explicit bundle ID, Game Center capability and App Store provisioning profile were prepared through Apple's API. The app record was created on Apple's website.
 
-## Required before review submission
+## Submission record
 
-- [ ] Complete the physical iPhone/iPad testing and latest-public-OS device recording in `Physical-Device-QA.md`.
-- [x] Clean physical TestFlight video published; exact device/OS/build/date and URL added to App Review preparation Notes. The response remains a draft pending remaining device coverage.
-- [x] Review contact name, telephone and email have been provided and saved privately in App Store Connect.
-- [ ] Publish the saved Data Not Collected privacy draft after the final practices check, Age rating saved and verified as 18+ globally with regional exceptions. The conservative simulated-gambling recommendation and regional implications are explained in `Privacy-and-Rating.md`.
-- [x] Initial storefront declarations saved and verified: 145 enabled, EU27/mainland China/South Korea/Vietnam excluded pending applicable declarations/licences; new-region automatic availability off.
-- [x] Prepared free pricing and limited the launch scope to iPhone/iPad (Mac and Vision Pro compatibility distribution disabled).
-- [ ] Confirm agreements/account requirements and assess Apple's current accessibility declaration questions. Do not claim unverified accessibility support.
-- [x] Candidate 1.0 (1) uploaded to App Store Connect with no errors after Apple package validation passed; Apple processing is VALID and non-exempt encryption is false.
-- [x] Physical iPhone TestFlight QA passed (3/3); tested 1.0 (1) selected for the version.
-- [ ] Complete multi-device production Game Center / nearby and physical iPad coverage.
-- [x] Six screenshots uploaded and processed successfully (three iPhone, three iPad); the iPad table is landscape. Recheck these against the final binary if it changes.
-- [x] Apple package validation passed. Review the updated staged metadata after physical evidence is completed; release remains manual.
+Version 1.0 (1) has been accepted into Apple's review queue. The published privacy declaration is Data Not Collected. The final six-part response and clean physical TestFlight video are included in App Review Information; Apple processed the direct video attachment as COMPLETE without errors. The release setting is **Automatically release this version**.
+
+`Submission-Status.json` records the submission ID, timestamp and release setting. `Guideline-2.1-Response.txt` is the final response. Earlier DRAFT files and dated QA entries are historical preparation records and do not describe the current submission status. The submitted physical-device evidence reports the three completed TestFlight tests; it does not claim additional testing.
 
 ## Local commands
 
