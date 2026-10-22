@@ -1,0 +1,220 @@
+{
+  "status": "reference-only-create-and-verify-in-app-store-connect",
+  "source": "Lightkeeper.storekit",
+  "products": [
+    {
+      "displayPrice": "0.99",
+      "familyShareable": false,
+      "internalID": "27BC7A05-EE7A-4970-B4E0-F04257484F02",
+      "localizations": [
+        {
+          "description": "10 drops of lamp oil.",
+          "displayName": "Oil \u00d710",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "oil_10",
+      "referenceName": "Oil \u00d710",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "2.49",
+      "familyShareable": false,
+      "internalID": "D7378959-75CA-4CFC-816A-DE7B0E744AF0",
+      "localizations": [
+        {
+          "description": "30 drops of lamp oil.",
+          "displayName": "Oil \u00d730",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "oil_30",
+      "referenceName": "Oil \u00d730",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "5.99",
+      "familyShareable": false,
+      "internalID": "E4810002-BC28-4963-B77A-77A42A80CFA9",
+      "localizations": [
+        {
+          "description": "80 drops of lamp oil.",
+          "displayName": "Oil \u00d780",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "oil_80",
+      "referenceName": "Oil \u00d780",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "4.99",
+      "familyShareable": false,
+      "internalID": "C13F7598-5E2A-413F-B08B-B283DC61FF53",
+      "localizations": [
+        {
+          "description": "Collect every drop you have saved in the flask.",
+          "displayName": "Break the flask",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "flask_499",
+      "referenceName": "Break the flask",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "7.99",
+      "familyShareable": false,
+      "internalID": "C41EE685-AEEB-4D6E-8A26-A860742461E2",
+      "localizations": [
+        {
+          "description": "Premium track for Season 1: First Light.",
+          "displayName": "Season Pass \u00b7 Season 1",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "season_pass_s1",
+      "referenceName": "Season Pass \u00b7 Season 1",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "FD97ED52-DA3A-4E2C-9B16-8BA475E257C3",
+      "localizations": [
+        {
+          "description": "A bonus island of nine gentle puzzles.",
+          "displayName": "Starter Island",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "starter_island",
+      "referenceName": "Starter Island",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "D12D6BDC-50C5-46E7-9015-F5DECF6463AA",
+      "localizations": [
+        {
+          "description": "Violet fog and amber lamps.",
+          "displayName": "Theme \u00b7 Dusk",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "theme_dusk",
+      "referenceName": "Theme \u00b7 Dusk",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "810D2241-68AF-4A93-A013-460B6E59A09B",
+      "localizations": [
+        {
+          "description": "Green curtains over the water.",
+          "displayName": "Theme \u00b7 Aurora",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "theme_aurora",
+      "referenceName": "Theme \u00b7 Aurora",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "B50160D5-3685-40DB-859B-14398386FE04",
+      "localizations": [
+        {
+          "description": "Slate skies, bright lanterns.",
+          "displayName": "Theme \u00b7 Storm",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "theme_storm",
+      "referenceName": "Theme \u00b7 Storm",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "9.99",
+      "familyShareable": false,
+      "internalID": "BD87A0BF-F6F0-444A-9DC0-B8EA8C5394BD",
+      "localizations": [
+        {
+          "description": "Every island and every theme, forever.",
+          "displayName": "Lighthouse Unlock",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "lighthouse_unlock",
+      "referenceName": "Lighthouse Unlock",
+      "type": "NonConsumable"
+    }
+  ],
+  "subscriptionGroups": [
+    {
+      "id": "CF57104B-9EDA-4A19-9199-2933AB0F2E81",
+      "localizations": [],
+      "name": "keepers_lantern",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "3.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "FBFA9ABC-2626-4C81-B207-605B7510177E",
+          "introductoryOffer": {
+            "internalID": "023426C7-3DD8-4FDF-A18B-C2D4A4490F2E",
+            "paymentMode": "free",
+            "subscriptionPeriod": "P1W"
+          },
+          "localizations": [
+            {
+              "description": "Keeper's Lantern: all themes, double season XP, no rewarded-ad prompts.",
+              "displayName": "Keeper's Lantern (monthly)",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "keepers_lantern_monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "Keeper's Lantern (monthly)",
+          "subscriptionGroupID": "CF57104B-9EDA-4A19-9199-2933AB0F2E81",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "29.99",
+          "familyShareable": false,
+          "groupNumber": 2,
+          "internalID": "833577BF-0D4A-4650-BFF4-E38DBE7DDD08",
+          "introductoryOffer": {
+            "internalID": "0101181E-022B-4676-A5FE-3E1BE31C81A8",
+            "paymentMode": "free",
+            "subscriptionPeriod": "P1W"
+          },
+          "localizations": [
+            {
+              "description": "Keeper's Lantern: all themes, double season XP, no rewarded-ad prompts.",
+              "displayName": "Keeper's Lantern (yearly)",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "keepers_lantern_yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "Keeper's Lantern (yearly)",
+          "subscriptionGroupID": "CF57104B-9EDA-4A19-9199-2933AB0F2E81",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        }
+      ]
+    }
+  ],
+  "withheldProductIds": [
+    "starter_island"
+  ]
+}
