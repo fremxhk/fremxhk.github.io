@@ -25,6 +25,7 @@ App-specific policy and support pages are in the developer's [GitHub Pages repos
 ## Contents
 
 - `metadata.json` and `Metadata/`: copy-ready Traditional Chinese and English listing fields, with length checks.
+- `Verification.md`: completed preparation checks and the limits of that evidence.
 - `Review-Notes.txt`: under 4,000 characters, staged as preparation notes; explicitly identifies pending physical QA/video.
 - `Guideline-2.1-Response-DRAFT.txt`: full six-part response draft. Do not send before completing evidence.
 - `Physical-Device-QA.md`: recording shot list, physical testing checklist and evidence record.
@@ -39,18 +40,20 @@ The app has an offline-readable privacy policy and links to its public policy/su
 
 Cloud saves are disabled and the free build requests only Game Center entitlement; `CloudEnabled.entitlements` is retained solely as an opt-in template. If cloud saving is enabled later, restore its account capabilities, deploy the schema, test migration and update privacy disclosures. Do not copy it into the current candidate.
 
-App Store Connect integration uses the locally supplied API key, with tokens generated in memory and no private-key contents stored in source, GitHub or logs. The matching distribution certificate is installed. The explicit bundle ID, Game Center capability and App Store provisioning profile were prepared through Apple's API. The app record was created on Apple's website.
+App Store Connect integration uses the locally supplied API key, with tokens generated in memory and no private-key contents stored in source, GitHub or logs. The matching distribution certificate is installed. The corrected signed archive and exported IPA are stored locally under `build/AppStore/Cuiju-1.0-ready.xcarchive` and `build/AppStore/ReadyExport/`. The app icon is fully opaque with no alpha channel. The explicit bundle ID, Game Center capability and App Store provisioning profile were prepared through Apple's API. The app record was created on Apple's website.
 
 ## Required before review submission
 
 - [ ] Complete the physical iPhone/iPad testing and latest-public-OS device recording in `Physical-Device-QA.md`.
 - [ ] Attach the recording, identify exact device/OS/build/date, finish the six-part response, and replace the pending note in App Review Information. Simulator assets do not satisfy this request.
-- [ ] Provide the review contact telephone number. Support email is already known; do not invent a phone number.
-- [ ] Confirm privacy questionnaire and rating answers against the final binary and actual practices. The conservative simulated-gambling recommendation and regional implications are explained in `Privacy-and-Rating.md`.
+- [x] Review contact name, telephone and email have been provided and saved privately in App Store Connect.
+- [ ] Publish the saved Data Not Collected privacy draft after the final practices check, and complete the age-rating questionnaire against the final binary and actual practices. The conservative simulated-gambling recommendation and regional implications are explained in `Privacy-and-Rating.md`.
 - [ ] Choose storefronts and satisfy any regional game classification/publication requirements. EU availability also needs the account holder's trader-status declaration/verification.
-- [ ] Set the free price schedule, confirm agreements/account requirements and assess Apple's current accessibility declaration questions. Do not claim unverified accessibility support.
-- [ ] Upload the tested candidate to TestFlight, verify processing/export compliance, enable and test production Game Center, and select the final build for the version.
-- [ ] Recheck final screenshot set, including landscape iPad captures; use real gameplay prominently. Screenshots must accurately match the selected binary. Do not use the earlier portrait iPad table capture if superseded.
+- [x] Prepared free pricing and limited the launch scope to iPhone/iPad (Mac and Vision Pro compatibility distribution disabled).
+- [ ] Confirm agreements/account requirements and assess Apple's current accessibility declaration questions. Do not claim unverified accessibility support.
+- [x] Candidate 1.0 (1) uploaded to App Store Connect with no errors after Apple package validation passed.
+- [ ] Confirm Apple processing/export compliance, complete physical TestFlight and production Game Center tests, and select the final tested build for the version.
+- [x] Six screenshots uploaded and processed successfully (three iPhone, three iPad); the iPad table is landscape. Recheck these against the final binary if it changes.
 - [ ] Run final Apple validation and review the complete staged metadata. Keep release manual until launch is deliberately approved.
 
 ## Local commands
@@ -60,7 +63,7 @@ From the application project directory:
 ```sh
 python3 Scripts/appstore-connect.py inspect
 python3 Scripts/stage-store-metadata.py
-python3 Scripts/store-preflight.py --archive build/AppStore/Cuiju-1.0-final.xcarchive --online
+python3 Scripts/store-preflight.py --archive build/AppStore/Cuiju-1.0-ready.xcarchive --online
 ```
 
 The first two commands require the private local configuration in `~/.config/cuiju-appstore/config.json`; it references the API key in Downloads. The scripts do not submit to review or release the app. `archive-appstore.sh` accepts `CUIJU_TEAM_ID`, `CUIJU_PROFILE_NAME` and optional archive/export paths. It archives, checks the signed bundle and exports a local IPA. `capture-store-screenshots.py <simulator-udid> iphone|ipad` captures native pixels from an opt-in UI test.

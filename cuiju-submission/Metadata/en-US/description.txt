@@ -1,0 +1,19 @@
+Enjoy Hong Kong-style sixteen-tile Mahjong on iPhone and iPad. Start an offline game with three computer opponents, or play with friends through Game Center and nearby connections.
+
+A familiar table
+Play in landscape with four players around the table. Discards stay in order at the center, while exposed melds and flowers remain visible. A newly drawn tile sits beside your hand; tap a legal tile to discard, and a retained draw sorts automatically.
+
+Clear choices
+See legal win, kong, pung and chow options with tile previews, or pass. Computer opponents decide from their own hand and public information.
+
+Your house rules
+Choose classic, advanced or casual scoring and adjust supported house rules and table themes. Optional tile exchange uses a shared die roll, player-selected packets and random redistribution.
+
+Readable scoring
+Review hand patterns, applicable dealer fan, base points, running debts and immediate flower awards. Completed game records are stored on your device.
+
+Version 1.0 is free, with no ads or in-app purchases. Offline play needs no account or internet connection. Online play requires Apple Game Center. Scores have no cash value; there is no real-money betting, cash-out or valuable prize.
+
+This app uses Hong Kong-style sixteen-tile Mahjong and configurable house rules. Please review the in-app rules before starting a table.
+
+Game interface: Traditional Chinese.
