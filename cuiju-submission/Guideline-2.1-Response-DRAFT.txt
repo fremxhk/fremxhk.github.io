@@ -1,14 +1,8 @@
-PHYSICAL QA UPDATE 2026-10-22: iPhone 18 Pro Max on iOS 27.2 RC (24B115): 11 integration, 8 gameplay UI and 1 Release walkthrough passed. Clean offline physical video prepared; physical iPad, multi-device and TestFlight coverage remain pending. See Physical-Device-QA.md and current Review-Notes.txt; this remains an unsent draft.
-
-DRAFT — do not send until physical-device QA and the recording below are completed.
-
-Thank you for reviewing Cuiju / 翠局. The following describes version 1.0.
+DRAFT — iPhone TestFlight QA/video completed 2026-10-23; physical iPad and multiplayer coverage remain pending. Do not send as a completed all-device response.
 
 1. Physical-device demonstration and quality assurance
-PENDING. We will provide a recording captured on a supported physical iPhone or iPad running the latest publicly released operating system, beginning with launching the exact submitted build and showing the normal user flow. Physical-device testing is not yet complete. No simulator capture is presented as physical-device evidence.
-Recording URL: https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4
-Recording source: physical Release XCTest walkthrough. The 7.1-second personal Home Screen lead-in and OS overlays were removed; orientation normalized; gameplay continuous. See DeviceQA/review-video.json for provenance.
-Device / OS / tested version and build / test date: iPhone 18 Pro Max / iOS 27.2 RC 24B115 / archived 1.0 (1), development re-signed / 2026-10-22. Additional device coverage pending.
+Recording: https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-TestFlight-review.mp4
+iPhone 18 Pro Max / iOS 27.2 RC 24B115 / TestFlight 1.0 (1) / 2026-10-23. Three XCTest UI tests passed on the installed TestFlight app without reinstalling it. The video begins during actual app opening and shows rules/privacy, a real offline hand, settlement/base/dealer and history. Personal Home Screen lead-in/OS overlays removed and orientation normalized; gameplay continuous. Physical iPad and multi-device nearby/production Game Center remain unverified. No simulator footage is presented as physical-device evidence.
 
 2. Purpose and audience
 Cuiju is a recreational Hong Kong-style sixteen-tile Mahjong game for Mahjong enthusiasts and friends who want to play a familiar table game on iPhone and iPad. It provides offline computer opponents, optional multiplayer, configurable house rules, legal-action prompts and detailed score breakdowns. It helps players run and understand their house-rule games without keeping score manually. It is not designed for children, enterprise use or real-money gambling. Points have no monetary value, cannot be transferred or redeemed, and do not provide prizes.

@@ -1,6 +1,6 @@
 # 翠局 1.0 — App Store submission package
 
-Prepared 2026-10-22. **Draft preparation; not submitted for review.** iPhone XCTest and Release walkthrough passed; clean offline physical video prepared; iPad, multiplayer and TestFlight coverage remain pending.
+Prepared 2026-10-22. **Draft preparation; not submitted for review.** iPhone XCTest and Release walkthrough passed; physical iPhone TestFlight QA and clean video complete; iPad and multiplayer coverage remain pending.
 
 ## Product and public documents
 
@@ -45,14 +45,15 @@ App Store Connect integration uses the locally supplied API key, with tokens gen
 ## Required before review submission
 
 - [ ] Complete the physical iPhone/iPad testing and latest-public-OS device recording in `Physical-Device-QA.md`.
-- [ ] Attach the recording, identify exact device/OS/build/date, finish the six-part response, and replace the pending note in App Review Information. Simulator assets do not satisfy this request.
+- [x] Clean physical TestFlight video published; exact device/OS/build/date and URL added to App Review preparation Notes. The response remains a draft pending remaining device coverage.
 - [x] Review contact name, telephone and email have been provided and saved privately in App Store Connect.
 - [ ] Publish the saved Data Not Collected privacy draft after the final practices check, Age rating saved and verified as 18+ globally with regional exceptions. The conservative simulated-gambling recommendation and regional implications are explained in `Privacy-and-Rating.md`.
 - [x] Initial storefront declarations saved and verified: 145 enabled, EU27/mainland China/South Korea/Vietnam excluded pending applicable declarations/licences; new-region automatic availability off.
 - [x] Prepared free pricing and limited the launch scope to iPhone/iPad (Mac and Vision Pro compatibility distribution disabled).
 - [ ] Confirm agreements/account requirements and assess Apple's current accessibility declaration questions. Do not claim unverified accessibility support.
 - [x] Candidate 1.0 (1) uploaded to App Store Connect with no errors after Apple package validation passed; Apple processing is VALID and non-exempt encryption is false.
-- [ ] Complete physical TestFlight and production Game Center tests, and select the final tested build for the version.
+- [x] Physical iPhone TestFlight QA passed (3/3); tested 1.0 (1) selected for the version.
+- [ ] Complete multi-device production Game Center / nearby and physical iPad coverage.
 - [x] Six screenshots uploaded and processed successfully (three iPhone, three iPad); the iPad table is landscape. Recheck these against the final binary if it changes.
 - [x] Apple package validation passed. Review the updated staged metadata after physical evidence is completed; release remains manual.
 

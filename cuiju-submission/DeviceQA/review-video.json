@@ -1,25 +1,19 @@
 {
-  "recordedOn": "2026-10-22",
+  "recordedOn": "2026-10-23",
   "device": "iPhone 18 Pro Max",
   "os": "iOS 27.2 RC (24B115)",
   "version": "1.0 (1)",
-  "source": "physical XCTest recording of archived Release candidate, development re-signed; executable code/resources matched archive",
-  "durationSeconds": 109.005,
-  "videoURL": "https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4",
-  "sha256": "e45a4ddfaa0b8d6ff371cd8b13b3629ebc7f6cc0b0ab5765c42129415082658d",
+  "source": "XCTest recording of the installed TestFlight build; UseDestinationArtifacts prevented target-app reinstall; Apple tester state INSTALLED and installation path unchanged during QA",
+  "durationSeconds": 82.76,
+  "videoURL": "https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-TestFlight-review.mp4",
+  "sha256": "07e448cb446aacf51ec39f6b8bbdc89e1b615548f6b27613608b23489a5b0227",
   "editing": [
-    "7.1 seconds of unrelated Home Screen lead-in removed; begins with app loading",
-    "OS status/Live Activity and home-indicator safe areas cropped",
+    "4.1-second personal Home Screen lead-in removed; begins during actual app opening transition",
+    "OS status and home-indicator safe areas cropped",
     "landscape orientation corrected; letterboxing added",
-    "gameplay sequence continuous; no simulated or substituted frames"
+    "gameplay sequence continuous; no substituted or simulated frames"
   ],
-  "qa": "Visual checks plus OCR on 110 one-second samples; no flagged personal Home Screen/account/location content. Raw source remains private.",
-  "coverage": "offline normal flow only; not a multiplayer or TestFlight verification",
-  "reviewerAccessVerified": {
-    "httpStatus": 200,
-    "contentType": "video/mp4",
-    "contentLength": 25886412,
-    "loginRequired": false
-  },
-  "reviewNotes": "Video URL saved and read back in App Store Connect; preparation draft, not submitted"
+  "qa": "Visual checks and OCR on 83 one-second samples found no flagged personal Home Screen/account/location content. Raw recording retained privately.",
+  "coverage": "single physical iPhone, offline normal flow; no claim of multi-device coverage",
+  "reviewerAccessVerified": "Pending deployment verification before Notes update"
 }

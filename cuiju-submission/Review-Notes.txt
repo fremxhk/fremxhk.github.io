@@ -1,8 +1,8 @@
-PREPARATION DRAFT — clean physical video available; iPad, multiplayer and TestFlight QA pending. Not yet cleared for review.
+PREPARATION DRAFT — iPhone TestFlight QA/video complete; physical iPad and multiplayer QA pending. Not yet cleared for review.
 
 1. Physical-device demonstration
-Video: https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4
-2026-10-22: iPhone 18 Pro Max, iOS 27.2 RC (24B115), archived Release 1.0 (1), development re-signed for installation; code/resources matched. Video starts with app loading and shows a real hand, score/base/dealer and history. Home Screen lead-in/status overlays removed and orientation normalized; gameplay continuous. Passed 11 integration + 8 gameplay UI tests (trust-prompt rerun) and one Release walkthrough. TestFlight, production Game Center and physical iPad QA remain pending.
+Video: https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-TestFlight-review.mp4
+2026-10-23: iPhone 18 Pro Max, iOS 27.2 RC (24B115), TestFlight 1.0 (1). Three XCTest tests passed: real hand through settlement/base/dealer/history, free settings, and table layout/rotation. Tests used the installed TestFlight app without reinstalling a development build. The 83-second video begins during app opening; private Home Screen lead-in/OS overlays removed and orientation normalized, gameplay continuous. Prior 11 integration + 8 gameplay UI tests also passed. Physical iPad and multi-device nearby/production Game Center QA remain pending.
 
 2. Purpose and audience
 Cuiju / 翠局 is a recreational Hong Kong-style sixteen-tile Mahjong game for Mahjong enthusiasts and friends. Offline bots, optional multiplayer, configurable house rules, legal-action prompts and score breakdowns make it easier to play and keep score. It is not designed for children or enterprise distribution. Points have no money value, transfer, redemption or prizes; there is no real-money betting.

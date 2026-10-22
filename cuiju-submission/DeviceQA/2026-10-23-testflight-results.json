@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-23",
+  "device": "iPhone 18 Pro Max",
+  "os": "iOS 27.2 RC (24B115)",
+  "version": "1.0",
+  "build": "1",
+  "distribution": "TestFlight internal testing",
+  "testerState": "INSTALLED",
+  "appStoreVersionBuildSelected": true,
+  "targetAppReinstalledByXCTest": false,
+  "installationPathUnchangedDuringQA": true,
+  "tests": [
+    {
+      "name": "testPhysicalReleaseWalkthrough",
+      "result": "passed",
+      "seconds": 87.958,
+      "humanSeatDiscards": 4,
+      "settlement": "win"
+    },
+    {
+      "name": "testFreeLaunchSettingsHaveNoPurchaseControls",
+      "result": "passed"
+    },
+    {
+      "name": "testLobbyAndPlayableRack",
+      "result": "passed"
+    }
+  ],
+  "testCount": 3,
+  "failures": 0,
+  "notes": "Initial installation automation lost its device connection during the USB transition. The user completed TestFlight installation; subsequent in-place walkthrough and smoke tests passed. No development app was reinstalled over the TestFlight app.",
+  "remaining": [
+    "physical iPad",
+    "multi-device nearby and production Game Center sessions",
+    "broader accessibility/minimum OS coverage"
+  ],
+  "reviewSubmitted": false
+}

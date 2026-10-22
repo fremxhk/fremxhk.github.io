@@ -1,6 +1,6 @@
 # Physical-device QA and Guideline 2.1 recording
 
-Status: **physical iPhone automation completed; clean offline review video prepared; remaining device/TestFlight coverage pending**. Simulator UI captures and the 100,000-hand engine audit are supporting evidence only. Do not submit for review with pending evidence or paste the unfinished response as if testing had occurred.
+Status: **physical iPhone TestFlight QA and clean video completed; physical iPad and multi-device coverage pending**. Simulator UI captures and the 100,000-hand engine audit are supporting evidence only. Do not submit for review with pending evidence or paste the unfinished response as if testing had occurred.
 
 ## Record the exact candidate
 
@@ -35,13 +35,13 @@ Keep the recording legible and complete from launch. Use iOS screen recording or
 | Item | Value |
 | --- | --- |
 | App Store Connect app ID | 6825805178 |
-| Version / build | 1.0 / 1 archived candidate; development re-signed for physical XCTest |
-| Physical iPhone / OS / result | iPhone 18 Pro Max, iOS 27.2 RC (24B115), 2026-10-22: 11 integration + 8 gameplay UI + 1 Release walkthrough passed |
+| Version / build | 1.0 / 1 installed from TestFlight; selected for App Store version 1.0 |
+| Physical iPhone / OS / result | iPhone 18 Pro Max, iOS 27.2 RC (24B115): previous development-signed coverage retained; 2026-10-23 TestFlight walkthrough and two smoke tests passed (3/3) |
 | Physical iPad / OS / result | Pending |
 | Multiplayer device tests | Pending |
-| Recording URL / attachment | [Clean physical-device video](https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4), 109 seconds; link added to preparation notes |
+| Recording URL / attachment | [TestFlight physical video](https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-TestFlight-review.mp4), 82.76 seconds; linked in preparation Notes |
 | Recording access verified | Public-link verification recorded after upload; no reviewer login required |
-| TestFlight build selected for review | Pending |
+| TestFlight build selected for review | 1.0 (1), installed/tested and selected; review not submitted |
 | Completed review-response date | Pending |
 
 ## Completed iPhone run — 2026-10-22
@@ -59,3 +59,13 @@ The raw video remains local at `build/PhysicalQA/Cuiju-1.0-1-iPhone-27.2-XCTest-
 A clean copy is prepared from the genuine physical Release walkthrough: [Cuiju-1.0-1-physical-review.mp4](https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4). It starts with the actual app loading and continues through lobby, rules/privacy, a real offline hand, settlement including base/dealer, and history. Only the unrelated 7.1-second Home Screen lead-in and system safe areas were removed; orientation and letterboxing were normalized. Gameplay remains continuous. The raw file stays private. This supersedes the earlier raw-capture privacy/orientation warning for the published copy. File hash and editing provenance are in `DeviceQA/review-video.json`. It is offline functionality evidence, not a claim of multiplayer or TestFlight coverage.
 
 TestFlight: build 1 is READY_FOR_BETA_TESTING; private internal group “Cuiju Physical QA” and bilingual test instructions prepared. Automatic build notifications disabled. The device's signed-in account matches the App Store Connect owner. Invitation/installation and exact TestFlight QA remain pending the user's requested confirmation; no invitation has been sent yet. XCTest will use documented `UseDestinationArtifacts` mode to test the installed build without reinstalling a development build over it.
+
+## TestFlight verification — 2026-10-23
+
+The user authorized the invitation and installation for the existing owner account. Apple reported the tester as INSTALLED after the user opened the TestFlight app. The app installation location changed from the development copy and remained unchanged throughout the following XCTest runs. Documented `UseDestinationArtifacts` mode used the installed test runner and target bundle ID; no app installation/build step ran over the TestFlight target.
+
+Three TestFlight tests passed with zero failures: a real hand through winning settlement/base/dealer and local history; free settings without purchase/hint controls; and four-seat landscape layout, rack, rotation and leaving the table. The full walkthrough passed in 87.958 seconds; two smoke tests passed in 17.919 seconds. The initial installation automation had a device-connection interruption during USB transition; that is not recorded as a gameplay pass or an app crash. Sanitized results: `DeviceQA/2026-10-23-testflight-results.json`.
+
+A new clean video is captured from this installed TestFlight run, superseding the 2026-10-22 development re-signed walkthrough as the primary evidence. It begins with the actual app opening transition and shows the normal flow continuously. Only the personal Home Screen lead-in and OS overlays were removed, with orientation/letterboxing normalized. The original file remains private. Video provenance and current URL: `DeviceQA/review-video.json`.
+
+The tested build is now selected for App Store version 1.0. No App Review submission/release was performed. Physical iPad, multi-device nearby/production Game Center, and broader accessibility coverage remain unverified. Earlier “invitation pending” and “TestFlight pending” entries above describe the previous preparation state and are superseded by this section.
