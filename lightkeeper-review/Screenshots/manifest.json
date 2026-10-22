@@ -1,0 +1,45 @@
+{
+  "capturedOn": "2026-10-23",
+  "screenshots": [
+    {
+      "file": "iPhone-6.9/01-puzzle.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    },
+    {
+      "file": "iPhone-6.9/02-coast.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    },
+    {
+      "file": "iPhone-6.9/03-journey.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    },
+    {
+      "file": "iPhone-6.9/04-duet.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    },
+    {
+      "file": "iPad-13/01-puzzle.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    },
+    {
+      "file": "iPad-13/02-coast.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    },
+    {
+      "file": "iPad-13/03-journey.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    },
+    {
+      "file": "iPad-13/04-duet.png",
+      "source": "Actual app running in iOS 27 simulator",
+      "physicalDeviceEvidence": false
+    }
+  ]
+}
