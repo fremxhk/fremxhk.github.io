@@ -1,5 +1,5 @@
 {
-  "status": "reference-only-create-and-verify-in-app-store-connect",
+  "status": "draft-records-created-see-setup-status.json",
   "source": "Lightkeeper.storekit",
   "products": [
     {
@@ -9,12 +9,12 @@
       "localizations": [
         {
           "description": "10 drops of lamp oil.",
-          "displayName": "Oil \u00d710",
+          "displayName": "Oil ×10",
           "locale": "en_US"
         }
       ],
       "productID": "oil_10",
-      "referenceName": "Oil \u00d710",
+      "referenceName": "Oil ×10",
       "type": "Consumable"
     },
     {
@@ -24,12 +24,12 @@
       "localizations": [
         {
           "description": "30 drops of lamp oil.",
-          "displayName": "Oil \u00d730",
+          "displayName": "Oil ×30",
           "locale": "en_US"
         }
       ],
       "productID": "oil_30",
-      "referenceName": "Oil \u00d730",
+      "referenceName": "Oil ×30",
       "type": "Consumable"
     },
     {
@@ -39,12 +39,12 @@
       "localizations": [
         {
           "description": "80 drops of lamp oil.",
-          "displayName": "Oil \u00d780",
+          "displayName": "Oil ×80",
           "locale": "en_US"
         }
       ],
       "productID": "oil_80",
-      "referenceName": "Oil \u00d780",
+      "referenceName": "Oil ×80",
       "type": "Consumable"
     },
     {
@@ -69,12 +69,12 @@
       "localizations": [
         {
           "description": "Premium track for Season 1: First Light.",
-          "displayName": "Season Pass \u00b7 Season 1",
+          "displayName": "Season Pass · Season 1",
           "locale": "en_US"
         }
       ],
       "productID": "season_pass_s1",
-      "referenceName": "Season Pass \u00b7 Season 1",
+      "referenceName": "Season Pass · Season 1",
       "type": "NonConsumable"
     },
     {
@@ -99,12 +99,12 @@
       "localizations": [
         {
           "description": "Violet fog and amber lamps.",
-          "displayName": "Theme \u00b7 Dusk",
+          "displayName": "Theme · Dusk",
           "locale": "en_US"
         }
       ],
       "productID": "theme_dusk",
-      "referenceName": "Theme \u00b7 Dusk",
+      "referenceName": "Theme · Dusk",
       "type": "NonConsumable"
     },
     {
@@ -114,12 +114,12 @@
       "localizations": [
         {
           "description": "Green curtains over the water.",
-          "displayName": "Theme \u00b7 Aurora",
+          "displayName": "Theme · Aurora",
           "locale": "en_US"
         }
       ],
       "productID": "theme_aurora",
-      "referenceName": "Theme \u00b7 Aurora",
+      "referenceName": "Theme · Aurora",
       "type": "NonConsumable"
     },
     {
@@ -129,12 +129,12 @@
       "localizations": [
         {
           "description": "Slate skies, bright lanterns.",
-          "displayName": "Theme \u00b7 Storm",
+          "displayName": "Theme · Storm",
           "locale": "en_US"
         }
       ],
       "productID": "theme_storm",
-      "referenceName": "Theme \u00b7 Storm",
+      "referenceName": "Theme · Storm",
       "type": "NonConsumable"
     },
     {
@@ -143,7 +143,7 @@
       "internalID": "BD87A0BF-F6F0-444A-9DC0-B8EA8C5394BD",
       "localizations": [
         {
-          "description": "Every island and every theme, forever.",
+          "description": "All 3 themes and island access. Downloads required.",
           "displayName": "Lighthouse Unlock",
           "locale": "en_US"
         }
@@ -173,7 +173,7 @@
           },
           "localizations": [
             {
-              "description": "Keeper's Lantern: all themes, double season XP, no rewarded-ad prompts.",
+              "description": "All 3 themes; double season XP on first solves.",
               "displayName": "Keeper's Lantern (monthly)",
               "locale": "en_US"
             }
@@ -190,7 +190,7 @@
           "codeOffers": [],
           "displayPrice": "29.99",
           "familyShareable": false,
-          "groupNumber": 2,
+          "groupNumber": 1,
           "internalID": "833577BF-0D4A-4650-BFF4-E38DBE7DDD08",
           "introductoryOffer": {
             "internalID": "0101181E-022B-4676-A5FE-3E1BE31C81A8",
@@ -199,7 +199,7 @@
           },
           "localizations": [
             {
-              "description": "Keeper's Lantern: all themes, double season XP, no rewarded-ad prompts.",
+              "description": "All 3 themes; double season XP on first solves.",
               "displayName": "Keeper's Lantern (yearly)",
               "locale": "en_US"
             }

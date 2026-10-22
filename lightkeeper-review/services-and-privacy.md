@@ -6,7 +6,7 @@ Snapshot: 2026-10-22. Re-audit the final signed archive before filling App Priva
 |---|---|---|
 | Local Foundation/SwiftUI/Canvas | Core puzzles, progress, economy | Device save and purchase delivery IDs; no custom server |
 | StoreKit 2 / App Store | Optional purchases and subscriptions | Apple verified transaction/entitlement data; configure live products and review purchase-history disclosure |
-| GameKit / Game Center | Optional sign-in and leaderboard adapter | Player identity/scores handled by Apple; production boards pending |
+| GameKit / Game Center | Optional sign-in and leaderboard adapter | Player identity/scores handled by Apple; draft boards created; production release/device verification pending |
 | GameSave / iCloud | Optional whole-save sync | Save includes progress, wallet and receipt delivery records; signed two-device verification pending |
 | Background Assets | Apple-hosted additional islands | Nine managed packs pending upload/provisioning and delivery verification |
 | WidgetKit / ActivityKit / App Intents | Local widget, activity and deep links | App Group beacon projection; no developer push server |

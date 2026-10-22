@@ -1,7 +1,7 @@
 {
-  "status": "draft-not-ready-for-submission",
+  "status": "configured-draft-not-ready-for-submission",
   "locale": "en-US",
-  "name": "Lightkeeper",
+  "name": "Lightkeeper: Lantern Puzzles",
   "subtitle": "Light the coast. Solve calmly.",
   "promotionalText": "Bring a quiet coast to life, one lantern at a time. Learn with an interactive walkthrough, explore logic puzzles and return for a daily beacon.",
   "description": "Restore a quiet coast with the light of your lanterns. Place lanterns to illuminate every open square, keep them from shining at each other, and satisfy the numbers on the posts.\n\nAn interactive walkthrough teaches each rule through small examples, including what 0, 1 and 2 mean. Explore Journey puzzles, return for a daily beacon, exchange a Duet link with someone you choose and collect keepsakes. Undo is free, and every puzzle can be solved without buying hints.\n\nOptional in-app purchases include hint oil, cosmetic themes, season rewards and Keeper’s Lantern subscriptions. Availability and localized prices appear in the app. No developer account is required. Optional Apple services and additional content downloads require network access.\n\nPrivacy: https://fremxhk.github.io/lightkeeper-privacy.html\nTerms: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
@@ -16,5 +16,7 @@
   "sku": "lightkeeper-ios",
   "minimumOS": "26.0",
   "reviewEvidence": "PENDING_PHYSICAL_DEVICE",
-  "releaseType": "MANUAL_AFTER_APPROVAL"
+  "releaseType": "MANUAL",
+  "appStoreId": "6825834948",
+  "version": "1.0"
 }

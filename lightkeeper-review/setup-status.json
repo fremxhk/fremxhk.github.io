@@ -1,0 +1,204 @@
+{
+  "checkedOn": "2026-10-22",
+  "website": {
+    "status": "live",
+    "httpStatus": 200,
+    "pages": [
+      "lightkeeper.html",
+      "lightkeeper-privacy.html",
+      "lightkeeper-support.html",
+      "lightkeeper-terms.html"
+    ]
+  },
+  "app": {
+    "appId": "6825834948",
+    "appInfoId": "0a76c7e6-8def-4c3b-9e63-b8a26e9ac1d9",
+    "versionId": "a87d8033-d0cf-4f0c-a952-8d05dc290093",
+    "version": "1.0",
+    "reviewNotesLength": 2867
+  },
+  "appName": "Lightkeeper: Lantern Puzzles",
+  "state": "PREPARE_FOR_SUBMISSION",
+  "releaseType": "MANUAL",
+  "reviewContactSavedPrivately": true,
+  "bundleIdentifiers": [
+    {
+      "identifier": "app.lightkeeper.ios",
+      "id": "THD3M66NCN"
+    },
+    {
+      "identifier": "app.lightkeeper.ios.widget",
+      "id": "MZYXXFU6PG"
+    },
+    {
+      "identifier": "app.lightkeeper.ios.liveactivity",
+      "id": "MZ323D2CLA"
+    },
+    {
+      "identifier": "app.lightkeeper.ios.assets",
+      "id": "4RAN2PS6XZ"
+    }
+  ],
+  "appGroup": "group.app.lightkeeper.ios",
+  "iCloudContainer": "iCloud.app.lightkeeper.ios",
+  "purchases": [
+    {
+      "productId": "oil_10",
+      "id": "6825836890",
+      "usdPrice": "0.99"
+    },
+    {
+      "productId": "oil_30",
+      "id": "6825838003",
+      "usdPrice": "2.49"
+    },
+    {
+      "productId": "oil_80",
+      "id": "6825838055",
+      "usdPrice": "5.99"
+    },
+    {
+      "productId": "flask_499",
+      "id": "6825838232",
+      "usdPrice": "4.99"
+    },
+    {
+      "productId": "season_pass_s1",
+      "id": "6825838569",
+      "usdPrice": "7.99"
+    },
+    {
+      "productId": "theme_dusk",
+      "id": "6825838271",
+      "usdPrice": "1.99"
+    },
+    {
+      "productId": "theme_aurora",
+      "id": "6825838552",
+      "usdPrice": "1.99"
+    },
+    {
+      "productId": "theme_storm",
+      "id": "6825838985",
+      "usdPrice": "1.99"
+    },
+    {
+      "productId": "lighthouse_unlock",
+      "id": "6825839025",
+      "usdPrice": "9.99"
+    }
+  ],
+  "subscriptions": {
+    "groupId": "22504127",
+    "subscriptions": [
+      {
+        "productId": "keepers_lantern_monthly",
+        "id": "6825839198",
+        "usdPrice": "3.99",
+        "introductoryOffer": "USA 7-day free trial; other territories pending"
+      },
+      {
+        "productId": "keepers_lantern_yearly",
+        "id": "6825839753",
+        "usdPrice": "29.99",
+        "introductoryOffer": "USA 7-day free trial; other territories pending"
+      }
+    ]
+  },
+  "gameCenter": {
+    "gameCenterDetailId": "a9afc231-cf89-4011-9e42-7c4fe8c0629a",
+    "leaderboards": [
+      {
+        "vendorIdentifier": "campaign.stars",
+        "id": "97f07d38-faee-4f82-af47-4d6b0684db15",
+        "versionId": "a43e7309-a5ac-400c-afbe-4cd89fc38979"
+      },
+      {
+        "vendorIdentifier": "duet.wins",
+        "id": "e18c7087-6f25-40b3-953f-fb4d2d07565d",
+        "versionId": "63d21db5-e2f7-410d-8d59-b5d380ec48e1"
+      },
+      {
+        "vendorIdentifier": "beacon.daily",
+        "id": "6c2fb967-dce9-43d9-b955-0251ccd85be3",
+        "versionId": "ba3faff2-7a4e-4ba9-812d-e6fc1bd5f247"
+      }
+    ]
+  },
+  "withheldProducts": [
+    "starter_island"
+  ],
+  "remainingGates": [
+    "Physical-device QA and recording",
+    "Signed archive privacy/SDK license and asset provenance audit",
+    "App Privacy certification and final age-rating review against submitted build",
+    "Paid agreements, banking/tax and EU trader status confirmation by account holder",
+    "App sale territories and non-US subscription prices/trials; IAP availability",
+    "Actual app screenshots and IAP/subscription review screenshots",
+    "Apple-hosted island pack upload and production delivery validation",
+    "TestFlight purchase/restore, two-device GameSave and leaderboard validation",
+    "Align local-day beacon content with UTC recurring leaderboard before enabling competition",
+    "Refresh season dates/content for actual launch"
+  ],
+  "submitted": false,
+  "buildUploaded": false,
+  "ageRating": {
+    "answers": {
+      "advertising": false,
+      "gambling": false,
+      "healthOrWellnessTopics": false,
+      "lootBox": false,
+      "messagingAndChat": false,
+      "parentalControls": false,
+      "ageAssurance": false,
+      "socialMedia": false,
+      "socialMediaAgeRestricted": false,
+      "unrestrictedWebAccess": false,
+      "userGeneratedContent": false,
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "gamblingSimulated": "NONE",
+      "gunsOrOtherWeapons": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "violenceRealistic": "NONE",
+      "contests": "FREQUENT",
+      "ageRatingOverrideV2": "NONE",
+      "kidsAgeBand": null
+    },
+    "derivedRatings": {
+      "appStoreState": "PREPARE_FOR_SUBMISSION",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "appStoreAgeRating": "TWELVE_PLUS",
+      "australiaAgeRating": null,
+      "brazilAgeRating": "TWELVE",
+      "brazilAgeRatingV2": "SELF_RATED_TWELVE",
+      "franceAgeRating": null,
+      "koreaAgeRating": "TWELVE"
+    },
+    "currentOSGlobalRating": "13+",
+    "rationale": "Frequent leaderboard contests; no broad user-content distribution, in-app messaging, ads, gambling, loot boxes, objectionable content or health advice. Recheck if features change."
+  },
+  "containerAssociations": {
+    "app.lightkeeper.ios": [
+      "group.app.lightkeeper.ios",
+      "iCloud.app.lightkeeper.ios"
+    ],
+    "app.lightkeeper.ios.widget": [
+      "group.app.lightkeeper.ios"
+    ],
+    "app.lightkeeper.ios.assets": [
+      "group.app.lightkeeper.ios"
+    ]
+  },
+  "baseAppPrice": {
+    "baseTerritory": "USA",
+    "usdPrice": "0.00",
+    "verified": true
+  }
+}

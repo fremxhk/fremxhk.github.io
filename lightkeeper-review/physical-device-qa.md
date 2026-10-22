@@ -13,7 +13,7 @@ All unchecked gates remain pending. Simulator tests are useful but do not satisf
 | Sandbox every visible SKU / pending / cancel / restore / revoke | NOT TESTED live | TestFlight StoreKit evidence; no duplicate grants |
 | Subscription monthly/yearly/trial and expiry | NOT TESTED live | Benefits, renewal copy, restore and entitlement evidence |
 | Two-device signed GameSave and conflict choice | NOT TESTED | Matching save and no wallet duplication |
-| Production Game Center scores | NOT CONFIGURED | Auth denial/success and leaderboard results |
+| Production Game Center scores | Draft boards created; NOT DEVICE TESTED | Auth denial/success and leaderboard results |
 | Nine Apple-hosted island packs | NOT UPLOADED/VERIFIED | Install, retry, offline, integrity and cache checks |
 | Duet second-device round trip | NOT TESTED on devices | Link open, placements, stats and invalid-link handling |
 | Widget, notifications and Live Activities | NOT TESTED on devices | Permission denied/allowed; lock-screen behavior |
@@ -21,7 +21,7 @@ All unchecked gates remain pending. Simulator tests are useful but do not satisf
 | Signed archive privacy report / SDK license and asset audit | NOT VERIFIED | Archive report; privacy-label answers; rights inventory |
 | Actual screenshots for all required device sizes | PENDING | Current-build screenshots in use |
 | Reviewer-accessible physical recording URL | PENDING | Playback without login, no private account data |
-| Account, IAPs, agreements, age rating and review contact | PENDING | ASC review of configured app record |
+| Account, IAPs, agreements, age rating and review contact | Partially configured; legal/privacy/release checks pending | ASC review of configured app record |
 
 Known content: 100 campaign levels committed, first 27 bundled; later islands require nine Apple-hosted packs. Current season begins 2026-10-19 for 28 days; refresh for launch. Ads/analytics SDKs remain inactive. `starter_island` must stay hidden pending a defined benefit. Do not mark a release ready while these content/service gates are unresolved.
 
