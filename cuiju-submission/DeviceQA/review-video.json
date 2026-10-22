@@ -1,0 +1,18 @@
+{
+  "recordedOn": "2026-10-22",
+  "device": "iPhone 18 Pro Max",
+  "os": "iOS 27.2 RC (24B115)",
+  "version": "1.0 (1)",
+  "source": "physical XCTest recording of archived Release candidate, development re-signed; executable code/resources matched archive",
+  "durationSeconds": 109.005,
+  "videoURL": "https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4",
+  "sha256": "e45a4ddfaa0b8d6ff371cd8b13b3629ebc7f6cc0b0ab5765c42129415082658d",
+  "editing": [
+    "7.1 seconds of unrelated Home Screen lead-in removed; begins with app loading",
+    "OS status/Live Activity and home-indicator safe areas cropped",
+    "landscape orientation corrected; letterboxing added",
+    "gameplay sequence continuous; no simulated or substituted frames"
+  ],
+  "qa": "Visual checks plus OCR on 110 one-second samples; no flagged personal Home Screen/account/location content. Raw source remains private.",
+  "coverage": "offline normal flow only; not a multiplayer or TestFlight verification"
+}

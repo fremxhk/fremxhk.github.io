@@ -1,4 +1,4 @@
-PHYSICAL QA UPDATE 2026-10-22: iPhone 18 Pro Max on iOS 27.2 RC (24B115): 11 integration, 8 gameplay UI and 1 Release walkthrough passed. Clean review video, physical iPad, multi-device and TestFlight coverage remain pending. See Physical-Device-QA.md and current Review-Notes.txt; this remains an unsent draft.
+PHYSICAL QA UPDATE 2026-10-22: iPhone 18 Pro Max on iOS 27.2 RC (24B115): 11 integration, 8 gameplay UI and 1 Release walkthrough passed. Clean offline physical video prepared; physical iPad, multi-device and TestFlight coverage remain pending. See Physical-Device-QA.md and current Review-Notes.txt; this remains an unsent draft.
 
 DRAFT — do not send until physical-device QA and the recording below are completed.
 
@@ -6,7 +6,8 @@ Thank you for reviewing Cuiju / 翠局. The following describes version 1.0.
 
 1. Physical-device demonstration and quality assurance
 PENDING. We will provide a recording captured on a supported physical iPhone or iPad running the latest publicly released operating system, beginning with launching the exact submitted build and showing the normal user flow. Physical-device testing is not yet complete. No simulator capture is presented as physical-device evidence.
-Recording URL / attachment: PENDING
+Recording URL: https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4
+Recording source: physical Release XCTest walkthrough. The 7.1-second personal Home Screen lead-in and OS overlays were removed; orientation normalized; gameplay continuous. See DeviceQA/review-video.json for provenance.
 Device / OS / tested version and build / test date: iPhone 18 Pro Max / iOS 27.2 RC 24B115 / archived 1.0 (1), development re-signed / 2026-10-22. Additional device coverage pending.
 
 2. Purpose and audience

@@ -1,6 +1,6 @@
 # Physical-device QA and Guideline 2.1 recording
 
-Status: **physical iPhone automation completed; remaining device coverage and review-ready video pending**. Simulator UI captures and the 100,000-hand engine audit are supporting evidence only. Do not submit for review with pending evidence or paste the unfinished response as if testing had occurred.
+Status: **physical iPhone automation completed; clean offline review video prepared; remaining device/TestFlight coverage pending**. Simulator UI captures and the 100,000-hand engine audit are supporting evidence only. Do not submit for review with pending evidence or paste the unfinished response as if testing had occurred.
 
 ## Record the exact candidate
 
@@ -8,7 +8,7 @@ Install the signed candidate using TestFlight when available. Record version/bui
 
 ## Video shot list
 
-1. Start screen recording on the physical device with the app closed. Launch from the Home Screen, showing the actual app icon and lobby.
+1. Begin with a genuine cold launch/loading screen on a physical device and show the lobby. Exclude private Home Screen content and personal system overlays.
 2. Open single-player, show landscape layout, normal draw/discard, retained-draw automatic sorting, legal claims and pass. Play through a hand and show the full score receipt including base and dealer components; record longer if needed instead of fabricating a win.
 3. Show exposed melds/flowers, chronological center discards, history and custom rules. Enable exchange and demonstrate one die roll, exact player selection and received tiles in a game that reaches an exchange phase.
 4. Show table themes, offline privacy policy and public support link. Demonstrate that this build has no purchase or advertising flow.
@@ -39,8 +39,8 @@ Keep the recording legible and complete from launch. Use iOS screen recording or
 | Physical iPhone / OS / result | iPhone 18 Pro Max, iOS 27.2 RC (24B115), 2026-10-22: 11 integration + 8 gameplay UI + 1 Release walkthrough passed |
 | Physical iPad / OS / result | Pending |
 | Multiplayer device tests | Pending |
-| Recording URL / attachment | 116-second physical XCTest recording retained locally; review-ready recording/attachment pending |
-| Recording access verified | Pending |
+| Recording URL / attachment | [Clean physical-device video](https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4), 109 seconds; link added to preparation notes |
+| Recording access verified | Public-link verification recorded after upload; no reviewer login required |
 | TestFlight build selected for review | Pending |
 | Completed review-response date | Pending |
 
@@ -53,3 +53,9 @@ The archived 1.0 (1) Release app was copied and re-signed with the existing deve
 The additional Release walkthrough passed in 116.234 seconds: normal launch, rules/settings, offline privacy, a genuine unseeded single-player hand with seven human-seat discards, winning settlement, base/dealer receipt, next hand, exit and local history. No debug fixtures were used. The test source is `UITests/ReleaseDeviceFlowTests.swift`; the only integration-test adjustment uses the app's sandbox temporary directory for a rendered atlas, replacing a Mac-specific `/private/tmp` path.
 
 The raw video remains local at `build/PhysicalQA/Cuiju-1.0-1-iPhone-27.2-XCTest-raw.mp4`. It includes private Home Screen/Live Activity content and has rotation/capture defects in some screens. It has **not** been published or presented as Apple's finished demonstration. A clean recording with private overlays suppressed and readable orientation must replace it. Physical iPad, multi-device nearby/production Game Center, TestFlight installation and accessibility coverage remain pending. Sanitized results: `DeviceQA/2026-10-22-results.json`; raw device identifiers/logs are not published.
+
+## Clean review video — 2026-10-22
+
+A clean copy is prepared from the genuine physical Release walkthrough: [Cuiju-1.0-1-physical-review.mp4](https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-physical-review.mp4). It starts with the actual app loading and continues through lobby, rules/privacy, a real offline hand, settlement including base/dealer, and history. Only the unrelated 7.1-second Home Screen lead-in and system safe areas were removed; orientation and letterboxing were normalized. Gameplay remains continuous. The raw file stays private. This supersedes the earlier raw-capture privacy/orientation warning for the published copy. File hash and editing provenance are in `DeviceQA/review-video.json`. It is offline functionality evidence, not a claim of multiplayer or TestFlight coverage.
+
+TestFlight: build 1 is READY_FOR_BETA_TESTING; private internal group “Cuiju Physical QA” and bilingual test instructions prepared. Automatic build notifications disabled. The device's signed-in account matches the App Store Connect owner. Invitation/installation and exact TestFlight QA remain pending the user's requested confirmation; no invitation has been sent yet. XCTest will use documented `UseDestinationArtifacts` mode to test the installed build without reinstalling a development build over it.

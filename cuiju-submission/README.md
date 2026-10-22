@@ -1,6 +1,6 @@
 # 翠局 1.0 — App Store submission package
 
-Prepared 2026-10-22. **Draft preparation; not submitted for review.** iPhone XCTest and Release walkthrough passed; remaining device coverage and Apple's clean review video remain pending.
+Prepared 2026-10-22. **Draft preparation; not submitted for review.** iPhone XCTest and Release walkthrough passed; clean offline physical video prepared; iPad, multiplayer and TestFlight coverage remain pending.
 
 ## Product and public documents
 
