@@ -1,7 +1,8 @@
 DRAFT — iPhone TestFlight QA/video completed 2026-10-23; physical iPad and multiplayer coverage remain pending. Do not send as a completed all-device response.
 
 1. Physical-device demonstration and quality assurance
-Recording: https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-TestFlight-review.mp4
+App Review attachment: Cuiju-1.0-1-TestFlight-review.mp4 (Apple processing COMPLETE, no errors)
+Backup recording: https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-TestFlight-review.mp4
 iPhone 18 Pro Max / iOS 27.2 RC 24B115 / TestFlight 1.0 (1) / 2026-10-23. Three XCTest UI tests passed on the installed TestFlight app without reinstalling it. The video begins during actual app opening and shows rules/privacy, a real offline hand, settlement/base/dealer and history. Personal Home Screen lead-in/OS overlays removed and orientation normalized; gameplay continuous. Physical iPad and multi-device nearby/production Game Center remain unverified. No simulator footage is presented as physical-device evidence.
 
 2. Purpose and audience

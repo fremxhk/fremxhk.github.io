@@ -40,7 +40,7 @@ Keep the recording legible and complete from launch. Use iOS screen recording or
 | Physical iPad / OS / result | Pending |
 | Multiplayer device tests | Pending |
 | Recording URL / attachment | [TestFlight physical video](https://fremxhk.github.io/cuiju-submission/DeviceQA/Cuiju-1.0-1-TestFlight-review.mp4), 82.76 seconds; linked in preparation Notes |
-| Recording access verified | Public-link verification recorded after upload; no reviewer login required |
+| Recording access verified | Direct Apple attachment COMPLETE, no delivery errors; public backup HTTP 200 video/mp4 without login |
 | TestFlight build selected for review | 1.0 (1), installed/tested and selected; review not submitted |
 | Completed review-response date | Pending |
 
@@ -69,3 +69,5 @@ Three TestFlight tests passed with zero failures: a real hand through winning se
 A new clean video is captured from this installed TestFlight run, superseding the 2026-10-22 development re-signed walkthrough as the primary evidence. It begins with the actual app opening transition and shows the normal flow continuously. Only the personal Home Screen lead-in and OS overlays were removed, with orientation/letterboxing normalized. The original file remains private. Video provenance and current URL: `DeviceQA/review-video.json`.
 
 The tested build is now selected for App Store version 1.0. No App Review submission/release was performed. Physical iPad, multi-device nearby/production Game Center, and broader accessibility coverage remain unverified. Earlier “invitation pending” and “TestFlight pending” entries above describe the previous preparation state and are superseded by this section.
+
+The clean TestFlight video was also uploaded directly to the version's **App Review Information → Attachment** field at the user's request. Apple returned `COMPLETE` with no errors for `Cuiju-1.0-1-TestFlight-review.mp4` (11,507,498 bytes). Notes name this direct attachment; the public URL is a backup. No review submission was made.

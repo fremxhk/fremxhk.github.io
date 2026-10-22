@@ -15,5 +15,17 @@
   ],
   "qa": "Visual checks and OCR on 83 one-second samples found no flagged personal Home Screen/account/location content. Raw recording retained privately.",
   "coverage": "single physical iPhone, offline normal flow; no claim of multi-device coverage",
-  "reviewerAccessVerified": "Pending deployment verification before Notes update"
+  "reviewerAccessVerified": {
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "contentLength": 11507498,
+    "loginRequired": false
+  },
+  "appReviewAttachment": {
+    "fileName": "Cuiju-1.0-1-TestFlight-review.mp4",
+    "id": "5a8b9633-cd11-4758-939a-f3ed295e3fe9",
+    "state": "COMPLETE",
+    "errors": []
+  },
+  "reviewNotes": "Direct attachment filename and backup URL saved/read back in App Review Information; version not submitted"
 }
