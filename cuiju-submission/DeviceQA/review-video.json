@@ -14,5 +14,12 @@
     "gameplay sequence continuous; no simulated or substituted frames"
   ],
   "qa": "Visual checks plus OCR on 110 one-second samples; no flagged personal Home Screen/account/location content. Raw source remains private.",
-  "coverage": "offline normal flow only; not a multiplayer or TestFlight verification"
+  "coverage": "offline normal flow only; not a multiplayer or TestFlight verification",
+  "reviewerAccessVerified": {
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "contentLength": 25886412,
+    "loginRequired": false
+  },
+  "reviewNotes": "Video URL saved and read back in App Store Connect; preparation draft, not submitted"
 }

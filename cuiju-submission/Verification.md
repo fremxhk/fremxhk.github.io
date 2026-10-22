@@ -29,6 +29,7 @@ This is a **prepared candidate**, not complete device coverage or App Review sub
 | Age rating | Saved: 18+ globally, R18+ Australia, 18+ Brazil; older OS 17+ with exceptions; Korea 19+ excluded |
 | Storefronts | API and website verified: 145 enabled / 30 excluded (EU27, mainland China, South Korea, Vietnam); automatic new territories off |
 | Content rights | Third-party font rights declared; bundled SIL OFL licence retained |
+| TestFlight preparation | Private internal group with 1.0 (1), Ready to Test; no testers yet, invitation authorization pending. In-place XCTest mode verified without reinstalling target app |
 | Review submission / release | Not performed |
 
 Local evidence: `/private/tmp/cuiju-store-ready-archive.log`, `/private/tmp/cuiju-store-ready-export.log`, `/private/tmp/cuiju-apple-validation.log`, `/private/tmp/cuiju-store-integration-tests.log`, the screenshot capture logs, and `build/AppStore/` status/checksum records. Upload processing status is tracked separately from validation; do not interpret validation success as a TestFlight installation test.
