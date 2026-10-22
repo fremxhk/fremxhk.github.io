@@ -1,6 +1,6 @@
 # Physical-device recording plan
 
-Status: PENDING. Use a supported physical iPhone/iPad running the latest publicly available OS at recording time. Do not substitute a simulator, composited demo, or future OS claim. Use the exact TestFlight/submitted build and note its version/build. Avoid displaying personal account details; do not edit away crashes or misleadingly splice flows.
+Status: supplemental native recording completed on the owner-approved iOS 27.2 RC (24B115). Final exact-TestFlight launch/purchase/restore evidence remains pending beta approval. Use the submitted build and record its version/build. Preserve the original privately and avoid exposing personal account details.
 
 1. Start recording on the Home Screen and launch Lightkeeper. Show the first-launch guided walkthrough: light propagation, lantern conflict, numbered 0/1/2 posts and the final practice puzzle.
 2. Open Journey and the first puzzle. Place/remove a lantern, undo, use a hint with its visible oil cost and solve a board. Show the completion reward and persistent progress after relaunch.
@@ -11,3 +11,5 @@ Status: PENDING. Use a supported physical iPhone/iPad running the latest publicl
 7. Confirm downloaded island content works and its progress survives relaunch. Capture relevant permission-denied/offline behavior in QA, even if not all fits the main video.
 
 Suggested length: 4–7 minutes, prioritizing clarity over speed. Upload to a stable reviewer-accessible HTTPS URL without login or expiring permissions. Check playback in a private browser. Put the URL, device, OS, exact build and recording date in both the final review reply and Notes. Keep the original recording and QA evidence privately; do not publish personal Apple account details on GitHub.
+
+Supplemental QA excerpt: https://fremxhk.github.io/lightkeeper-review/device-walkthrough.html (123 seconds, continuous app flow; private system UI trimmed).

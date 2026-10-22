@@ -133,7 +133,7 @@
   "remainingGates": [
     "Apple TestFlight beta approval and invitation delivery",
     "Approved TestFlight-copy purchase/restore, hosted packs, Game Center and two-device iCloud validation",
-    "Native physical-device walkthrough recording and reviewer-accessible video URL",
+    "Final exact-TestFlight launch, purchase and restore recording after beta approval",
     "Refresh season dates/content for actual launch",
     "Final production submission after review evidence and integration QA; 25 resources already staged in unsubmitted draft"
   ],
@@ -419,24 +419,63 @@
     "uploaded": 9,
     "processingState": "COMPLETE",
     "deviceDeliveryVerified": false,
-    "externalBetaState": "All nine WAITING_FOR_REVIEW",
-    "internalBetaState": "READY_FOR_TESTING"
+    "externalBetaState": "7 READY_FOR_TESTING, 2 IN_REVIEW at last check",
+    "internalBetaState": "READY_FOR_TESTING",
+    "externalBetaStates": [
+      {
+        "pack": "island-12",
+        "state": "IN_REVIEW"
+      },
+      {
+        "pack": "island-11",
+        "state": "READY_FOR_TESTING"
+      },
+      {
+        "pack": "island-10",
+        "state": "READY_FOR_TESTING"
+      },
+      {
+        "pack": "island-9",
+        "state": "IN_REVIEW"
+      },
+      {
+        "pack": "island-8",
+        "state": "READY_FOR_TESTING"
+      },
+      {
+        "pack": "island-7",
+        "state": "READY_FOR_TESTING"
+      },
+      {
+        "pack": "island-6",
+        "state": "READY_FOR_TESTING"
+      },
+      {
+        "pack": "island-5",
+        "state": "READY_FOR_TESTING"
+      },
+      {
+        "pack": "island-4",
+        "state": "READY_FOR_TESTING"
+      }
+    ]
   },
   "validation": {
     "schemeTestsPassed": 100,
-    "physicalDeviceQA": false,
-    "physicalRecording": false,
+    "physicalDeviceQA": true,
+    "physicalRecording": true,
     "dailyBeaconBoundary": "00:00 UTC",
     "inactiveSDKsLinkedInArchive": false,
-    "artifactCaptureTestsPassed": 1
+    "artifactCaptureTestsPassed": 1,
+    "schemeTestsSkipped": 1
   },
   "purchaseReviewScreenshots": {
     "uploaded": 11,
     "iapStates": "All nine READY_TO_SUBMIT",
     "iapScreenshotStates": "COMPLETE",
     "subscriptionsPriceCounts": [
-      146,
-      146
+      175,
+      175
     ],
     "subscriptionsTrialCounts": [
       146,
@@ -540,8 +579,14 @@
       "skipped": 1
     },
     "packageTests": "Simulator verified; unhosted package tests cannot run on physical device",
-    "recording": "in progress",
+    "recording": "Native iPhone recording exported; supplemental continuous 123-second app-only excerpt published",
     "testFlightCopyTested": false,
-    "toolReportedReleaseChannel": "Beta"
+    "toolReportedReleaseChannel": "Beta",
+    "uiWalkthroughTests": {
+      "passed": 1
+    },
+    "totalPassed": 24,
+    "videoURL": "https://fremxhk.github.io/lightkeeper-review/device-walkthrough.html",
+    "finalTestFlightEvidenceComplete": false
   }
 }

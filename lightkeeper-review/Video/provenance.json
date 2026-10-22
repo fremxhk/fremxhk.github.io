@@ -1,0 +1,16 @@
+{
+  "recordedOn": "2026-10-23",
+  "device": "iPhone 18 Pro Max",
+  "os": "iOS 27.2 RC (24B115), owner-approved",
+  "app": "development-signed 1.0 (1)",
+  "capture": "Native iPhone Control Center Screen Recording",
+  "publicDurationSeconds": 123,
+  "originalExcerptStartSeconds": 63,
+  "editing": "Continuous excerpt; only private system UI lead/tail removed; resized with avconvert. No internal cuts or overlays.",
+  "sha256": "7c4b3c8a23d6f087ac74e9e6ea158820cda92cc73ce2c0fdf2bdee6da843e2be",
+  "limitations": [
+    "Not the TestFlight copy",
+    "Does not show tap-to-launch or authenticated purchase/restore",
+    "Raw original retained privately; not published"
+  ]
+}
