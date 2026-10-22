@@ -18,7 +18,7 @@ This is a **prepared candidate**, not a completed physical-device QA report or A
 | IPA export | Passed; current candidate is build/AppStore/ReadyExport/HKTaiwaneseMahjong.ipa |
 | Local store preflight | Passed metadata limits, icon, free-release flags, packaged policy/font/license/privacy manifest, signatures, dSYM and public-page content checks |
 | Apple package validation | VERIFY SUCCEEDED with no errors |
-| App Store Connect candidate upload | UPLOAD SUCCEEDED with no errors; version 1.0 build 1; Apple processing pending appearance in the builds API |
+| App Store Connect candidate upload | UPLOAD SUCCEEDED with no errors; version 1.0 build 1; processing completed as VALID; usesNonExemptEncryption is false |
 | Screenshots | Six primary-locale screenshots uploaded and all reported COMPLETE with no Apple delivery errors; iPhone and iPad captures are native pixels |
 | Screenshot UI flow | Passed on both iPhone and iPad; iPad table captured in landscape |
 | App integration tests | 11 passed, zero failures |

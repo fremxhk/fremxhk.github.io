@@ -51,8 +51,8 @@ App Store Connect integration uses the locally supplied API key, with tokens gen
 - [ ] Choose storefronts and satisfy any regional game classification/publication requirements. EU availability also needs the account holder's trader-status declaration/verification.
 - [x] Prepared free pricing and limited the launch scope to iPhone/iPad (Mac and Vision Pro compatibility distribution disabled).
 - [ ] Confirm agreements/account requirements and assess Apple's current accessibility declaration questions. Do not claim unverified accessibility support.
-- [x] Candidate 1.0 (1) uploaded to App Store Connect with no errors after Apple package validation passed.
-- [ ] Confirm Apple processing/export compliance, complete physical TestFlight and production Game Center tests, and select the final tested build for the version.
+- [x] Candidate 1.0 (1) uploaded to App Store Connect with no errors after Apple package validation passed; Apple processing is VALID and non-exempt encryption is false.
+- [ ] Complete physical TestFlight and production Game Center tests, and select the final tested build for the version.
 - [x] Six screenshots uploaded and processed successfully (three iPhone, three iPad); the iPad table is landscape. Recheck these against the final binary if it changes.
 - [ ] Run final Apple validation and review the complete staged metadata. Keep release manual until launch is deliberately approved.
 
