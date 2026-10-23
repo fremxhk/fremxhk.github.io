@@ -2,15 +2,17 @@
 
 Prepared metadata and review evidence for VaultGlass, BioPulse Local and ClauseShield. Submission is deliberately pending physical-device QA and video evidence requested under Guideline 2.1.
 
-## Completed
+## Completed preparation
 
-- Three English metadata sets: app name, subtitle, description, keywords, promotional text, copyright, category, version, SKU, privacy/support/marketing URLs.
-- Nine product definitions matching the in-app catalog: monthly $4.99, annual $29.99 with a one-week eligible introductory trial, lifetime $79.99. Live USA prices and the eligible one-week annual trial have been saved in App Store Connect. All nine product availabilities are currently USA only; final rollout regions remain to be confirmed.
-- Per-app review notes answering purpose/audience, access and samples, external services, regional limitations and rights/regulated-service scope.
-- Public policy/support pages; in-app links in Pro and Backup & Privacy.
-- API authentication verified. Three explicit app bundle IDs and widget ID registered. Relevant capabilities enabled. Three private iCloud containers and the VaultGlass shared App Group are registered and associated with the app IDs; distribution provisioning and signed exports passed; production schema validation remains outstanding.
-- All three signed Release archives and App Store production exports passed deep/strict signature, identity, entitlement and privacy-resource checks. Nine IAP review screenshots are uploaded and processed. Individual App Store purchase options are configured; TestFlight app descriptions and private review contact are saved without inviting testers or submitting beta review.
-- Sequential simulator QA and genuine native captures. The iPhone 17e captures are for UI review. Eleven additional unresized App Store captures cover 1206 × 2622 iPhone and 2064 × 2752 iPad slots; all original uploads processed, with the final affected captures refreshed after iPad findings.
+- Forty-five distinct target-qualified automated test methods passed in the recorded scopes. [Every method, pass result and supporting bundle](../Documentation/TestResults.md) is listed; repeat executions are separate. Functional tests reused one iPhone 17e sequentially. Final affected flows passed four normal and four dark/accessibility XXXL tests.
+- Three final signed Release archives and App Store production exports passed deep/strict signature, bundle/version/build, entitlement, privacy-resource and Debug-flag exclusion checks. [Package fingerprints and exact scope](../Documentation/BuildVerification.md) are recorded.
+- Final builds uploaded, processed as VALID and were selected for version 1.0.0: VaultGlass build 2, BioPulse Local build 3, ClauseShield build 2. Per-build TestFlight QA instructions are saved; automatic tester notifications are disabled. An explicitly authorized internal tester has been invited to an internal-only QA group for each final build. Invitation acceptance and on-phone TestFlight installation remain pending. No beta review submission, App Review submission or public release occurred.
+- Three English metadata sets: app name, subtitle, description, keywords, promotional text, copyright, category, version, SKU, privacy/support/marketing URLs. Private App Review contacts and six-point review notes are saved without publishing private contact details to GitHub.
+- Nine products matching the app catalog: monthly $4.99 USD, annual $29.99 USD with a one-week eligible USA introductory trial, lifetime $79.99 USD. Individual App Store purchase options are configured. Product availability remains USA only pending final rollout confirmation.
+- Nine IAP review screenshots and eleven genuine current-size App Store screenshots processed successfully. The screenshot slots cover 1206 × 2622 iPhone and 2064 × 2752 iPad captures, without resizing. They show the app in use with demonstration data and are not physical-device certification.
+- Three app bundle IDs and widget ID registered. Three private CloudKit containers and the VaultGlass App Group are registered/associated. Production schema and two-device runtime verification remain open.
+- Public support/privacy pages and in-app policy links are present. Three Data Not Collected privacy drafts and age questionnaires are saved; privacy publication remains pending Apple's legal attestation.
+- Three unsubmitted review drafts exist. All nine products and all three subscription groups are attached to unsubmitted drafts. Apple-converted UPFRONT prices are saved for all 175 pricing territories; this does not widen product availability beyond USA. Draft creation is not submission for review.
 
 ## App Store Connect records created
 
@@ -24,6 +26,15 @@ Version 1.0.0, English (U.S.), manual release. Names, subtitles, descriptions, k
 
 All three Data Not Collected privacy drafts are saved. Publishing displays Apple's legal accuracy/compliance attestation and remains pending explicit confirmation. Review notes clearly state that physical-device evidence is pending. No response falsely claiming hardware QA has been sent.
 
+## Apple’s final draft validation
+
+Apple accepts the selected builds and current screenshot slots. Adding each app version to its unsubmitted draft currently returns exactly two declaration blockers:
+
+- `contentRightsDeclaration` is required.
+- App Privacy answers must be published.
+
+These are left for explicit owner confirmation. The drafts are not submitted, and hardware/live-service/domain gates still apply even after the metadata blockers are resolved.
+
 ## Privacy and age-rating worksheet
 
 - No tracking, ads, developer-operated accounts, public user-content feeds or third-party AI/analytics SDKs.
@@ -35,14 +46,13 @@ All three Data Not Collected privacy drafts are saved. Publishing displays Apple
 - No protected third-party library of content is bundled. Synthetic samples are generated by the app; users supply their own documents.
 - Encryption uses platform CryptoKit/CommonCrypto for archive protection, without a custom cryptographic algorithm. The binary currently declares no non-exempt encryption; validate the current export-compliance questionnaire and territories before submission.
 
-## Remaining release gates and user input — last
+## Remaining release gates and owner input — last
 
-1. Review the test-by-test simulator results and complete the remaining live-service/hardware gates. Forty-five distinct target-qualified methods passed in the documented scopes; repeat executions are not additional methods.
-2. Confirm developer/account declarations: privacy questionnaire, age rating, regulated-device/rights/export answers, distribution territories, any agreements/tax/banking or trader details Apple requests. Public support uses the existing portal address; private review contact details remain outside Git.
-3. Verify the CloudKit production schema and two-device synchronization. Container/App Group associations, signed archives and production exports passed; App Store upload/processing and final build selection are recorded separately when complete.
-4. Supply a physical device; test the exact Release/TestFlight build on each supported platform and record the launch-to-main-flow demonstration including paid access and restore. No simulator video is a substitute for Apple’s requested evidence.
-5. Review the eleven genuine current-size App Store screenshots and confirm final delivery. Capture profiles ran sequentially; functional tests remain on the original iPhone 17e. No simulator capture represents the required physical-device video.
-6. Finish initial-submission IAP associations; confirm rollout availability and verify purchases in sandbox/TestFlight. Nine review images are processed; product records, localizations, USA availability/prices and annual offers are saved. Draft review validation identified missing international UPFRONT price points despite USA-only availability. Apple-converted prices are being prepared without widening availability. Products are not approved or sale-ready.
-7. Add the real video URL/device/OS/build evidence to review notes and attach applicable IAPs. Only then submit the version and answer the review request.
+1. Complete physical iPhone and iPad QA on the exact signed Release/TestFlight builds, including camera/OCR, model-ready/fallback behavior, permissions, large documents/memory, notifications/widget, VoiceOver/largest text, offline use and data retention. Follow [the unchecked hardware walkthrough](../Documentation/OnDeviceQA.md). The iPhone has reconnected. Physical XCTest is awaiting the owner-completed iOS passcode prompt to enable UI automation; no hardware test is counted as passed yet.
+2. Verify live App Store sandbox/TestFlight purchases, trial eligibility, renewals/cancellation, refunds/revocation, pending/failed purchases and restore. Local StoreKit test passes do not certify Apple's live service.
+3. Validate/deploy the CloudKit production schema after signed hardware testing and confirm synchronization on two devices, signed-out fallback and explicit local/cloud transfer behavior.
+4. Obtain qualified review of the illustrative health calculations/ranges and legal screening/playbooks. No clinical validation, medical-device clearance or jurisdiction-wide legal guarantee is claimed.
+5. Confirm final rollout territories and owner declarations: privacy publication, content rights, BioPulse regulatory status, encryption/export classification and any applicable trader/account agreements/tax/banking information. Proposed encryption classification is exempt platform-based protection; owner confirmation remains a submission gate.
+6. Finish the unsubmitted review package after those confirmations, append the real device/OS/build/video URL to the Notes field and send Apple's Guideline 2.1 response only after the physical launch-to-flow recording exists. Demonstrate paid access/restore in the recording. No simulator video may substitute.
 
-No review response claiming readiness has been sent, and no app has been submitted or released by this preparation.
+Apple's privacy Publish dialog states that publishing agrees to accuracy, App Store guidelines and applicable law; explicit confirmation is required for that action. All three drafts remain unpublished until confirmed. No response claiming hardware QA or production readiness has been sent.

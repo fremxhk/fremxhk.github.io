@@ -13,3 +13,9 @@ Checks passed: deep/strict code-signature validation; exact bundle IDs, version/
 The initial BioPulse upload was rejected for a missing HealthKit update purpose string. Both Health purpose strings are now present and checked before archiving. The app requests read-only HealthKit access.
 
 App Store upload, processing, selected builds, purchase draft attachments and final owner-input gates are recorded in [submission status](../Submission/README.md). No physical-device QA, App Review approval or public release is implied.
+
+## Physical QA distribution preparation
+
+All three archived candidates were exported with Apple's `release-testing` method for the registered iPhone. Deep/strict signatures pass, and executable UUIDs plus every Mach-O `__TEXT` section hash match their original archives. Only distribution signing changed; no app source was rebuilt. This allows hardware checks to proceed separately from pending TestFlight invitation acceptance. It does not certify TestFlight receipt behavior or live purchases.
+
+The independent physical UI-test host has no dependency on the three app targets. It cannot replace them with Debug apps, supplies no QA launch arguments and has no StoreKit configuration. Runner construction passed; physical test execution is pending the device's UI-automation authentication prompt.

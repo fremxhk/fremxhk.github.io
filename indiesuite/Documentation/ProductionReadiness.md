@@ -34,7 +34,7 @@ See [Validation.md](Validation.md) for the background crash, extraction groundin
 - Development-to-production CloudKit schema validation and two-device synchronization, including signed-out fallback and explicit local/cloud transfer behavior.
 - App Store sandbox/TestFlight product loading, paid monthly/annual/lifetime access, trial eligibility, renewal, cancellation, pending/failed purchases, refunds and restore. Local StoreKit simulation does not certify Apple's live service.
 - Qualified review of medical/educational content and legal playbooks. No claim of clinical validation, regulated medical-device clearance or jurisdiction-wide legal accuracy is made.
-- App Store screenshot slots, privacy/legal declarations, applicable trader/account details, build selection and IAP review attachments.
+- Final privacy/legal declarations, distribution territories, applicable trader/account details and completion of the unsubmitted review package. Current-size screenshots and IAP review images are prepared; final build selection and IAP draft associations are recorded in the submission status.
 - Apple's requested physical-device launch-to-flow recording, real device/OS/build/video details in review notes, and truthful Guideline 2.1 reply.
 
-The unavailable physical device prevents completion of hardware QA and recording today. No app has been submitted for review or released by this preparation.
+The connected iPhone 18 Pro Max runs iOS 27.2 beta (24B115). Physical XCTest is awaiting the owner-completed system passcode prompt to enable UI automation. The direct device recording API is unsupported on this phone; native Control Center recording is being prepared. No physical app-flow test or recording has been completed yet. Public stable-OS and physical iPad coverage remain open. No app has been submitted for review or released by this preparation.

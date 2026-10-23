@@ -270,4 +270,3 @@ Result: **Passed**. 4 passed, 0 failed, 0 skipped.
 | `SequentialAppSmokeTests/test10MainScreenAccessibilityAudit()` | Passed |
 
 Local evidence: `TestResults/Final-iPad-Findings-LargeText.xcresult`.
-
