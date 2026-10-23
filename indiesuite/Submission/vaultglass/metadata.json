@@ -1,0 +1,25 @@
+{
+  "slug": "vaultglass",
+  "name": "VaultGlass",
+  "subtitle": "Receipts, warranties & items",
+  "category": "PRODUCTIVITY",
+  "keywords": "receipt,warranty,inventory,home,insurance,serial,return,organize,property,claim",
+  "purpose": "VaultGlass helps individuals keep receipts, item details, estimated warranty dates and home inventory in one place.",
+  "audience": "People managing personal purchases and household inventory.",
+  "features": [
+    "Import receipts from photos, document scans, PDFs or text. Review and correct extracted facts.",
+    "Track estimated return and warranty dates, attach evidence and prepare claim drafts.",
+    "Filter a home inventory by property and room, then export an insurance valuation PDF."
+  ],
+  "limits": "Coverage and depreciation are estimates. Always check merchant, manufacturer, card-provider and insurer terms.",
+  "bundleId": "com.indiesuite.vaultglass",
+  "sku": "indiesuite-vaultglass-ios",
+  "locale": "en-US",
+  "version": "1.0.0",
+  "copyright": "2026 Freeman Cheung",
+  "privacyPolicyUrl": "https://fremxhk.github.io/indiesuite/vaultglass/privacy.html",
+  "supportUrl": "https://fremxhk.github.io/indiesuite/vaultglass/support.html",
+  "marketingUrl": "https://fremxhk.github.io/indiesuite/vaultglass/",
+  "promotionalText": "VaultGlass helps individuals keep receipts, item details, estimated warranty dates and home inventory in one place.",
+  "description": "VaultGlass helps individuals keep receipts, item details, estimated warranty dates and home inventory in one place.\n\nImport receipts from photos, document scans, PDFs or text. Review and correct extracted facts.\n\nTrack estimated return and warranty dates, attach evidence and prepare claim drafts.\n\nFilter a home inventory by property and room, then export an insurance valuation PDF.\n\nPRIVATE BY DESIGN\nDocument recognition and analysis run on device. Compatible devices may use Apple’s on-device Foundation Models; deterministic local extraction is available when the model is unavailable. Optional synchronization uses your private iCloud container. No account registration or third-party AI key is required.\n\nFREE AND PRO\nIncludes five completed on-device AI actions per app. Pro unlocks additional AI actions through a monthly or annual subscription, or a separate lifetime purchase. Prices and eligibility are shown by the App Store. Subscriptions renew automatically unless canceled in App Store settings.\n\nCoverage and depreciation are estimates. Always check merchant, manufacturer, card-provider and insurer terms.\n\nPrivacy: https://fremxhk.github.io/indiesuite/vaultglass/privacy.html\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+}

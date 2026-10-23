@@ -1,0 +1,25 @@
+{
+  "slug": "biopulselocal",
+  "name": "BioPulse Local",
+  "subtitle": "Lab history and visit prep",
+  "category": "HEALTH_AND_FITNESS",
+  "keywords": "labs,biomarker,history,health,charts,doctor,questions,wellness,results,records",
+  "purpose": "BioPulse Local helps adults organize lab reports, compare saved biomarker measurements and prepare questions for clinician visits.",
+  "audience": "Adults who want a personal lab history and educational visit-preparation tools.",
+  "features": [
+    "Import a lab PDF or document photo and verify the extracted values and units.",
+    "Compare biomarker history with optional read-only Apple Health trends and dated lifestyle notes.",
+    "Prepare clinician questions, export a doctor brief and record laboratory preparation tasks."
+  ],
+  "limits": "Educational organization and estimates only. It does not diagnose, treat or prevent disease. Reference intervals are illustrative, not individualized clinical thresholds. Follow your clinician and laboratory instructions. PhenoAge is an estimate, not a clinical assessment.",
+  "bundleId": "com.indiesuite.biopulselocal",
+  "sku": "indiesuite-biopulselocal-ios",
+  "locale": "en-US",
+  "version": "1.0.0",
+  "copyright": "2026 Freeman Cheung",
+  "privacyPolicyUrl": "https://fremxhk.github.io/indiesuite/biopulselocal/privacy.html",
+  "supportUrl": "https://fremxhk.github.io/indiesuite/biopulselocal/support.html",
+  "marketingUrl": "https://fremxhk.github.io/indiesuite/biopulselocal/",
+  "promotionalText": "BioPulse Local helps adults organize lab reports, compare saved biomarker measurements and prepare questions for clinician visits.",
+  "description": "BioPulse Local helps adults organize lab reports, compare saved biomarker measurements and prepare questions for clinician visits.\n\nImport a lab PDF or document photo and verify the extracted values and units.\n\nCompare biomarker history with optional read-only Apple Health trends and dated lifestyle notes.\n\nPrepare clinician questions, export a doctor brief and record laboratory preparation tasks.\n\nPRIVATE BY DESIGN\nDocument recognition and analysis run on device. Compatible devices may use Apple’s on-device Foundation Models; deterministic local extraction is available when the model is unavailable. Optional synchronization uses your private iCloud container. No account registration or third-party AI key is required.\n\nFREE AND PRO\nIncludes five completed on-device AI actions per app. Pro unlocks additional AI actions through a monthly or annual subscription, or a separate lifetime purchase. Prices and eligibility are shown by the App Store. Subscriptions renew automatically unless canceled in App Store settings.\n\nEducational organization and estimates only. It does not diagnose, treat or prevent disease. Reference intervals are illustrative, not individualized clinical thresholds. Follow your clinician and laboratory instructions. PhenoAge is an estimate, not a clinical assessment.\n\nPrivacy: https://fremxhk.github.io/indiesuite/biopulselocal/privacy.html\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+}

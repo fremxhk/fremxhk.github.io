@@ -1,0 +1,33 @@
+[
+  {
+    "productId": "com.indiesuite.biopulselocal.pro.monthly",
+    "name": "BioPulse Local Pro Monthly",
+    "type": "AUTO_RENEWABLE_SUBSCRIPTION",
+    "usdPrice": "4.99",
+    "subscriptionPeriod": "ONE_MONTH",
+    "introductoryOffer": null,
+    "description": "Unlimited on-device AI actions in BioPulse Local"
+  },
+  {
+    "productId": "com.indiesuite.biopulselocal.pro.annual",
+    "name": "BioPulse Local Pro Annual",
+    "type": "AUTO_RENEWABLE_SUBSCRIPTION",
+    "usdPrice": "29.99",
+    "subscriptionPeriod": "ONE_YEAR",
+    "introductoryOffer": {
+      "mode": "FREE_TRIAL",
+      "duration": "ONE_WEEK",
+      "eligibility": "Apple determines eligibility"
+    },
+    "description": "Unlimited on-device AI actions in BioPulse Local"
+  },
+  {
+    "productId": "com.indiesuite.biopulselocal.pro.lifetime",
+    "name": "BioPulse Local Pro Lifetime",
+    "type": "NON_CONSUMABLE",
+    "usdPrice": "79.99",
+    "subscriptionPeriod": null,
+    "introductoryOffer": null,
+    "description": "Unlimited on-device AI actions in BioPulse Local"
+  }
+]

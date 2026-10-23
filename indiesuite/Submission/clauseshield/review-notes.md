@@ -1,0 +1,19 @@
+# ClauseShield — App Review information
+
+Status: prepared draft. Do not submit until the physical-device evidence below is complete. This is not a claim that hardware QA has been performed.
+
+1. **Physical-device demonstration:** Pending. Record on a physical iPhone/iPad running the latest available operating system. Begin with launching the installed Release/TestFlight build, demonstrate import, review, saved history, export, and the Pro purchase/restore path. Provide device model, OS version, build number and the recording URL. The simulator captures in this repository are UI evidence only.
+2. **Purpose and audience:** ClauseShield helps individuals inspect agreements, understand flagged wording and prepare proposed changes for discussion. Intended audience: Freelancers, creators, tenants and individuals preparing to discuss an agreement. This is a general-public app, not a private employee or organization distribution.
+3. **Access and setup:** No registration, login or demo credentials are required. Launch the app, use the document import action and select “Try a sample document” to generate a synthetic example locally. No external sample file is needed. Choose a role/category, import the sample, review each clause and open Pushback to prepare a draft. Five completed AI actions are available free; open Pro to purchase or restore additional access. The floating QA seeder and entitlement overrides exist only in Debug and are not part of the Release app.
+4. **External services:** Apple StoreKit/App Store for purchases and restore; Apple CloudKit/iCloud for optional private synchronization; Apple Vision and Foundation Models frameworks for on-device OCR and generation; Apple SwiftData, PDFKit, PhotosPicker/document camera, App Intents and MetricKit platform frameworks. No external legal database or remote legal AI service is used. There is no developer-operated backend, ad SDK, third-party analytics endpoint, or third-party AI API. No Private Cloud Compute route is invoked by this implementation.
+5. **Regions:** The app’s intended tools and content are consistent across regions, with an English interface. Apple model availability depends on supported device, language, region and OS settings; deterministic on-device extraction is available when the model is unavailable. Apple determines purchase availability, price, tax and trial eligibility. iCloud and HealthKit depend on account, permission and platform availability. There is no region-specific regulated service.
+6. **Rights and regulated activity:** Screening and drafting assistance only. It is not legal advice or a completeness, enforceability or outcome guarantee. A qualified lawyer should assess the final agreement. No professional credential, regulatory authorization or third-party content license is claimed. Synthetic QA documents are generated locally; users import their own files. If Apple requests additional substantiation or professional review, obtain it before submission. There are no accounts or publicly shared user-content feeds, so account deletion and public-content reporting/blocking flows do not apply.
+
+## Evidence required before submission
+
+- [ ] Physical-device QA of the exact Release/TestFlight build, on supported iPhone and iPad platforms.
+- [ ] Device model, current OS version, build number and pass/fail report.
+- [ ] Physical-device recording beginning with app launch and showing the typical flow plus purchase/restore.
+- [ ] Attach recording and update these notes with the real URL; do not substitute a simulator video.
+- [ ] Verify all three IAP products, first-subscription group, prices, localizations and review screenshots in App Store Connect; attach applicable products to the initial submission.
+- [ ] Confirm privacy answers, age rating, export compliance and any requested rights/regulated-device declarations against the actual build.

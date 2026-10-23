@@ -1,0 +1,25 @@
+{
+  "slug": "clauseshield",
+  "name": "ClauseShield",
+  "subtitle": "Contract review and reply",
+  "category": "PRODUCTIVITY",
+  "keywords": "contract,review,freelance,clause,redline,negotiation,agreement,lease,terms,draft",
+  "purpose": "ClauseShield helps individuals inspect agreements, understand flagged wording and prepare proposed changes for discussion.",
+  "audience": "Freelancers, creators, tenants and individuals preparing to discuss an agreement.",
+  "features": [
+    "Import an agreement as PDF, text or scanned pages and choose a role and category.",
+    "Review source quotes, screening flags and missing-protection checks; save or dismiss suggested replacements.",
+    "Compare paragraph versions and export a negotiation draft or redline comparison memo."
+  ],
+  "limits": "Screening and drafting assistance only. It is not legal advice or a completeness, enforceability or outcome guarantee. A qualified lawyer should assess the final agreement.",
+  "bundleId": "com.indiesuite.clauseshield",
+  "sku": "indiesuite-clauseshield-ios",
+  "locale": "en-US",
+  "version": "1.0.0",
+  "copyright": "2026 Freeman Cheung",
+  "privacyPolicyUrl": "https://fremxhk.github.io/indiesuite/clauseshield/privacy.html",
+  "supportUrl": "https://fremxhk.github.io/indiesuite/clauseshield/support.html",
+  "marketingUrl": "https://fremxhk.github.io/indiesuite/clauseshield/",
+  "promotionalText": "ClauseShield helps individuals inspect agreements, understand flagged wording and prepare proposed changes for discussion.",
+  "description": "ClauseShield helps individuals inspect agreements, understand flagged wording and prepare proposed changes for discussion.\n\nImport an agreement as PDF, text or scanned pages and choose a role and category.\n\nReview source quotes, screening flags and missing-protection checks; save or dismiss suggested replacements.\n\nCompare paragraph versions and export a negotiation draft or redline comparison memo.\n\nPRIVATE BY DESIGN\nDocument recognition and analysis run on device. Compatible devices may use Apple’s on-device Foundation Models; deterministic local extraction is available when the model is unavailable. Optional synchronization uses your private iCloud container. No account registration or third-party AI key is required.\n\nFREE AND PRO\nIncludes five completed on-device AI actions per app. Pro unlocks additional AI actions through a monthly or annual subscription, or a separate lifetime purchase. Prices and eligibility are shown by the App Store. Subscriptions renew automatically unless canceled in App Store settings.\n\nScreening and drafting assistance only. It is not legal advice or a completeness, enforceability or outcome guarantee. A qualified lawyer should assess the final agreement.\n\nPrivacy: https://fremxhk.github.io/indiesuite/clauseshield/privacy.html\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+}
