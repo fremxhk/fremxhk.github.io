@@ -6,7 +6,7 @@
     "usdPrice": "4.99",
     "subscriptionPeriod": "ONE_MONTH",
     "introductoryOffer": null,
-    "description": "Unlimited on-device AI actions in BioPulse Local"
+    "description": "Unlimited on-device AI analyses"
   },
   {
     "productId": "com.indiesuite.biopulselocal.pro.annual",
@@ -19,7 +19,7 @@
       "duration": "ONE_WEEK",
       "eligibility": "Apple determines eligibility"
     },
-    "description": "Unlimited on-device AI actions in BioPulse Local"
+    "description": "Unlimited on-device AI analyses"
   },
   {
     "productId": "com.indiesuite.biopulselocal.pro.lifetime",
@@ -28,6 +28,6 @@
     "usdPrice": "79.99",
     "subscriptionPeriod": null,
     "introductoryOffer": null,
-    "description": "Unlimited on-device AI actions in BioPulse Local"
+    "description": "Unlimited on-device AI. One-time unlock."
   }
 ]

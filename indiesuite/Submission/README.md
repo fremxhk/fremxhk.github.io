@@ -5,23 +5,24 @@ Prepared metadata and review evidence for VaultGlass, BioPulse Local and ClauseS
 ## Completed
 
 - Three English metadata sets: app name, subtitle, description, keywords, promotional text, copyright, category, version, SKU, privacy/support/marketing URLs.
-- Nine product definitions matching the in-app catalog: monthly $4.99, annual $29.99 with a one-week eligible introductory trial, lifetime $79.99. Live price tiers, territories and offers are not yet saved in App Store Connect.
+- Nine product definitions matching the in-app catalog: monthly $4.99, annual $29.99 with a one-week eligible introductory trial, lifetime $79.99. Live USA prices and the eligible one-week annual trial have been saved in App Store Connect. All nine product availabilities are currently USA only; final rollout regions remain to be confirmed.
 - Per-app review notes answering purpose/audience, access and samples, external services, regional limitations and rights/regulated-service scope.
 - Public policy/support pages; in-app links in Pro and Backup & Privacy.
-- API authentication verified. Three explicit app bundle IDs and widget ID registered. Relevant capabilities enabled. This does not imply CloudKit containers, app-group associations or signing profiles are complete.
-- Sequential simulator QA and genuine native captures. Current iPhone 17e captures are for UI review; they do not satisfy all required current App Store screenshot slots.
+- API authentication verified. Three explicit app bundle IDs and widget ID registered. Relevant capabilities enabled. Three private iCloud containers and the VaultGlass shared App Group are registered and associated with the app IDs; distribution provisioning and signed exports passed; production schema validation remains outstanding.
+- All three signed Release archives and App Store production exports passed deep/strict signature, identity, entitlement and privacy-resource checks. Nine IAP review screenshots are uploaded and processed. Individual App Store purchase options are configured; TestFlight app descriptions and private review contact are saved without inviting testers or submitting beta review.
+- Sequential simulator QA and genuine native captures. The iPhone 17e captures are for UI review. Eleven additional unresized App Store captures cover 1206 × 2622 iPhone and 2064 × 2752 iPad slots; all original uploads processed, with the final affected captures refreshed after iPad findings.
 
-## App records to create on the App Store Connect website
+## App Store Connect records created
 
-Apple’s public API [does not create initial app records](https://developer.apple.com/documentation/appstoreconnectapi/apps). A signed-in website session is required. The available browser is signed out. Do not create duplicates if records have been created since this preparation.
+| App | App ID | Bundle ID |
+| --- | --- | --- |
+| VaultGlass | 6826259569 | com.indiesuite.vaultglass |
+| BioPulse Local | 6826259946 | com.indiesuite.biopulselocal |
+| ClauseShield | 6826260497 | com.indiesuite.clauseshield |
 
-| Name | Bundle ID | SKU | Language | Platform |
-| --- | --- | --- | --- | --- |
-| VaultGlass | com.indiesuite.vaultglass | indiesuite-vaultglass-ios | English (U.S.) | iOS |
-| BioPulse Local | com.indiesuite.biopulselocal | indiesuite-biopulselocal-ios | English (U.S.) | iOS |
-| ClauseShield | com.indiesuite.clauseshield | indiesuite-clauseshield-ios | English (U.S.) | iOS |
+Version 1.0.0, English (U.S.), manual release. Names, subtitles, descriptions, keywords, promotional text, public URLs, copyright, categories and review notes/contact are saved. Base apps are free. Nine products and their localizations, three subscription groups, USD prices and annual introductory offers are saved. Age questionnaires are saved; BioPulse and ClauseShield use an adult override. These are setup records, not submitted/reviewed products.
 
-Use version 1.0.0 and manual release. API-driven metadata can be applied after the records exist. Current prepared files are drafts, not evidence that live App Store fields have been saved.
+All three Data Not Collected privacy drafts are saved. Publishing displays Apple's legal accuracy/compliance attestation and remains pending explicit confirmation. Review notes clearly state that physical-device evidence is pending. No response falsely claiming hardware QA has been sent.
 
 ## Privacy and age-rating worksheet
 
@@ -36,12 +37,12 @@ Use version 1.0.0 and manual release. API-driven metadata can be applied after t
 
 ## Remaining release gates and user input — last
 
-1. Sign in to App Store Connect and create the three initial records (or provide their existing app IDs). Do not send passwords or two-factor codes in chat.
+1. Review the test-by-test simulator results and complete the remaining live-service/hardware gates. Forty-five distinct target-qualified methods passed in the documented scopes; repeat executions are not additional methods.
 2. Confirm developer/account declarations: privacy questionnaire, age rating, regulated-device/rights/export answers, distribution territories, any agreements/tax/banking or trader details Apple requests. Public support uses the existing portal address; private review contact details remain outside Git.
-3. Verify CloudKit container and App Group associations, production schema and distribution provisioning. Signed archives/export/upload must pass before choosing a build.
+3. Verify the CloudKit production schema and two-device synchronization. Container/App Group associations, signed archives and production exports passed; App Store upload/processing and final build selection are recorded separately when complete.
 4. Supply a physical device; test the exact Release/TestFlight build on each supported platform and record the launch-to-main-flow demonstration including paid access and restore. No simulator video is a substitute for Apple’s requested evidence.
-5. Capture current required App Store screenshot sizes: Dynamic Island medium iPhone and 13-inch iPad. The current 1170×2532 iPhone 17e review captures must not be misrepresented as these sizes. Additional profiles should be captured sequentially; keep functional regression tests on the single established simulator.
-6. Configure live products, localizations, USD base prices and availability, annual introductory offer, IAP review screenshots and initial-submission associations; verify in sandbox/TestFlight.
+5. Review the eleven genuine current-size App Store screenshots and confirm final delivery. Capture profiles ran sequentially; functional tests remain on the original iPhone 17e. No simulator capture represents the required physical-device video.
+6. Finish initial-submission IAP associations; confirm rollout availability and verify purchases in sandbox/TestFlight. Nine review images are processed; product records, localizations, USA availability/prices and annual offers are saved. Draft review validation identified missing international UPFRONT price points despite USA-only availability. Apple-converted prices are being prepared without widening availability. Products are not approved or sale-ready.
 7. Add the real video URL/device/OS/build evidence to review notes and attach applicable IAPs. Only then submit the version and answer the review request.
 
 No review response claiming readiness has been sent, and no app has been submitted or released by this preparation.

@@ -3,7 +3,7 @@
 ## Prepare Xcode signing
 
 1. Open `IndieSuite.xcworkspace` in Xcode 27.0 or newer, using Swift 6.4.
-2. Select your Apple Developer team for all three apps and the widget. The checked-in build does not assume or embed a developer identity.
+2. Select your Apple Developer team for all three apps and the widget. The build can use an external signing configuration; private credentials are excluded from Git.
 3. Register the requested bundle identifiers and private CloudKit containers:
 
 | App | Bundle | CloudKit container |
@@ -18,7 +18,7 @@
 
 ## Simulator protocol
 
-Run `Scripts/test-sequential.sh SIMULATOR_UDID` against one already booted simulator. The script installs apps sequentially, then runs evaluations, then UI tests. UI tests terminate one app before launching the next. Simulator parallel testing and destination cloning are disabled; the Swift Testing parent suite is serialized. Do not run multiple copies of the script at once.
+Run `Scripts/test-sequential.sh SIMULATOR_UDID` against one already booted simulator. The script installs apps sequentially, then runs evaluations, then the main UI tests, then the two additional app-specific purchase hosts. UI tests terminate one app before launching the next. Simulator parallel testing and destination cloning are disabled; the Swift Testing parent suite is serialized. Do not run multiple copies of the script at once.
 
 ## Shared checks, in each app
 
@@ -73,3 +73,13 @@ Run `Scripts/test-sequential.sh SIMULATOR_UDID` against one already booted simul
 - [ ] Review clinical ranges and legal playbooks with qualified domain professionals before a public release.
 - [ ] Configure App Store Connect products, privacy disclosure and support information, then test sandbox purchases separately from the local StoreKit catalog.
 - [ ] Promote and validate CloudKit schemas before production distribution. Verify Debug QA overlays, overrides and launch seeding are absent in Release.
+
+## Archive format compatibility
+
+The unreleased QA archive format is now version 2. AES-GCM authenticates the app identifier as well as the payload. Version 1 development archives are intentionally rejected; re-export needed QA fixtures with the current build. No released customer migration is being claimed.
+
+## Current release preparation
+
+The three app IDs, three private iCloud containers and VaultGlass app group are registered and associated. Distribution provisioning, signed archives and production exports now pass package validation. This does not prove production CloudKit schema or device synchronization. App Store Connect records and metadata exist; see [submission status](../Submission/README.md).
+
+SwiftUI scene restoration uses the framework's automatic restoration behavior and scene-stored tabs. Backgrounding must not manually call UIKit's restoration extension outside its permitted transition. Reproduce background/resume on hardware in each app and each supported window configuration.

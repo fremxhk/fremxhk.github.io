@@ -27,8 +27,24 @@ Direction: calm, polished utility with clear hierarchy. This is an implementatio
 
 ## Validation and limits
 
-Native captures were reviewed at the actual simulator resolution. All nine updated live Siri/UI checks passed sequentially on the same iPhone 17e, including all three document workflows and additional chart/review/coverage capture paths. No concurrent simulator destinations or clones were used. The core numerical and persistence suite is recorded separately in Validation.md.
+Native captures were reviewed at the actual simulator resolution. The main UI/App Intents suite and final focused runs passed sequentially on the same iPhone 17e, including all three document workflows and chart/review/coverage capture paths. See TestResults.md for exact per-bundle scopes and counts. No concurrent simulator destinations or clones were used. The core numerical and persistence suite is recorded separately in Validation.md.
 
 No usability participants were recruited and no retention, conversion or task-time improvement has been measured. Physical-device accessibility, iPad layouts and the exact signed App Store build still require QA. The candidate is prepared for further review, not certified App Store-ready.
 
 The latest captures are in [Previews/Refined](Previews/Refined). Earlier captures are retained as a comparison baseline.
+
+## Contrast refinement
+
+A final screenshot review identified bright teal/green/orange text on light cards. These accents now use darker light-mode values and brighter dark-mode values; status labels retain icons and explicit text. The target is at least 4.5:1 for ordinary text, following [W3C contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). This is a palette improvement, not a claim that every screen has completed a full accessibility certification.
+
+The automated main-screen audit identified the system blue Pro label on VaultGlass's glass control as a contrast failure. VaultGlass now uses a darker light-mode blue; all adaptive text accents, including secondary text, are tested against light/dark card and badge surfaces. The visible-content audit passed after strengthening secondary captions and native section headers. Native toolbar and viewport exceptions are explicitly described in the validation report.
+
+## Final accessibility layout review
+
+The largest-text screenshots revealed an overlap that tap/existence tests did not detect in BioPulse's native marker picker. The chart now uses an explicit menu label, stacks its selector/reading/date at accessibility sizes, reduces axis density and preserves scaled caption labels. A layout assertion verifies the selector ends above the reading, and the UI workflow changes to Albumin and back to Fasting Glucose. The accessibility-size PhenoAge card uses a text summary instead of squeezing large labels into a fixed ring. Receipt amounts remain an atomic line with a spoken currency value. Chart legends identify the lab reference band and intervention span as well as the primary measurement and optimal interval.
+
+These changes passed normal and dark/accessibility XXXL UI runs and were reviewed in native captures. Passing control interactions alone is not treated as evidence that the rendered layout is correct.
+
+## iPad capture findings
+
+The 13-inch iPad capture revealed a selected-sidebar contrast issue: a red risk badge appeared directly over the indigo selected row. The badge now has an opaque semantic backing so selection cannot change its contrast. VaultGlass’s two secondary valuations now expose separate explicit spoken labels/values rather than relying on automatic grouping. BioPulse’s experiment setup uses a menu of named markers instead of requiring internal biomarker codes; saved experiments display marker names. The final focused regression checks menu selection and the affected receipt, contract and accessibility flows.
