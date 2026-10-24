@@ -1,5 +1,7 @@
 # On-device QA walkthrough
 
+The completed, version-qualified runs are listed in [physical test results](PhysicalTestResults.md). This walkthrough also includes checks still required for the latest candidate and other supported platforms; unchecked items are not claimed as passed. Simulator QA flags are for Debug testing only and are absent from TestFlight builds.
+
 ## Prepare Xcode signing
 
 1. Open `IndieSuite.xcworkspace` in Xcode 27.0 or newer, using Swift 6.4.
@@ -29,7 +31,7 @@ Run `Scripts/test-sequential.sh SIMULATOR_UDID` against one already booted simul
 - [ ] Test an Apple Intelligence capable device with its model ready, and an unavailable/unsupported configuration. Both routes must yield usable, source-grounded results or an actionable input error.
 - [ ] Switch QA entitlement among Free, Pro and Exhausted. Exhausted blocks analysis and opens/points to Pro; Pro allows analysis. Restore Live before testing real quota persistence.
 - [ ] In Live mode, complete five actions, relaunch, and check that a sixth action is blocked. Failed extraction should not consume quota. Check storage failure behavior on a protected/locked device.
-- [ ] Buy monthly, annual and lifetime via local StoreKit; verify the seven-day annual introductory offer. Test cancellation, pending approval, refund/revocation and Restore Purchases with Xcode's transaction manager. Check no unlock occurs for unverified transactions.
+- [ ] Buy monthly, annual and lifetime via local StoreKit; verify the seven-day annual introductory offer. Test cancellation, pending approval, refund/revocation with Xcode's transaction manager. Check no unlock occurs for unverified transactions.
 - [ ] Export a plain archive; import into a clean installation and compare every field and attachment. Repeat with a strong password. An incorrect password or changed encrypted payload must fail cleanly; an archive from another app must be rejected.
 - [ ] Verify local storage fallback when signed out of iCloud. For cloud testing, use provisioned containers, inspect development schema, and test a second device on the same account. Export/import explicitly when transferring records between the separate local and cloud stores.
 - [ ] Test Dynamic Type, VoiceOver, Reduce Transparency, Reduce Motion, dark mode, iPad split windows and live resizing. Background/reopen each window and check saved records persist.
@@ -83,3 +85,13 @@ The unreleased QA archive format is now version 2. AES-GCM authenticates the app
 The three app IDs, three private iCloud containers and VaultGlass app group are registered and associated. Distribution provisioning, signed archives and production exports now pass package validation. This does not prove production CloudKit schema or device synchronization. App Store Connect records and metadata exist; see [submission status](../Submission/README.md).
 
 SwiftUI scene restoration uses the framework's automatic restoration behavior and scene-stored tabs. Backgrounding must not manually call UIKit's restoration extension outside its permitted transition. Reproduce background/resume on hardware in each app and each supported window configuration.
+
+## Default workflow for future paid-feature QA
+
+Owner instruction, 24 October 2026: once the owner confirms Pro/lifetime activation, verify active access and persistence, exercise paid features and record the actual installed app flow. Do not initiate Restore Purchases or repeat purchase authentication unless explicitly requested. Keep owner-dependent actions until the end, run apps sequentially on one physical device, and use gentle bounded Control Center gestures. Stop native recording before any system authentication.
+
+Routine data-roaming warnings may be accepted during QA, as authorized by the owner. This does not authorize account authentication, new purchases or unrelated security changes.
+
+After building the independent `IndieSuitePhysicalQA` runner for the connected phone, run `Scripts/test-installed-pro-sequential.sh DEVICE_ID`. It drives the three already-installed apps without rebuilding them, disables parallel destinations, verifies active Pro after relaunch, exercises the paid workflows and captures native Control Center recordings. It shares the simulator QA lock so automated suites cannot overlap. Result bundles remain ignored/private; publish only reviewed, app-only evidence.
+
+For the final release candidate, set `INDIESUITE_INCLUDE_RELEASE_REGRESSION=1` to run all ten installed-app methods on the same phone. Only the three complete Pro demonstrations start native recording; the other methods retain native screenshots without creating duplicate review clips.

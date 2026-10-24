@@ -48,3 +48,7 @@ These changes passed normal and dark/accessibility XXXL UI runs and were reviewe
 ## iPad capture findings
 
 The 13-inch iPad capture revealed a selected-sidebar contrast issue: a red risk badge appeared directly over the indigo selected row. The badge now has an opaque semantic backing so selection cannot change its contrast. VaultGlass’s two secondary valuations now expose separate explicit spoken labels/values rather than relying on automatic grouping. BioPulse’s experiment setup uses a menu of named markers instead of requiring internal biomarker codes; saved experiments display marker names. The final focused regression checks menu selection and the affected receipt, contract and accessibility flows.
+
+## Paid-state review on physical hardware
+
+Physical TestFlight captures showed that an already active Pro user was still offered a new subscription. The shared access screen now shows a compact access summary, identifies lifetime ownership, and presents subscription management only for an existing subscriber. Purchase options wait for access resolution and are hidden while Pro is active; an additional manager-level guard prevents another purchase. The management action uses [Apple’s native subscription sheet](https://developer.apple.com/documentation/StoreKit/AppStore/showManageSubscriptions(in:)), with account-settings guidance on unsupported iOS-on-Mac hosts. Local StoreKit regression coverage verifies lifetime ownership, duplicate-purchase suppression and active subscription states across the eight app namespaces.
