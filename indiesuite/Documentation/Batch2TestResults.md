@@ -6,15 +6,15 @@ The CLI reused one iOS 27.0 iPhone 17e. Parallel tests/clones were disabled. Eac
 
 | App | Passing method | Evidence |
 | --- | --- | --- |
-| VaultGlass | `SequentialWorkspaceQASuite/test01_VaultGlass_EndToEndAndDepreciation()` | `TestResults/Sequential-8-App-20261024-110537/VaultGlass.xcresult` |
-| BioPulseLocal | `SequentialWorkspaceQASuite/test02_BioPulseLocal_UnitNormalizationAndPhenoAge()` | `TestResults/Sequential-8-App-20261024-110537/BioPulseLocal.xcresult` |
-| ClauseShield | `SequentialWorkspaceQASuite/test03_ClauseShield_RiskScoringAndVersionDiff()` | `TestResults/Sequential-8-App-20261024-110537/ClauseShield.xcresult` |
-| DeductGlass | `SequentialWorkspaceQASuite/test04_DeductGlass_DualMethodTaxOptimizerAndAuditBinder()` | `TestResults/Sequential-8-App-20261024-110537/DeductGlass.xcresult` |
-| EchoBrief | `SequentialWorkspaceQASuite/test05_EchoBrief_MeetingBurnRateAndCommitmentExtraction()` | `TestResults/Sequential-8-App-20261024-110537/EchoBrief.xcresult` |
-| NutriLoupe | `SequentialWorkspaceQASuite/test06_NutriLoupe_NOVAScorerAndBayesianTriggerRanker()` | `TestResults/Sequential-8-App-20261024-110537/NutriLoupe.xcresult` |
-| TorqueShield | `SequentialWorkspaceQASuite/test07_TorqueShield_VINCheckDigitAndEstimateRedliner()` | `TestResults/Sequential-8-App-20261024-110537/TorqueShield.xcresult` |
-| RecallGlass | `SequentialWorkspaceQASuite/test08_RecallGlass_AcademicFSRS5AndSemanticGrader()` | `TestResults/RecallGlass-Final-Anchors.xcresult` |
-| RecallGlass | `SequentialWorkspaceQASuite/test09_RecallGlass_CorporateSpeechToCueCardCutoutPDFImposition()` | `TestResults/RecallGlass-Final-Anchors.xcresult` |
+| VaultGlass | `SequentialWorkspaceQASuite/test01_VaultGlass_EndToEndAndDepreciation()` | `TestResults/Sequential-8-App-20261024-135357/VaultGlass.xcresult` |
+| BioPulseLocal | `SequentialWorkspaceQASuite/test02_BioPulseLocal_UnitNormalizationAndPhenoAge()` | `TestResults/Sequential-8-App-20261024-135357/BioPulseLocal.xcresult` |
+| ClauseShield | `SequentialWorkspaceQASuite/test03_ClauseShield_RiskScoringAndVersionDiff()` | `TestResults/Sequential-8-App-20261024-135357/ClauseShield.xcresult` |
+| DeductGlass | `SequentialWorkspaceQASuite/test04_DeductGlass_DualMethodTaxOptimizerAndAuditBinder()` | `TestResults/Sequential-8-App-20261024-135357/DeductGlass.xcresult` |
+| EchoBrief | `SequentialWorkspaceQASuite/test05_EchoBrief_MeetingBurnRateAndCommitmentExtraction()` | `TestResults/Sequential-8-App-20261024-135357/EchoBrief.xcresult` |
+| NutriLoupe | `SequentialWorkspaceQASuite/test06_NutriLoupe_NOVAScorerAndBayesianTriggerRanker()` | `TestResults/Sequential-8-App-20261024-135357/NutriLoupe.xcresult` |
+| TorqueShield | `SequentialWorkspaceQASuite/test07_TorqueShield_VINCheckDigitAndEstimateRedliner()` | `TestResults/Sequential-8-App-20261024-135357/TorqueShield.xcresult` |
+| RecallGlass | `SequentialWorkspaceQASuite/test08_RecallGlass_AcademicFSRS5AndSemanticGrader()` | `TestResults/Sequential-8-App-20261024-135357/RecallGlass.xcresult` |
+| RecallGlass | `SequentialWorkspaceQASuite/test09_RecallGlass_CorporateSpeechToCueCardCutoutPDFImposition()` | `TestResults/Sequential-8-App-20261024-135357/RecallGlass.xcresult` |
 
 ## Recorded smoke measurements
 
@@ -22,15 +22,15 @@ These are individual observations, not performance guarantees. The memory field 
 
 | Target | Duration, ms | Sampled memory increase, MB | Assertions passed |
 | --- | ---: | ---: | ---: |
-| vaultGlass | 1922.7 | 1.48 | 4 |
-| bioPulseLocal | 5169.9 | 1.62 | 4 |
-| clauseShield | 2402.9 | 1.59 | 4 |
-| deductGlass | 3939.2 | 1.84 | 5 |
-| echoBrief | 5935.6 | 1.31 | 5 |
-| nutriLoupe | 3381.4 | 1.48 | 5 |
-| torqueShield | 6137.7 | 1.80 | 5 |
-| recallGlassAcademic | 6347.5 | 1.59 | 5 |
-| recallGlassCorporateSpeech | 5954.7 | 0.30 | 6 |
+| vaultGlass | 2248.8 | 3.52 | 4 |
+| bioPulseLocal | 2867.0 | 13.19 | 4 |
+| clauseShield | 4005.4 | 45.97 | 4 |
+| deductGlass | 4359.4 | 2.00 | 5 |
+| echoBrief | 6059.7 | 0.92 | 5 |
+| nutriLoupe | 4026.5 | 0.77 | 5 |
+| torqueShield | 6603.2 | 2.88 | 5 |
+| recallGlassAcademic | 6583.4 | 1.94 | 5 |
+| recallGlassCorporateSpeech | 7175.3 | 0.62 | 6 |
 
 ## Scope
 

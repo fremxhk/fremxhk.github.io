@@ -33,10 +33,21 @@ All three final Release archives and App Store distribution exports passed. Deep
 
 The simulator exercises model generation when available and deterministic fallback when unavailable or over budget. It does not certify model quality across every device, language or region. Lab reference intervals are illustrative; the supplied PhenoAge equation and legal screening rules require qualified domain review before public release.
 
-Physical-device checks must cover camera/OCR, HealthKit authorized/denied/no-data behavior, real notifications, widget updates, model availability/performance, large-document memory, CloudKit synchronization and production schema, Release/TestFlight purchases and restore, and iPad/window/accessibility behavior. Follow [OnDeviceQA.md](OnDeviceQA.md) and provide the physical launch-to-flow recording requested under Guideline 2.1.
+Physical-device checks must cover camera/OCR, HealthKit authorized/denied/no-data behavior, real notifications, widget updates, model availability/performance, large-document memory, CloudKit synchronization and production schema, Release/TestFlight product loading and activated Pro access, and iPad/window/accessibility behavior. Follow [OnDeviceQA.md](OnDeviceQA.md) and provide the physical launch-to-flow recording requested under Guideline 2.1.
 
 ## Accessibility audit scope and tooling exceptions
 
 The final visible-content accessibility tests passed in normal light mode and dark/accessibility XXXL mode. The test checks contrast and sufficient element descriptions in three scrolled dashboard viewports for each app, using an isolated in-memory demo fixture. It independently checks the rendered pixels of each native Pro control against a 4.5:1 threshold.
 
 iOS 27's native toolbar contrast audit flags that control even when the captured text is black on a light backdrop. Only that measured native control is handled as a tooling exception. Contrast reports for nodes outside the fully visible content rectangle (under floating navigation/tab bars, or partly offscreen horizontally) are deferred to visible viewports. The test does not represent those occluded pixels as readable content. Clipping is reviewed through the separate large-text screenshots rather than claiming a clean automated clipping audit. These checks do not certify full VoiceOver usability or every app screen; supported physical-device accessibility QA remains required.
+
+
+## Warranty draft completeness regression — 24 October 2026
+
+A physical TestFlight check of VaultGlass build 3 found that an actual generated claim repeated the issue without the saved product, serial, merchant or purchase date, and supplied an empty evidence checklist. The completed 3/6/3 candidate bundle had nine passes and one failure; it is retained privately and is excluded from the passing physical baseline.
+
+VaultGlass build 4 now reconciles model output against the exact supplied facts. An incomplete response uses a complete source-based warranty assessment letter. Missing facts remain “Not recorded”; no missing serial is invented. The subject, evidence checklist and follow-up come from the documented source template. A complete documented model body may be retained. This is a request for eligibility assessment, not a guarantee of coverage.
+
+Three new passing regression methods cover the incomplete hardware response, a complete documented body with a repaired checklist, and an unrecorded serial. The current simulator inventory contains 51 distinct passing methods. The initial simulator UI attempt encountered a noninteractive launch card; the harness now starts from Home, terminates the previous app, confirms foreground state and waits for a hittable control. Its full 14-method UI rerun and four StoreKit UI methods passed. Failed attempts are excluded from the passing inventory. Build 4 still requires physical verification and a final native recording.
+
+The additional `test12WarrantyDraftRetainsReceiptFactsAndEvidence` UI method passed on the same simulator: fresh synthetic receipt import, generation through the app, all five source facts, the three evidence requests and a reachable Share Claim Draft control. Both native screenshots were visually reviewed. This raises the main inventory to 51 distinct passing methods; it does not replace build 4 physical verification.

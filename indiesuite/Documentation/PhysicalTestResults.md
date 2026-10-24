@@ -72,3 +72,8 @@ Early physical attempts encountered first-launch TestFlight instructions, the no
 Native Control Center recordings show the actual installed apps and synthetic documents. Raw recordings and hardware identifiers remain private. Review copies retain native 1320 × 2868 pixels, trim outer recording setup/cleanup and use HEVC; they contain continuous app interactions without simulated app screens. The owner activated lifetime access in all three apps. Installed-app Pro checks verify active access, relaunch persistence and paid-feature use without QA entitlement overrides. TestFlight service behavior is distinguished from the local StoreKit simulation. Current Pro recordings require independent visual/privacy review before publication. See [physical captures and recordings](Previews/Physical-TestFlight/README.md).
 
 These passes do not certify live StoreKit transactions, physical iPad, public stable OS, unavailable-model hardware behavior, camera permissions, production CloudKit/two-device sync, every accessibility mode, peak-memory stress, clinical/legal content or App Review approval. See [remaining release gates](ProductionReadiness.md).
+
+
+## Subsequent candidate regression
+
+The later completed `Physical-Release-3-6-3-Complete.xcresult` contained nine passes, one failure and no skips. The failure exposed an incomplete VaultGlass warranty letter and empty evidence checklist, confirmed in a native capture. That bundle is not included in the passing baseline above. VaultGlass build 4 corrects source-fact reconciliation and the evidence template and has passed the focused simulator regressions. Exact-build physical verification and final native Pro videos remain pending. No earlier physical pass is relabeled as execution of build 4.

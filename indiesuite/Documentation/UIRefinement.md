@@ -52,3 +52,8 @@ The 13-inch iPad capture revealed a selected-sidebar contrast issue: a red risk 
 ## Paid-state review on physical hardware
 
 Physical TestFlight captures showed that an already active Pro user was still offered a new subscription. The shared access screen now shows a compact access summary, identifies lifetime ownership, and presents subscription management only for an existing subscriber. Purchase options wait for access resolution and are hidden while Pro is active; an additional manager-level guard prevents another purchase. The management action uses [Apple’s native subscription sheet](https://developer.apple.com/documentation/StoreKit/AppStore/showManageSubscriptions(in:)), with account-settings guidance on unsupported iOS-on-Mac hosts. Local StoreKit regression coverage verifies lifetime ownership, duplicate-purchase suppression and active subscription states across the eight app namespaces.
+
+
+## Warranty assessment letter completeness
+
+Reviewing the real build 3 claim screen found an incomplete letter and empty attachments section. Build 4 validates generated text against the saved receipt facts and the reported issue, supplies a source-based letter when necessary, and always provides a consistent proof-of-purchase, product/serial photo and issue photo/video checklist. Unknown identifiers remain explicitly unrecorded. Three focused core regressions and the fresh-receipt-to-letter simulator UI flow passed. Native simulator captures were visually reviewed for complete source facts, the three evidence requests and the share control. The revised physical screen and final video remain pending.

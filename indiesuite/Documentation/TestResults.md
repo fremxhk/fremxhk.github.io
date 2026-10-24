@@ -2,7 +2,7 @@
 
 Only completed result bundles are included. Repeated runs and parameter cases are identified separately; a simulator pass is not physical-device certification.
 
-**47 distinct target-qualified test methods passed.** Repeated executions below do not increase that count. StoreKit expiry parameters for eight product namespaces are cases within one method.
+**51 distinct target-qualified test methods passed.** Repeated executions below do not increase that count. StoreKit expiry parameters for eight product namespaces are cases within one method.
 
 Functional tests ran sequentially on iPhone 17e, iOS 27.0, with parallel testing and simulator cloning disabled. Accessibility scope and retained tooling exceptions are detailed in [Validation.md](Validation.md). Native StoreKit simulations are not live sandbox certification.
 
@@ -40,6 +40,9 @@ Functional tests ran sequentially on iPhone 17e, iOS 27.0, with parallel testing
 | `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/physicianPreparationAlwaysHasFiveDistinctQuestions()` | Passed | `Evaluations.xcresult` |
 | `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/receiptTotalsExcludeSubtotalAndDatesAreValidated()` | Passed | `Evaluations.xcresult` |
 | `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/textAccentPaletteMaintainsContrastOnCardsAndBadges()` | Passed | `Evaluations.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftNeverInventsAnUnrecordedSerial()` | Passed | `Evaluations.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftRepairsIncompleteHardwareModelResponse()` | Passed | `Evaluations.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftRetainsCompleteDocumentedBodyAndRepairsChecklist()` | Passed | `Evaluations.xcresult` |
 | `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/fifteenBatch2ProductsAndVerifiedLifetimeEntitlements()` | Passed | `Evaluations.xcresult` |
 | `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/nineProductsAndVerifiedLifetimeEntitlements()` | Passed | `Evaluations.xcresult` |
 | `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/pendingDeclinedAndFailedPurchasesDoNotUnlock()` | Passed | `Evaluations.xcresult` |
@@ -58,12 +61,13 @@ Functional tests ran sequentially on iPhone 17e, iOS 27.0, with parallel testing
 | `IndieSuiteUITests/SequentialAppSmokeTests/test09EmptyInstallFlowsNeedNoAccountOrExternalFiles` | Passed | `UI.xcresult` |
 | `IndieSuiteUITests/SequentialAppSmokeTests/test10MainScreenAccessibilityAudit` | Passed | `UI.xcresult` |
 | `IndieSuiteUITests/SequentialAppSmokeTests/test11MonthlyAndAnnualSubscriptionButtonsUnlockPro` | Passed | `UI.xcresult` |
+| `IndieSuiteUITests/SequentialAppSmokeTests/test12WarrantyDraftRetainsReceiptFactsAndEvidence` | Passed | `Warranty4-Screen-20261024-135950.xcresult` |
 
 ## Result bundles and repeat executions
 
 ## Evaluations.xcresult
 
-Result: **Passed**. 29 passed, 0 failed, 0 skipped.
+Result: **Passed**. 32 passed, 0 failed, 0 skipped.
 
 | Test | Result |
 | --- | --- |
@@ -79,6 +83,9 @@ Result: **Passed**. 29 passed, 0 failed, 0 skipped.
 | `IndieSuiteEvaluations/FoundationModelsEvaluationTests/weightedRiskAndOmissionsAndDiff()` | Passed |
 | `IndieSuiteEvaluations/FoundationModelsEvaluationTests/authenticatedArchiveRoundTripAndWrongPassword()` | Passed |
 | `IndieSuiteEvaluations/FoundationModelsEvaluationTests/cloudCompatibleSchemaAndFullArchiveRecords()` | Passed |
+| `IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftRepairsIncompleteHardwareModelResponse()` | Passed |
+| `IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftRetainsCompleteDocumentedBodyAndRepairsChecklist()` | Passed |
+| `IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftNeverInventsAnUnrecordedSerial()` | Passed |
 | `IndieSuiteEvaluations/ProductionRegressionTests/physicianPreparationAlwaysHasFiveDistinctQuestions()` | Passed |
 | `IndieSuiteEvaluations/ProductionRegressionTests/textAccentPaletteMaintainsContrastOnCardsAndBadges()` | Passed |
 | `IndieSuiteEvaluations/ProductionRegressionTests/receiptTotalsExcludeSubtotalAndDatesAreValidated()` | Passed |
@@ -97,7 +104,7 @@ Result: **Passed**. 29 passed, 0 failed, 0 skipped.
 | `IndieSuiteEvaluations/StoreKitVerificationTests/subscriptionExpiryAndLifetimeRefundRevokeAccess(bundle:)` | Passed |
 | `IndieSuiteEvaluations/StoreKitVerificationTests/pendingDeclinedAndFailedPurchasesDoNotUnlock()` | Passed |
 
-Local evidence: `TestResults/20261024-121011/Evaluations.xcresult`.
+Local evidence: `TestResults/20261024-131203/Evaluations.xcresult`.
 
 ## UI.xcresult
 
@@ -120,7 +127,7 @@ Result: **Passed**. 14 passed, 0 failed, 0 skipped.
 | `SequentialAppSmokeTests/test10MainScreenAccessibilityAudit()` | Passed |
 | `SequentialAppSmokeTests/test11MonthlyAndAnnualSubscriptionButtonsUnlockPro()` | Passed |
 
-Local evidence: `TestResults/20261024-121011/UI.xcresult`.
+Local evidence: `TestResults/Warranty4-UI-StoreKit-20261024-132433/UI.xcresult`.
 
 ## BioPulsePurchaseUI.xcresult
 
@@ -131,7 +138,7 @@ Result: **Passed**. 2 passed, 0 failed, 0 skipped.
 | `SequentialAppSmokeTests/test08PaywallPurchaseAndActiveAccessForTargetApp()` | Passed |
 | `SequentialAppSmokeTests/test11MonthlyAndAnnualSubscriptionButtonsUnlockPro()` | Passed |
 
-Local evidence: `TestResults/20261024-121011/BioPulsePurchaseUI.xcresult`.
+Local evidence: `TestResults/Warranty4-UI-StoreKit-20261024-132433/BioPulsePurchaseUI.xcresult`.
 
 ## ClausePurchaseUI.xcresult
 
@@ -142,4 +149,14 @@ Result: **Passed**. 2 passed, 0 failed, 0 skipped.
 | `SequentialAppSmokeTests/test08PaywallPurchaseAndActiveAccessForTargetApp()` | Passed |
 | `SequentialAppSmokeTests/test11MonthlyAndAnnualSubscriptionButtonsUnlockPro()` | Passed |
 
-Local evidence: `TestResults/20261024-121011/ClausePurchaseUI.xcresult`.
+Local evidence: `TestResults/Warranty4-UI-StoreKit-20261024-132433/ClausePurchaseUI.xcresult`.
+
+## Warranty4-Screen-20261024-135950.xcresult
+
+Result: **Passed**. 1 passed, 0 failed, 0 skipped.
+
+| Test | Result |
+| --- | --- |
+| `SequentialAppSmokeTests/test12WarrantyDraftRetainsReceiptFactsAndEvidence()` | Passed |
+
+Local evidence: `TestResults/Warranty4-Screen-20261024-135950.xcresult`.
