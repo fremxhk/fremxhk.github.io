@@ -1,3 +1,7 @@
+# Current submission status — 17 November 2026
+
+**Version 1.0 (1) submitted; Apple confirms WAITING_FOR_REVIEW. Manual release remains enabled.** See [submission record](submission-2026-11-17.md) for the current state and disclosed QA limitations. The preparation history below predates submission.
+
 # Lightkeeper submission preparation
 
 Updated 2026-10-23. **24 physical-device tests and 100 simulator tests pass. A supplemental physical walkthrough is published; production submission remains on hold for exact-TestFlight integration checks and final purchase evidence.** App Store Connect contains **Lightkeeper: Lantern Puzzles**, app `6825834948`, version 1.0, manual release, Prepare for Submission.

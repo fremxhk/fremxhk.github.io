@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-10-23",
+  "checkedOn": "2026-11-17",
   "website": {
     "status": "live",
     "httpStatus": 200,
@@ -15,10 +15,10 @@
     "appInfoId": "0a76c7e6-8def-4c3b-9e63-b8a26e9ac1d9",
     "versionId": "a87d8033-d0cf-4f0c-a952-8d05dc290093",
     "version": "1.0",
-    "reviewNotesLength": 2867
+    "reviewNotesLength": 3290
   },
   "appName": "Lightkeeper: Lantern Puzzles",
-  "state": "PREPARE_FOR_SUBMISSION",
+  "state": "WAITING_FOR_REVIEW",
   "releaseType": "MANUAL",
   "reviewContactSavedPrivately": true,
   "bundleIdentifiers": [
@@ -131,13 +131,11 @@
     "starter_island"
   ],
   "remainingGates": [
-    "Apple TestFlight beta approval and invitation delivery",
-    "Approved TestFlight-copy purchase/restore, hosted packs, Game Center and two-device iCloud validation",
-    "Final exact-TestFlight launch, purchase and restore recording after beta approval",
-    "Refresh season dates/content for actual launch",
-    "Final production submission after review evidence and integration QA; 25 resources already staged in unsubmitted draft"
+    "Unverified exact-TestFlight purchase/restore, hosted delivery, Game Center and cloud integration disclosed in review notes",
+    "Final launch-to-purchase recording not completed; supplemental physical recording supplied",
+    "Respond to Apple review feedback; manual release after approval"
   ],
-  "submitted": false,
+  "submitted": true,
   "buildUploaded": true,
   "ageRating": {
     "answers": {
@@ -214,9 +212,9 @@
     "groupId": "5ab47f24-83e1-4b22-b3ad-203b310cd008",
     "testerAdded": true,
     "publicLinkEnabled": false,
-    "betaReviewState": "WAITING_FOR_REVIEW",
-    "productionReviewSubmitted": false,
-    "invitationState": "Blocked pending beta approval: NO_INSTALLABLE_BUILDS"
+    "betaReviewState": "IN_BETA_TESTING",
+    "productionReviewSubmitted": true,
+    "invitationState": "Build approved for external testing; delivery not reverified"
   },
   "privacy": {
     "published": true,
@@ -563,8 +561,8 @@
   },
   "productionReviewDraft": {
     "id": "eced3757-f152-4b1e-a89d-e171b1388d2e",
-    "state": "READY_FOR_REVIEW",
-    "submittedDate": null,
+    "state": "WAITING_FOR_REVIEW",
+    "submittedDate": "2026-11-17T11:08:24.306Z",
     "items": 25
   },
   "deviceQA": {
