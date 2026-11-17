@@ -50,3 +50,5 @@ The completed 35-method physical baseline used TestFlight 2/5/2. A later 3/6/3 b
 ### Capture diagnostic follow-up
 
 Tablet capture diagnostics emitted AVAudioSession main-thread activation/deactivation warnings and transient SwiftUI frame warnings. These observations are retained for follow-up; a passing portrait UI workflow does not establish audio responsiveness or full layout certification. The five additional apps are prepared as unsubmitted drafts, not certified production-ready releases.
+
+The final RecallGlass tablet capture retry installed successfully after storage recovery, then failed during XCTest runner preparation before any app method began. This is recorded as a runner error, with zero new passes, in [UI results](Batch2UIResults.md). Its five tablet screenshots remain pending; the other 27 native store screenshots and all 15 product review screenshots have COMPLETE Apple delivery states.
