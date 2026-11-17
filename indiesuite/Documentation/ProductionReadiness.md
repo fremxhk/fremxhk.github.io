@@ -46,3 +46,7 @@ The five new apps and 24-product local catalog are implemented. The eight-scheme
 ## Current candidate checkpoint
 
 The completed 35-method physical baseline used TestFlight 2/5/2. A later 3/6/3 bundle passed nine flows and failed the warranty draft check; it is excluded from the passing baseline. VaultGlass build 4 corrects source-fact completeness and the evidence checklist. Current 4/6/3 packages pass signed archive and production export verification. The full simulator regression contains 51 passing methods, including three warranty core regressions and the fresh-receipt-to-letter UI check. Final exact-build physical coverage and native Pro recordings remain pending; earlier passes are retained under their actual versions. All three were submitted on 17 November 2026 and verified as Waiting for Review. No public release occurred.
+
+### Capture diagnostic follow-up
+
+Tablet capture diagnostics emitted AVAudioSession main-thread activation/deactivation warnings and transient SwiftUI frame warnings. These observations are retained for follow-up; a passing portrait UI workflow does not establish audio responsiveness or full layout certification. The five additional apps are prepared as unsubmitted drafts, not certified production-ready releases.

@@ -1,6 +1,6 @@
 # Five-app App Store submission preparation
 
-Status: 17 November 2026. **Preparation in progress; all five remain unsubmitted with manual release selected.** No physical device is being used. Native iPhone/iPad store captures are running sequentially and have not yet been uploaded.
+Status: 17 November 2026. **Preparation in progress; all five remain unsubmitted with manual release selected.** No physical device is being used. All 16 native iPhone store captures and 11 native iPad captures for DeductGlass, EchoBrief, NutriLoupe and TorqueShield are uploaded with COMPLETE delivery. RecallGlass’s tablet workflow is awaiting a focused retest after a rehearsal navigation-bar harness fix; its five tablet screenshots remain pending. No physical device was used.
 
 | App | App Store record | Selected build |
 | --- | --- | --- |
@@ -17,3 +17,7 @@ All five distribution archives/exports passed package checks and uploaded succes
 [Five target-qualified local purchase methods](../Documentation/Batch2PurchaseResults.md) and the [nine-method eight-app pipeline rerun](../Documentation/Batch2TestResults.md) passed under Xcode 27.2, on one iOS 27.0 iPhone 17e simulator. [Local StoreKit screenshots](../Documentation/Previews/Batch2/Purchases/README.md) demonstrate test transactions and cold relaunch, not live payments. The existing main 51-method regression inventory remains separately version-qualified.
 
 The saved “Data Not Collected” privacy drafts are unpublished. After native asset capture/upload and final validation, privacy publication and final App Review submission remain owner decisions. The physical-device hold remains in force; no physical recording is claimed. Actual audio/calendar/printer behavior, live App Store transactions and production cloud services remain outside these simulator results.
+
+## Native capture evidence in progress
+
+The iPhone capture bundle passed all five workflows. Four tablet workflows have individually verified Passed results in `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult`; that bundle also contains an interrupted RecallGlass attempt, which is not counted as passing. The affected RecallGlass method is being rerun separately. Its unchanged app behavior has passing phone evidence; tablet timer and cutout completion remain pending. [Native captures currently available](../Documentation/Previews/AppStore/Batch2/README.md).

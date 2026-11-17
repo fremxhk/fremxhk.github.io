@@ -24,3 +24,9 @@ Filled fields retain visible labels. Calendar dates inferred only from relative 
 | `RecallGlass-Final-UI.xcresult` | 1 |
 
 Earlier offscreen-control, accessibility-identifier, keyboard/confirmation-switch targeting and interrupted attempts are retained privately and excluded here. These results do not establish production readiness; see [open release gates](ProductionReadiness.md).
+
+## Native store capture progress — 17 November 2026
+
+Xcode 27.2 / iOS 27.0: all five workflows passed on iPhone 17 in `TestResults/Batch2-Store-Captures-20261117-202817/iPhone.xcresult`. DeductGlass, EchoBrief, NutriLoupe and TorqueShield each have a Passed case in `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult`. That tablet bundle also contains a canceled RecallGlass case; the bundle as a whole is not green. RecallGlass is being rerun with a tablet-rehearsal-only navigation-bar correction. None of its canceled tablet executions is counted as passing.
+
+Centered-sheet drag coordinates were corrected after the initial tablet attempt. The later rehearsal attempt measured visible fixed controls against the underlying page navigation bar; the focused retest uses the rehearsal bar instead. All functional assertions remain intact. Native captures are selected only from individually verified Passed cases. No physical device was accessed.
