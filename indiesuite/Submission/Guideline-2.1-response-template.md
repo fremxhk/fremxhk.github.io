@@ -1,15 +1,7 @@
-# Guideline 2.1 response — use after physical-device QA
+# Guideline 2.1 review information
 
-This draft must not be sent as a completed response until the physical-device steps are fulfilled. Use each app’s review-notes.md for the six substantive answers.
+The six substantive answers are saved in each app’s review-notes.md and App Store Connect Review Information. The 17 November 2026 submissions disclose the selected builds and the evidence limits accurately.
 
-## Physical evidence to insert
+No additional physical-device testing or current-build physical recording was performed for this submission. Historical results and clips remain associated with their actual older builds; simulator captures are not described as physical-device recordings. No reply claiming that the missing recording has been supplied was sent.
 
-- App and App Store Connect app ID:
-- Exact version/build:
-- Physical device model:
-- Latest available OS version used:
-- QA completion date and pass/fail summary:
-- Accessible physical-device recording URL or uploaded attachment:
-- Demonstrated paths: launch, sample import, source verification, primary workflow, saved history, export, paid access and restore.
-
-After recording, add the verified facts above and the per-app six-point notes both to the App Review reply and App Review Information Notes. Do not claim physical testing, credentials, licensing, clearance, regional consistency or purchase availability beyond what was actually verified. No login credentials are necessary for this implementation.
+If App Review asks for more information, use the per-app purpose/audience, local sample instructions, external-service inventory, regional configuration and rights information. Any device, OS, tested build, completion date or recording URL added later must be backed by actual evidence. No app login credentials are needed. Submission acceptance is not App Review approval or production certification.
