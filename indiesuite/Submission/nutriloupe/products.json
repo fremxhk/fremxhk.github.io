@@ -1,0 +1,33 @@
+[
+  {
+    "productId": "com.indiesuite.nutriloupe.pro.monthly",
+    "name": "NutriLoupe Pro Monthly",
+    "type": "AUTO_RENEWABLE_SUBSCRIPTION",
+    "usdPrice": "4.99",
+    "subscriptionPeriod": "ONE_MONTH",
+    "introductoryOffer": null,
+    "description": "Additional on-device AI actions"
+  },
+  {
+    "productId": "com.indiesuite.nutriloupe.pro.annual",
+    "name": "NutriLoupe Pro Annual",
+    "type": "AUTO_RENEWABLE_SUBSCRIPTION",
+    "usdPrice": "29.99",
+    "subscriptionPeriod": "ONE_YEAR",
+    "introductoryOffer": {
+      "mode": "FREE_TRIAL",
+      "duration": "ONE_WEEK",
+      "eligibility": "Apple determines eligibility"
+    },
+    "description": "Additional on-device AI actions"
+  },
+  {
+    "productId": "com.indiesuite.nutriloupe.pro.lifetime",
+    "name": "NutriLoupe Pro Lifetime",
+    "type": "NON_CONSUMABLE",
+    "usdPrice": "79.99",
+    "subscriptionPeriod": null,
+    "introductoryOffer": null,
+    "description": "Additional AI actions. One-time unlock."
+  }
+]

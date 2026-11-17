@@ -1,0 +1,33 @@
+[
+  {
+    "productId": "com.indiesuite.deductglass.pro.monthly",
+    "name": "DeductGlass Pro Monthly",
+    "type": "AUTO_RENEWABLE_SUBSCRIPTION",
+    "usdPrice": "4.99",
+    "subscriptionPeriod": "ONE_MONTH",
+    "introductoryOffer": null,
+    "description": "Additional on-device AI actions"
+  },
+  {
+    "productId": "com.indiesuite.deductglass.pro.annual",
+    "name": "DeductGlass Pro Annual",
+    "type": "AUTO_RENEWABLE_SUBSCRIPTION",
+    "usdPrice": "29.99",
+    "subscriptionPeriod": "ONE_YEAR",
+    "introductoryOffer": {
+      "mode": "FREE_TRIAL",
+      "duration": "ONE_WEEK",
+      "eligibility": "Apple determines eligibility"
+    },
+    "description": "Additional on-device AI actions"
+  },
+  {
+    "productId": "com.indiesuite.deductglass.pro.lifetime",
+    "name": "DeductGlass Pro Lifetime",
+    "type": "NON_CONSUMABLE",
+    "usdPrice": "79.99",
+    "subscriptionPeriod": null,
+    "introductoryOffer": null,
+    "description": "Additional AI actions. One-time unlock."
+  }
+]

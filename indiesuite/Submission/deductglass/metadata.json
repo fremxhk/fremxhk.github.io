@@ -1,0 +1,25 @@
+{
+  "name": "DeductGlass",
+  "slug": "deductglass",
+  "bundleId": "com.indiesuite.deductglass",
+  "sku": "indiesuite-deductglass-ios",
+  "version": "1.0.0",
+  "primaryLocale": "en-US",
+  "subtitle": "Receipts & tax estimates",
+  "category": "FINANCE",
+  "keywords": "receipt,tax,expense,records,mileage,home office,CPA,audit,business,bookkeeping",
+  "promotionalText": "Organize business-expense evidence and compare illustrative tax methods before professional review.",
+  "description": "Organize business-expense evidence and compare illustrative tax methods before professional review.\n\nImport a receipt, CSV or text, review the source facts and mark evidence as checked.\n\nKeep business-purpose notes with expense records and export a selected-year evidence binder.\n\nCompare US mileage and home-office methods using explicit year, distance and cost assumptions.\n\nUse a separate Singapore recordkeeping workspace; US deduction formulas do not apply to that export.\n\nPRIVATE BY DESIGN\nDocument processing and supported Apple Intelligence generation run on device. Optional storage uses your private iCloud container. There is no developer-operated account, advertising, analytics backend or third-party AI API. Supported local/text workflows remain available when a model or speech language is unavailable.\n\nFREE AND PRO\nIncludes five completed on-device AI actions per app. Pro unlocks additional actions through monthly or annual subscriptions, or a separate lifetime purchase. App Store prices, eligibility and subscription terms are displayed before purchase. Subscriptions renew automatically unless canceled in App Store settings.\n\nEstimates are not tax advice, a filing service or a deduction guarantee. Eligibility, income limits, carryovers and local rules require qualified review. Stored amounts are USD; no currency conversion is performed.\n\nPrivacy: https://fremxhk.github.io/indiesuite/deductglass/privacy.html\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "copyright": "2026 Freeman Cheung",
+  "privacyPolicyUrl": "https://fremxhk.github.io/indiesuite/deductglass/privacy.html",
+  "supportUrl": "https://fremxhk.github.io/indiesuite/deductglass/support.html",
+  "marketingUrl": "https://fremxhk.github.io/indiesuite/deductglass/",
+  "purpose": "Organize business-expense evidence and compare illustrative tax methods before professional review.",
+  "audience": "Self-employed adults and small-business owners organizing their own records.",
+  "features": [
+    "Import a receipt, CSV or text, review the source facts and mark evidence as checked.",
+    "Keep business-purpose notes with expense records and export a selected-year evidence binder.",
+    "Compare US mileage and home-office methods using explicit year, distance and cost assumptions.",
+    "Use a separate Singapore recordkeeping workspace; US deduction formulas do not apply to that export."
+  ]
+}

@@ -29,3 +29,7 @@ No physical device was accessed for this submission. Historical phone results re
 Apple’s earlier metadata blockers—unpublished privacy answers and missing content rights—were resolved. Server submission acceptance and Waiting for Review were verified for all three apps. App Review approval and public availability remain separate outcomes.
 
 See the [submission checklist](PreparationChecklist.md) and each app’s saved review notes for the submitted information.
+
+## Five additional apps — preparation only
+
+DeductGlass, EchoBrief, NutriLoupe, TorqueShield and RecallGlass now have their own App Store records and VALID version 1.0.0 build 1 uploads. They remain unsubmitted with manual release selected. See [Batch 2 preparation](Batch2Preparation.md) for metadata, assets, tests and remaining publication steps. The physical-device hold remains in force.

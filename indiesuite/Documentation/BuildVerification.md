@@ -22,13 +22,19 @@ The independent physical UI-test host has no dependency on the three app targets
 
 ## Five additional studios
 
-RecallGlass, DeductGlass, EchoBrief, NutriLoupe and TorqueShield compiled successfully in Release for generic iOS hardware (Swift 6.4 complete concurrency, iOS SDK 27.1). These are unsigned compilation checks, not installed-device execution or App Store distribution exports. Debug `--qa-studio-pro`, `--qa-empty-fixture` and `--store-screenshots` launch flags were absent from each executable. The final RecallGlass anchor refinement was rebuilt separately and passed. Original implementation: `715acba`; archive configuration correction: `0fa625a`. On 24 October 2026 all five were rebuilt serially after the `IndieCoreAudio` isolation and shared access changes. Every Release compilation passed. The actual outputs passed bundle/build/minimum-OS, privacy-manifest and all four Debug-launch-flag exclusion checks. EchoBrief and RecallGlass contain the required microphone/speech purpose strings; the other three have no Speech framework or `SFSpeech` references. This used generic iOS build destinations and did not access a physical device.
+On 17 November 2026, DeductGlass, EchoBrief, NutriLoupe, TorqueShield and RecallGlass were archived, exported for App Store distribution and uploaded **sequentially**, without accessing a physical device. All are version 1.0.0 build 1, archived from source `4f7b15e` using Xcode 27.2 (27B52), Swift 6.4.2 and iOS SDK 27.2; deployment target is iOS/iPadOS 27.0. All five uploads processed to VALID and were selected in unsubmitted, manual-release App Store drafts.
 
-Distribution verification now requires App Store application metadata and exactly one app in each archive. A rejected BioPulse build 5 attempt included the independent QA host and was therefore a generic archive. The QA host is now `SKIP_INSTALL=YES`; the rejected artifact is retained privately and is not counted as an export pass. The corrected archive contains only BioPulseLocal.app and its production export passed signature/entitlement checks.
+Every archive and exported IPA passed identity, version/build, privacy-manifest, signature, production APNs/iCloud entitlements, disabled debugging and exclusion of all four Debug QA launch flags. Each App ID is associated only with its own registered iCloud container. EchoBrief and RecallGlass include the required microphone/speech usage strings; Speech references are excluded from the other three. These package checks do not verify deployed production schemas or service behavior. The later repair-smoke grounding correction belongs to test support; the IPA fingerprints below continue to identify the archived `4f7b15e` source and are not relabeled as builds from the later preparation commit.
 
-Apple processing rejected the first build 5 upload because unused shared speech code required a speech privacy declaration. Speech transcription now resides in `IndieCoreAudio`, linked only by EchoBrief, RecallGlass and their sequential test target. The corrected BioPulse Release archive has no Speech framework dependency or `SFSpeech` symbols; the archive verifier enforces both. The rejected artifact is retained privately and excluded from current evidence. Corrected source: `84ae61c`; upload processing remains separate from export verification.
+| Export | Build | IPA SHA-256 |
+| --- | --- | --- |
+| DeductGlass | 1 | `d155c7365867010ec28e6b58695bd902ef1c869e21997e2e90e93697b09f29fe` |
+| EchoBrief | 1 | `0a6bfd48413b176a82f1ff156789b4911040c65a0eb8763be24ba84c35950ccc` |
+| NutriLoupe | 1 | `fab23170b341d55402c06a8011f8ae4ae759d8ceb5c5f0c5a691d6b433a23546` |
+| TorqueShield | 1 | `7ce7e442137747a7ee262973ba0d93151386e7458c1208358cd617ee38c7589a` |
+| RecallGlass | 1 | `9a82a772f6c28cec7726002cdcd9882c69f83f8df8aebbeb861cc64bcc3584dd` |
 
-The earlier corrected build 5 upload processed as VALID and was available to internal testers. It is superseded by the current build 6 candidate. Automatic tester notifications remain disabled.
+Validation commands: `python3 Scripts/verify-archives.py DeductGlass EchoBrief NutriLoupe TorqueShield RecallGlass` and the same explicit names with `Scripts/verify-exports.py`. Private signing material, IPAs and raw diagnostics are excluded from Git. See [five-app submission preparation](../Submission/Batch2Preparation.md) for status and remaining decisions.
 
 ## Current candidates
 

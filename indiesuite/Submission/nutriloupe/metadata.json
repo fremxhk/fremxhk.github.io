@@ -1,0 +1,25 @@
+{
+  "name": "NutriLoupe",
+  "slug": "nutriloupe",
+  "bundleId": "com.indiesuite.nutriloupe",
+  "sku": "indiesuite-nutriloupe-ios",
+  "version": "1.0.0",
+  "primaryLocale": "en-US",
+  "subtitle": "Ingredient & symptom journal",
+  "category": "HEALTH_AND_FITNESS",
+  "keywords": "ingredient,food,journal,symptom,meal,processing,allergen,pattern,diary,label",
+  "promotionalText": "Keep ingredient labels and a personal food-and-symptom journal with transparent association counts.",
+  "description": "Keep ingredient labels and a personal food-and-symptom journal with transparent association counts.\n\nImport an ingredient label and review extracted ingredients against the original.\n\nSee a provisional processing explanation and an explicitly unvalidated preference heuristic.\n\nSave a meal and symptom journal entry, then explore the 14-day association chart.\n\nInspect the observed counts and limitations instead of treating associations as causes.\n\nPRIVATE BY DESIGN\nDocument processing and supported Apple Intelligence generation run on device. Optional storage uses your private iCloud container. There is no developer-operated account, advertising, analytics backend or third-party AI API. Supported local/text workflows remain available when a model or speech language is unavailable.\n\nFREE AND PRO\nIncludes five completed on-device AI actions per app. Pro unlocks additional actions through monthly or annual subscriptions, or a separate lifetime purchase. App Store prices, eligibility and subscription terms are displayed before purchase. Subscriptions renew automatically unless canceled in App Store settings.\n\nEducational organization only. This app does not diagnose conditions, certify allergens or food safety, or recommend treatment or an elimination diet. Ingredient-only processing classification is provisional. Symptom associations do not establish causation; consult a qualified clinician for health decisions.\n\nPrivacy: https://fremxhk.github.io/indiesuite/nutriloupe/privacy.html\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+  "copyright": "2026 Freeman Cheung",
+  "privacyPolicyUrl": "https://fremxhk.github.io/indiesuite/nutriloupe/privacy.html",
+  "supportUrl": "https://fremxhk.github.io/indiesuite/nutriloupe/support.html",
+  "marketingUrl": "https://fremxhk.github.io/indiesuite/nutriloupe/",
+  "purpose": "Keep ingredient labels and a personal food-and-symptom journal with transparent association counts.",
+  "audience": "Adults who want to organize food labels and their own meal and symptom observations.",
+  "features": [
+    "Import an ingredient label and review extracted ingredients against the original.",
+    "See a provisional processing explanation and an explicitly unvalidated preference heuristic.",
+    "Save a meal and symptom journal entry, then explore the 14-day association chart.",
+    "Inspect the observed counts and limitations instead of treating associations as causes."
+  ]
+}
