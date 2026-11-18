@@ -1,37 +1,43 @@
 # Five-app App Store submission preparation
 
-Status: 18 November 2026 (Hong Kong). **Preparation in progress; all five remain unsubmitted with manual release selected.** No physical device is being used. All 16 native iPhone store captures and 11 native iPad captures for DeductGlass, EchoBrief, NutriLoupe and TorqueShield are uploaded with COMPLETE delivery. RecallGlass’s tablet workflow is awaiting a focused retest after a rehearsal navigation-bar harness fix; its five tablet screenshots remain pending. No physical device was used.
+Status verified 18 November 2026 (Hong Kong). **Preparation only: these five apps have not been submitted to App Review.** The existing VaultGlass, BioPulse Local and ClauseShield submissions are separate. No physical device was accessed for this work.
 
-| App | App Store record | Selected build |
-| --- | --- | --- |
-| DeductGlass | [6835851991](https://appstoreconnect.apple.com/apps/6835851991/distribution/ios/version/inflight) | 1.0.0 (1), VALID |
-| EchoBrief | [6835852599](https://appstoreconnect.apple.com/apps/6835852599/distribution/ios/version/inflight) | 1.0.0 (1), VALID |
-| NutriLoupe | [6835853020](https://appstoreconnect.apple.com/apps/6835853020/distribution/ios/version/inflight) | 1.0.0 (1), VALID |
-| TorqueShield | [6835853579](https://appstoreconnect.apple.com/apps/6835853579/distribution/ios/version/inflight) | 1.0.0 (1), VALID |
-| RecallGlass | [6835854026](https://appstoreconnect.apple.com/apps/6835854026/distribution/ios/version/inflight) | 1.0.0 (1), VALID |
+| App | App Store record | Version / selected build | Status |
+| --- | --- | --- | --- |
+| DeductGlass | [6835851991](https://appstoreconnect.apple.com/apps/6835851991/distribution/ios/version/inflight) | 1.0.0 / 1, VALID | Prepare for Submission; manual release |
+| EchoBrief | [6835852599](https://appstoreconnect.apple.com/apps/6835852599/distribution/ios/version/inflight) | 1.0.0 / 1, VALID | Prepare for Submission; manual release |
+| NutriLoupe | [6835853020](https://appstoreconnect.apple.com/apps/6835853020/distribution/ios/version/inflight) | 1.0.0 / 1, VALID | Prepare for Submission; manual release |
+| TorqueShield | [6835853579](https://appstoreconnect.apple.com/apps/6835853579/distribution/ios/version/inflight) | 1.0.0 / 1, VALID | Prepare for Submission; manual release |
+| RecallGlass | [6835854026](https://appstoreconnect.apple.com/apps/6835854026/distribution/ios/version/inflight) | 1.0.0 / 2, VALID | Prepare for Submission; manual release |
 
-Completed and read back from Apple: English (US) metadata, age declarations, content rights, private review contacts and six-point notes; free base apps and US-only availability; five subscription groups and 15 products. Monthly is USD 4.99, annual USD 29.99 with an eligible one-week trial, and lifetime USD 79.99. All ten subscriptions have Apple-required prices in 175 territories, without enabling non-US availability. All 15 product review screenshot deliveries are COMPLETE. Each unsubmitted review draft contains its three product versions and subscription group version.
+The [development workspace](../Documentation/Workspace.md) and its project-local build/test evidence now reside on the connected Xcode SSD; migration was checksum verified.
 
-All five distribution archives/exports passed package checks and uploaded successfully. [Signed build fingerprints](../Documentation/BuildVerification.md). Each App ID has its own registered iCloud container; production schemas and synchronization are not certified.
+## Saved and verified
 
-[Five target-qualified local purchase methods](../Documentation/Batch2PurchaseResults.md) and the [nine-method eight-app pipeline rerun](../Documentation/Batch2TestResults.md) passed under Xcode 27.2, on one iOS 27.0 iPhone 17e simulator. [Local StoreKit screenshots](../Documentation/Previews/Batch2/Purchases/README.md) demonstrate test transactions and cold relaunch, not live payments. The existing main 51-method regression inventory remains separately version-qualified.
+- Registered explicit App IDs, provisioned distribution signing and associated each app with its own iCloud container. All five selected archives and App Store exports passed package checks, uploaded and processed to VALID. RecallGlass uses build 2 with the fitted cutout-preview correction; the other four use build 1. [Build fingerprints](../Documentation/BuildVerification.md).
+- Saved English (US) names, subtitles, descriptions, keywords, categories, copyright, privacy/support/marketing URLs, age declarations, content rights, private review contacts and six-point review notes. All 15 public URLs returned HTTP 200.
+- Configured free base apps, US availability, five subscription groups and 15 products. Prices: USD 4.99/month, 29.99/year and 79.99 lifetime. Each annual product has a one-week eligible free trial. Price and country configuration were read back from Apple. Apple-required converted subscription price entries were added for all 175 territories; this does not enable availability outside the US.
+- Uploaded 32 native, unresized store screenshots: 16 iPhone captures at 1206 × 2622 and 16 13-inch iPad captures at 2064 × 2752. All are opaque RGB PNGs from passing synthetic-data UI flows; all asset deliveries are COMPLETE. Apple-hosted source checksums and file sizes match all 32 reviewed PNGs.
+- Uploaded 15 product review screenshots from actual local StoreKit UI. Each subscription uses its own selected-plan screenshot; each lifetime product shows the separate purchase. All deliveries are COMPLETE.
+- Prepared five unsubmitted App Review drafts, each containing its three product versions and subscription group version. Automatic TestFlight notifications are disabled. No tester was asked to use a physical device.
+- Saved NutriLoupe’s required medical-device declaration as No for the current consumer-wellness scope; this is not a claim of FDA clearance.
+- Saved “Data Not Collected” privacy drafts in the browser. They are not published; publication is a legal attestation and remains an owner decision.
 
-The saved “Data Not Collected” privacy drafts are unpublished. After native asset capture/upload and final validation, privacy publication and final App Review submission remain owner decisions. The physical-device hold remains in force; no physical recording is claimed. Actual audio/calendar/printer behavior, live App Store transactions and production cloud services remain outside these simulator results.
+## Passing simulator evidence
 
-## Native capture evidence in progress
+- [Five distinct purchase UI methods](../Documentation/Batch2PurchaseResults.md): monthly and annual local purchases, lifetime local purchase, active access, cold relaunch persistence and legal links. No forced Pro entitlement or real payment was used.
+- [Nine app/mode pipeline methods across eight apps](../Documentation/Batch2TestResults.md), rerun under Xcode 27.2. Input/PDF ingestion, model-or-validated fallback, persistence, deterministic calculations and PDF exports are covered by the listed assertions.
+- [Five studio UI workflows](../Documentation/Batch2UIResults.md), repeated on native phone/tablet capture configurations: 10 passing executions, five distinct methods. Repeats do not increase the unique count.
+- The existing [51-method main regression inventory](../Documentation/TestResults.md) remains separately version-qualified; it was not relabeled as a new full regression run.
 
-The iPhone capture bundle passed all five workflows. Four tablet workflows have individually verified Passed results in `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult`; that bundle also contains an interrupted RecallGlass attempt, which is not counted as passing. The affected RecallGlass method is being rerun separately. Its unchanged app behavior has passing phone evidence; tablet timer and cutout completion remain pending. [Native captures currently available](../Documentation/Previews/AppStore/Batch2/README.md).
+Functional simulator work used one iPhone 17e running iOS 27.0. Capture-only profiles then ran one at a time, with the prior task-owned simulator shut down before switching. All selected phone and tablet capture cases passed on iOS 27.0. RecallGlass build 2 also passed an additional complete tablet control on iOS 27.2; the case-level report identifies the selected candidate results. Jobs were limited to two; parallel tests and clones were disabled.
 
-## Final validator and simulator-host gate — 17 November 2026
+## Remaining owner and release decisions
 
-Apple's app-version validator now reports unpublished app-privacy details for all five apps. RecallGlass additionally requires its 13-inch iPad screenshot set. NutriLoupe's required regulated-medical-device declaration was saved as No and its medical-declaration validation error cleared. This records its current consumer-wellness purpose; it is not a claim of FDA review or clearance. See [Apple's declaration requirements](https://developer.apple.com/help/app-store-connect/manage-app-information/declare-regulated-medical-device-status) and [FDA general-wellness guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-wellness-policy-low-risk-devices).
+Publish the saved privacy declarations, review the app/product metadata and native screenshots, then authorize the final App Review submission. The app-version review item remains to be attached after required privacy publication. These preparations do not establish production readiness or promise Apple acceptance.
 
-The remaining RecallGlass tablet retest is **blocked before the XCTest runner establishes its connection**. The workspace, archives and test evidence have moved to the connected Xcode SSD after full content, symlink, permission and Git verification. Internal free space measured 16.88 GiB at migration completion; the earlier insufficient-space error is no longer the current gate.
+The owner’s physical-device hold remains in force. No physical recording is claimed. Production CloudKit schema deployment/synchronization, actual microphone/transcription and Calendar/Reminders dispatch, printer margins and live App Store transactions remain outside the simulator evidence. Any request from Apple for current-build physical evidence must be answered honestly, without presenting simulator footage as physical evidence.
 
-The first SSD retry booted the same dedicated iPad but timed out reapplying its appearance. A subsequent run reused that already configured simulator and its unchanged installed build. `TestResults/Recall-iPad-SSD-20261117-234744/iPad.xcresult` ended on 18 November with “Test crashed with signal kill before establishing connection.” It records zero passes and one runner error; no app method began. The earlier pre-migration stalled-wait runner failure is retained separately.
+## Reproducible checks
 
-The host's observed one-minute load average returned to approximately 730, and a resource check found five other projects' Xcode builds and five other booted simulators. Host resource pressure is a possible contributor, not a proven cause of the runner termination. The owner has been asked to pause those other jobs. This task's capture simulator was shut down; no additional test was launched. The remaining step is the complete RecallGlass tablet workflow on a healthy host, followed by native screenshot review/upload and validator readback. No physical device is needed.
-
-Latest passing evidence: five local-purchase UI methods; nine pipeline methods across eight apps; all five native iPhone capture workflows; four individually verified tablet workflows. RecallGlass tablet timer/cutout completion and its five tablet captures remain pending. Canceled or unstarted attempts are not counted as passes. The saved privacy drafts remain unpublished and no new app version has been submitted.
-
-The [development workspace](../Documentation/Workspace.md) has moved to the connected Xcode SSD after checksum verification. The SSD retry ended at runner startup with no passing app method; the next retry awaits adequate host resources.
+`python3 Scripts/verify-submission.py` validates all eight metadata sets and 24 product localizations. Archive/export validators accept an explicit app-name list to preserve the first three candidates’ evidence. `Scripts/run-batch2-purchase-qa.sh EXISTING_IOS_27_SIMULATOR` and `Scripts/report-batch2-purchase-results.py RESULT_ROOT` reproduce the scoped purchase checks. `Scripts/capture-batch2-store-assets.sh IPHONE_SIMULATOR IPAD_SIMULATOR` captures the native profiles sequentially. Signing keys, private contacts, IPAs, raw diagnostics and API tokens are excluded from Git.

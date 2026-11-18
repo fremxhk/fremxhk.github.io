@@ -59,3 +59,9 @@ The Singapore export path is also separate: it produces a business-record binder
 ## Cloud relationship structure
 
 [Apple’s SwiftData sync guidance](https://developer.apple.com/documentation/swiftdata/syncing-model-data-across-a-persons-devices) requires optional relationships and explicit inverses where inference is not possible. The new study/cards, speech/cues, meeting/commitments, food/symptoms and repair/line-item relationships now include optional parent back-references and explicit inverses. Tests assert both sides after insertion/save. This structural check does not replace deployment of production schemas or two-device synchronization.
+
+## Print-preview follow-up — 18 November 2026
+
+Screenshot review found that a vertical PDF scroller inside Cue Studio’s vertical list could be panned to the blank lower part of a sheet. Apple’s [scroll-view guidance](https://developer.apple.com/design/human-interface-guidelines/scroll-views) advises against nested scrolling on the same axis. The inline preview now uses [single-page display](https://developer.apple.com/documentation/pdfkit/pdfdisplaymode/singlepage) with automatic scaling and leaves scrolling to the enclosing list. Export and AirPrint still use the original PDF bytes. A first-sheet label explains that export contains all sheets; accessibility reports when the full page fits the preview.
+
+RecallGlass build 2 contains this refinement. Simulator verification and refreshed screenshots are required before replacing its selected App Store candidate. The test harness also skips invalid, zero-sized transition collection views before asking XCTest for their hittability; functional assertions are retained.

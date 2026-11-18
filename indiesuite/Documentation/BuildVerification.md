@@ -22,9 +22,9 @@ The independent physical UI-test host has no dependency on the three app targets
 
 ## Five additional studios
 
-On 17 November 2026, DeductGlass, EchoBrief, NutriLoupe, TorqueShield and RecallGlass were archived, exported for App Store distribution and uploaded **sequentially**, without accessing a physical device. All are version 1.0.0 build 1, archived from source `4f7b15e` using Xcode 27.2 (27B52), Swift 6.4.2 and iOS SDK 27.2; deployment target is iOS/iPadOS 27.0. All five uploads processed to VALID and were selected in unsubmitted, manual-release App Store drafts.
+Verified 18 November 2026. DeductGlass, EchoBrief, NutriLoupe and TorqueShield retain version 1.0.0 build 1 from source `4f7b15e`. RecallGlass uses version 1.0.0 build 2 from source `4dab198`, correcting the fitted first-sheet PDF preview. The archive-scheme guard prevents QA hosts and test bundles from entering app archive actions. All five packages are preserved and were revalidated on the Xcode SSD; they were built sequentially with Xcode 27.2 (27B52), Swift 6.4.2 and iOS SDK 27.2; deployment target remains iOS/iPadOS 27.0. They processed to VALID and are selected in unsubmitted, manual-release App Store drafts.
 
-Every archive and exported IPA passed identity, version/build, privacy-manifest, signature, production APNs/iCloud entitlements, disabled debugging and exclusion of all four Debug QA launch flags. Each App ID is associated only with its own registered iCloud container. EchoBrief and RecallGlass include the required microphone/speech usage strings; Speech references are excluded from the other three. These package checks do not verify deployed production schemas or service behavior. The later repair-smoke grounding correction belongs to test support; the IPA fingerprints below continue to identify the archived `4f7b15e` source and are not relabeled as builds from the later preparation commit.
+Archive and export validators checked exact identity/version/build, deep/strict signatures, privacy resources, app-specific CloudKit containers and absence of Debug QA launch flags or private key files. Exported packages disable debugging and carry production APNs/iCloud entitlements. EchoBrief and RecallGlass include microphone/speech usage strings; Speech linkage is absent from the other three. Each archive contains only its intended app, with no QA host. These package checks do not establish deployed production cloud schemas or live service behavior. Earlier RecallGlass build 1 artifacts are preserved privately and are not relabeled as build 2.
 
 | Export | Build | IPA SHA-256 |
 | --- | --- | --- |
@@ -32,9 +32,9 @@ Every archive and exported IPA passed identity, version/build, privacy-manifest,
 | EchoBrief | 1 | `0a6bfd48413b176a82f1ff156789b4911040c65a0eb8763be24ba84c35950ccc` |
 | NutriLoupe | 1 | `fab23170b341d55402c06a8011f8ae4ae759d8ceb5c5f0c5a691d6b433a23546` |
 | TorqueShield | 1 | `7ce7e442137747a7ee262973ba0d93151386e7458c1208358cd617ee38c7589a` |
-| RecallGlass | 1 | `9a82a772f6c28cec7726002cdcd9882c69f83f8df8aebbeb861cc64bcc3584dd` |
+| RecallGlass | 2 | `c327f64912ee47384ee731e10dc32619aea529d131848e507e0922fa339d80bb` |
 
-Validation commands: `python3 Scripts/verify-archives.py DeductGlass EchoBrief NutriLoupe TorqueShield RecallGlass` and the same explicit names with `Scripts/verify-exports.py`. Private signing material, IPAs and raw diagnostics are excluded from Git. See [five-app submission preparation](../Submission/Batch2Preparation.md) for status and remaining decisions.
+Validation: `python3 Scripts/verify-archives.py DeductGlass EchoBrief NutriLoupe TorqueShield RecallGlass` and the same names with `Scripts/verify-exports.py`. Signing material, IPAs and raw diagnostics remain excluded from Git. See [five-app submission preparation](../Submission/Batch2Preparation.md) for draft status and remaining decisions.
 
 ## Current candidates
 
