@@ -1,48 +1,44 @@
-# Five-studio UI test results
+# Current five-app UI workflow results
 
-**Five distinct UI workflows passed; no failures or skips in the listed bundles.** All used the same iOS 27.0 iPhone 17e simulator sequentially.
+Verified 18 November 2026 using Xcode 27.2. All five named XCTest workflows passed on native iPhone 17 and 13-inch iPad Pro profiles running iOS 27.0. The complete retest passed **10 executions of five distinct workflow methods**, with zero failures or skips in those two completed bundles. A later repair-label refinement passed its same workflow again on both profiles; those repeats do not increase the distinct-method count.
 
-Source: `715acba` (app behavior), with archive-only configuration follow-up `0fa625a`.
+Fresh installs used normal durable storage and the real free allowance. The UI launch arguments were empty: no empty in-memory fixture, forced Pro entitlement or screenshot override was used. Installed build identities and executable hashes were recorded before execution. These are Debug simulator executions; distribution package checks are reported separately.
 
-These tests use synthetic documents, isolated in-memory stores and a Debug-only QA entitlement. They verify interaction and rendering, not paid purchases, physical audio, EventKit dispatch or cloud services. The entitlement flag is excluded from Release builds. Repeated runs do not increase the method count.
+Only one task-owned simulator ran at a time, each app terminated before the next, two build jobs were allowed, and parallel tests/clones were disabled. XCTest teardown also terminates an app after a failed case.
 
-| Method | Latest passing evidence |
-| --- | --- |
-| `Batch2StudioFlowTests/test01DeductReceiptVerificationAndBinder()` | `Studio-Final-Schema-And-Grounding.xcresult` |
-| `Batch2StudioFlowTests/test02EchoBriefCommitmentReviewAndExport()` | `Studio-Final-Schema-And-Grounding.xcresult` |
-| `Batch2StudioFlowTests/test03NutriIngredientJournalAndAssociations()` | `Studio-Final-Schema-And-Grounding.xcresult` |
-| `Batch2StudioFlowTests/test04TorqueEstimateDecisionAndLeaseWorkspace()` | `Studio-Final-Schema-And-Grounding.xcresult` |
-| `Batch2StudioFlowTests/test05RecallStudyAndSpeechPrintStudio()` | `RecallGlass-Final-UI.xcresult` |
+| App | Method in `Batch2StudioFlowTests` | iPhone | iPad | Candidate build |
+| --- | --- | --- | --- | --- |
+| DeductGlass | `test01DeductReceiptVerificationAndBinder()` | Passed | Passed | 2 |
+| EchoBrief | `test02EchoBriefCommitmentReviewAndExport()` | Passed | Passed | 2 |
+| NutriLoupe | `test03NutriIngredientJournalAndAssociations()` | Passed | Passed | 2 |
+| TorqueShield | `test04TorqueEstimateDecisionAndLeaseWorkspace()` | Passed | Passed | 2 |
+| RecallGlass | `test05RecallStudyAndSpeechPrintStudio()` | Passed | Passed | 3 |
 
-Coverage: receipt verification, tax-year-scoped US CPA PDF and separate Singapore records PDF; meeting summary/source-linked commitment review, confirmed Simulator dispatch preview and PDF; ingredient details, symptom entry and 14-day chart; repair quote/item review, a saved decline decision and lease assumptions; study creation, typed exact-answer grading with a correct/Good suggestion, answer reveal and FSRS grade, speech creation, stage timer start/pause/reset and cutout preview.
+## Assertions exercised
 
-Filled fields retain visible labels. Calendar dates inferred only from relative weekdays remain unset. Captures wait for navigation transitions to settle. The PDF and deterministic-math suites are reported separately in [eight-app results](Batch2TestResults.md).
+- **DeductGlass:** sample receipt import, source evidence review, verification state, tax method workspace, readable CPA PDF and the separate Singapore recordkeeping path.
+- **EchoBrief:** sample transcript, meeting costs and commitments, owner/task/date confirmation, intentionally simulated reminder dispatch, and readable meeting PDF. No real reminder or calendar event is created by the simulator path.
+- **NutriLoupe:** ingredient analysis, journal save and 14-day association view.
+- **TorqueShield:** source-grounded repair items, evidence detail, persisted decline decision and VIN/lease workspace. Final labels show readable triage and decision text.
+- **RecallGlass:** deck creation, exact-source answer/semantic grade, review scheduling, speech cue generation, stage rehearsal, PDF export/preview and full-first-sheet fit on both profiles.
 
-| Completed bundle | Passed executions |
-| --- | ---: |
-| `Studio-Final-Schema-And-Grounding.xcresult` | 5 |
-| `RecallGlass-Final-UI.xcresult` | 1 |
+## Selected case provenance
 
-Earlier offscreen-control, accessibility-identifier, keyboard/confirmation-switch targeting and interrupted attempts are retained privately and excluded here. These results do not establish production readiness; see [open release gates](ProductionReadiness.md).
+- iPhone / DeductGlass 2: `TestResults/Batch2-Normal-Launch-20261118-213740/iPhone.xcresult`; source snapshot `ce53ccebe3c6596f259d242bf5429d710511f05e`.
+- iPhone / EchoBrief 2: `TestResults/Batch2-Normal-Launch-20261118-213740/iPhone.xcresult`; source snapshot `ce53ccebe3c6596f259d242bf5429d710511f05e`.
+- iPhone / NutriLoupe 2: `TestResults/Batch2-Normal-Launch-20261118-213740/iPhone.xcresult`; source snapshot `ce53ccebe3c6596f259d242bf5429d710511f05e`.
+- iPhone / TorqueShield 2: `TestResults/Torque-Native-Labels-20261118-215751/iPhone.xcresult`; source snapshot `0e555aa7535ff0c99135689612e0ab28e7e2bdef`.
+- iPhone / RecallGlass 3: `TestResults/Batch2-Normal-Launch-20261118-213740/iPhone.xcresult`; source snapshot `ce53ccebe3c6596f259d242bf5429d710511f05e`.
+- iPad / DeductGlass 2: `TestResults/Batch2-Normal-Launch-20261118-213740/iPad.xcresult`; source snapshot `d0c53f4fa867cfbffb820ceaead08fbccedad099`.
+- iPad / EchoBrief 2: `TestResults/Batch2-Normal-Launch-20261118-213740/iPad.xcresult`; source snapshot `d0c53f4fa867cfbffb820ceaead08fbccedad099`.
+- iPad / NutriLoupe 2: `TestResults/Batch2-Normal-Launch-20261118-213740/iPad.xcresult`; source snapshot `d0c53f4fa867cfbffb820ceaead08fbccedad099`.
+- iPad / TorqueShield 2: `TestResults/Torque-Native-Labels-20261118-215751/iPad.xcresult`; source snapshot `0e555aa7535ff0c99135689612e0ab28e7e2bdef`.
+- iPad / RecallGlass 3: `TestResults/Batch2-Normal-Launch-20261118-213740/iPad.xcresult`; source snapshot `d0c53f4fa867cfbffb820ceaead08fbccedad099`.
 
-## Native store capture rerun — 17–18 November 2026
+The full clean retest is retained in `TestResults/Batch2-Normal-Launch-20261118-213740`; the final repair-label captures are in `TestResults/Torque-Native-Labels-20261118-215751`. Source snapshots can differ for documentation-only commits and the scoped repair-label update; installed candidate versions and individual Passed cases are checked separately.
 
-The same five methods each achieved a passing execution on iPhone 17 and 13-inch iPad simulators using Xcode 27.2. The first four apps use their build 1 captures on iOS 27.0. RecallGlass uses build 2 with the fitted PDF preview and strengthened full-sheet visibility assertion; selected destination runtimes are listed below. An additional full build 2 tablet control passed on iOS 27.2. These are ten passing executions of five existing methods, not ten new distinct tests. The profiles ran one at a time.
+## Native store images
 
-| App / method | iPhone latest Passed case | iPad latest Passed case |
-| --- | --- | --- |
-| DeductGlass: `test01DeductReceiptVerificationAndBinder()` | `TestResults/Batch2-Store-Captures-20261117-202817/iPhone.xcresult` | `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult` |
-| EchoBrief: `test02EchoBriefCommitmentReviewAndExport()` | `TestResults/Batch2-Store-Captures-20261117-202817/iPhone.xcresult` | `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult` |
-| NutriLoupe: `test03NutriIngredientJournalAndAssociations()` | `TestResults/Batch2-Store-Captures-20261117-202817/iPhone.xcresult` | `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult` |
-| TorqueShield: `test04TorqueEstimateDecisionAndLeaseWorkspace()` | `TestResults/Batch2-Store-Captures-20261117-202817/iPhone.xcresult` | `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult` |
-| RecallGlass: `test05RecallStudyAndSpeechPrintStudio()` | `TestResults/Recall-iPhone-Build2-20261118-022834/iPhone.xcresult` | `TestResults/Recall-iPad-Build2-20261118-093414/iPad.xcresult` |
+The 32 selected PNGs are opaque RGB captures at 1206 × 2622 (16 phone images) and 2064 × 2752 (16 tablet images). Their original bytes are retained without resizing. All five contact sheets were visually reviewed, including repair details, associations, PDFs and the fitted cue-card sheet. [Capture inventory](Previews/AppStore/Batch2/README.md).
 
-The original iPhone capture bundle passed all five cases with zero failures/skips; the selected table retains its first four cases and uses the separate build 2 RecallGlass phone run. The tablet bundle `TestResults/Batch2-Store-Captures-20261117-204958/iPad.xcresult` contains four Passed cases and a canceled RecallGlass attempt. Only its four individually verified Passed cases contribute to the table. RecallGlass build 2 was rerun separately after the fitted-preview correction and test geometry guard; both selected focused phone/tablet bundles passed one case each with zero failures/skips. This is a case-level passing inventory, not a claim that every historical bundle is green.
-
-The first tablet attempt exposed full-window drag coordinates landing outside centered form sheets. Scrolling was corrected to use visible form bounds. A subsequent rehearsal attempt measured fixed controls against the underlying page navigation bar; tablet rehearsal now uses its own visible navigation bar. The latter branch affects only RecallGlass rehearsal, so the four already passing tablet cases were preserved and the complete affected RecallGlass method was rerun. Failed and interrupted attempts remain private and are excluded from the latest passing case selection. All interaction, grading, timer, verification and export assertions remain intact; the full-sheet preview-fit assertion was added for build 2. Pre-migration storage failures, stalled-wait runner failures, and the SSD runner termination before connection remain retained and excluded from passing counts. Host load was elevated; its causal role was not established. The earlier build 1 iOS 27.0 tablet run failed on invalid accessibility transition geometry. The first build 2 minimum-runtime tablet run failed during an accessibility snapshot query. Those attempts remain excluded; the selected build 2 results and runtimes below identify the actual completed retests.
-
-The selected [native store captures](Previews/AppStore/Batch2) contain synthetic content and exclude QA home screens and the simulator-only dispatch diagnostic. [Local purchase evidence](Batch2PurchaseResults.md) is separate. No physical device was used.
-
-RecallGlass build 2 selected tablet runtime: iOS 27.0. Complete method assertions include study creation, typed grading, answer reveal, FSRS, speech creation, stage timer start/pause/reset and first-sheet PDF fit. Candidate build and source provenance were read from the generated app and saved alongside each passing result.
-
-RecallGlass build 2 phone and iOS 27.2 tablet control used source `5432a63`. The selected iOS 27.0 tablet run and signed archive used `4dab198`, which adds the archive-action configuration guard without changing app behavior. The iOS 27.2 control is retained at `TestResults/Recall-iPad-Build2-20261118-025205/iPad.xcresult`; it is additional evidence, not a second selected screenshot set.
+The initial normal-launch run retained four passing flows and one failed repair case. It exposed a model response that repeated itemized prices in the service name and changed brake safety triage. That case was not counted as a pass. Source reconciliation and two [repair regression methods](RepairGroundingResults.md) now cover that failure; the full clean UI retest passed afterward. Earlier design/capture attempts remain version-qualified historical evidence and are not relabeled as current candidate results.

@@ -1,15 +1,20 @@
-# Native five-app store captures
+# Native App Store capture inventory
 
-Captured with Xcode 27.2, using one task-owned simulator at a time. Images are native, opaque RGB PNGs without resizing. Synthetic records are used; QA home screens and simulator-only dispatch diagnostics are excluded. No physical device was used.
+Reviewed on 18 November 2026. All 32 images are actual simulator captures of the apps in use with synthetic examples and normal durable storage. The selected individual workflow cases passed; [exact method and source provenance](../../../Batch2UIResults.md) is recorded separately. The source PNG bytes are not resized or composited.
 
-Complete set: 16 iPhone images (1206 × 2622) and 16 iPad images (2064 × 2752). Every selected image comes from an individually verified Passed case. The first four apps use build 1 captures on iOS 27.0. RecallGlass uses build 2; its phone capture runtime is iOS 27.0 and its selected tablet runtime is recorded below. Earlier failed or interrupted attempts are excluded.
+| Profile | Native pixels | Image count | Runtime |
+| --- | --- | ---: | --- |
+| iPhone 17 | 1206 × 2622 | 16 | iOS 27.0 |
+| 13-inch iPad Pro | 2064 × 2752 | 16 | iOS 27.0 |
 
-RecallGlass build 2 selected tablet runtime: iOS 27.0.
-
-| App | iPhone | iPad |
+| App | Candidate build | Screens per profile |
 | --- | --- | --- |
-| DeductGlass | [CPA-Binder](iPhone/DeductGlass-CPA-Binder.png) · [Expense-Evidence](iPhone/DeductGlass-Expense-Evidence.png) · [Method-Comparison](iPhone/DeductGlass-Method-Comparison.png) | [CPA-Binder](iPad/DeductGlass-CPA-Binder.png) · [Expense-Evidence](iPad/DeductGlass-Expense-Evidence.png) · [Method-Comparison](iPad/DeductGlass-Method-Comparison.png) |
-| EchoBrief | [Commitment-Review](iPhone/EchoBrief-Commitment-Review.png) · [Meeting-Summary](iPhone/EchoBrief-Meeting-Summary.png) · [PDF](iPhone/EchoBrief-PDF.png) | [Commitment-Review](iPad/EchoBrief-Commitment-Review.png) · [Meeting-Summary](iPad/EchoBrief-Meeting-Summary.png) · [PDF](iPad/EchoBrief-PDF.png) |
-| NutriLoupe | [Ingredient-Details](iPhone/NutriLoupe-Ingredient-Details.png) · [Symptom-Associations](iPhone/NutriLoupe-Symptom-Associations.png) | [Ingredient-Details](iPad/NutriLoupe-Ingredient-Details.png) · [Symptom-Associations](iPad/NutriLoupe-Symptom-Associations.png) |
-| TorqueShield | [Lease-Workspace](iPhone/TorqueShield-Lease-Workspace.png) · [Quote-Review](iPhone/TorqueShield-Quote-Review.png) · [Repair-Evidence](iPhone/TorqueShield-Repair-Evidence.png) | [Lease-Workspace](iPad/TorqueShield-Lease-Workspace.png) · [Quote-Review](iPad/TorqueShield-Quote-Review.png) · [Repair-Evidence](iPad/TorqueShield-Repair-Evidence.png) |
-| RecallGlass | [Cue-Studio](iPhone/RecallGlass-Cue-Studio.png) · [Cutout-Preview](iPhone/RecallGlass-Cutout-Preview.png) · [Semantic-Review](iPhone/RecallGlass-Semantic-Review.png) · [Stage-Mode](iPhone/RecallGlass-Stage-Mode.png) · [Study-Deck](iPhone/RecallGlass-Study-Deck.png) | [Cue-Studio](iPad/RecallGlass-Cue-Studio.png) · [Cutout-Preview](iPad/RecallGlass-Cutout-Preview.png) · [Semantic-Review](iPad/RecallGlass-Semantic-Review.png) · [Stage-Mode](iPad/RecallGlass-Stage-Mode.png) · [Study-Deck](iPad/RecallGlass-Study-Deck.png) |
+| DeductGlass | 2 | Expense evidence; method comparison; CPA binder |
+| EchoBrief | 2 | Meeting summary; commitment review; PDF |
+| NutriLoupe | 2 | Ingredient details; symptom associations |
+| TorqueShield | 2 | Quote review; repair evidence; lease workspace |
+| RecallGlass | 3 | Study deck; semantic review; cue studio; stage mode; cutout preview |
+
+The complete five-app retest passed on both profiles. TorqueShield’s later readable-label refinement passed its flow again on each profile and supplies its selected images. The final cue-card first sheet fits within the preview on both devices. Product purchase-review images and their local StoreKit evidence are reported separately.
+
+All 32 current asset deliveries are COMPLETE. Apple source checksums and file sizes match the reviewed PNGs. The profiles match Apple’s [current screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/): Dynamic Island medium-display iPhone and 13-inch iPad.

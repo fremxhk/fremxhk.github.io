@@ -16,7 +16,7 @@ The applications use the private CloudKit database. The SDK-generated role decla
 
 The container factory now uses CloudKit account status rather than the iCloud Drive identity token. It retains one durable cache URL when account availability changes and adopts an existing legacy local store in place. The [20 offline storage checks](CloudStorageResults.md) cover schema constraints, real SQLite reopen, relationships, receipt data, cascades, signed-out operation and legacy-store preservation.
 
-Live production export, independent-store import, updates and cleanup are being verified separately. Schema deployment and authenticated dry runs alone are not recorded as completed production synchronization tests.
+[Five production service preflights](ProductionServiceResults.md) passed across all 13 record types. Automatic export, independent-store import, later updates, receipt asset transfer and cleanup are checked separately and need an unlocked Mac session. Schema deployment, authenticated dry runs and direct API success are not recorded as completed automatic-synchronization tests.
 
 ## Apple references
 
