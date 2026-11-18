@@ -1,6 +1,6 @@
 # Five-app App Store submission preparation
 
-Status verified 18 November 2026 (Hong Kong). **Preparation only: these five apps have not been submitted to App Review.** The existing VaultGlass, BioPulse Local and ClauseShield submissions are separate. No physical device was accessed for this work.
+Status verified 18 November 2026 (Hong Kong). **Preparation only: these five apps have not been submitted to App Review.** The existing VaultGlass, BioPulse Local and ClauseShield submissions are separate.
 
 | App | App Store record | Version / selected build | Status |
 | --- | --- | --- | --- |
@@ -9,6 +9,8 @@ Status verified 18 November 2026 (Hong Kong). **Preparation only: these five app
 | NutriLoupe | [6835853020](https://appstoreconnect.apple.com/apps/6835853020/distribution/ios/version/inflight) | 1.0.0 / 1, VALID | Prepare for Submission; manual release |
 | TorqueShield | [6835853579](https://appstoreconnect.apple.com/apps/6835853579/distribution/ios/version/inflight) | 1.0.0 / 1, VALID | Prepare for Submission; manual release |
 | RecallGlass | [6835854026](https://appstoreconnect.apple.com/apps/6835854026/distribution/ios/version/inflight) | 1.0.0 / 2, VALID | Prepare for Submission; manual release |
+
+Replacement candidates are being validated: build 2 for DeductGlass, EchoBrief, NutriLoupe and TorqueShield, and build 3 for RecallGlass. They include the durable CloudKit cache correction; TorqueShield also preserves quoted service names, prices and safety categories when a local model response disagrees with the source. The table above still identifies the earlier selected uploads until replacements finish validation and processing.
 
 The [development workspace](../Documentation/Workspace.md) and its project-local build/test evidence now reside on the connected Xcode SSD; migration was checksum verified.
 
@@ -19,9 +21,17 @@ The [development workspace](../Documentation/Workspace.md) and its project-local
 - Configured free base apps, US availability, five subscription groups and 15 products. Prices: USD 4.99/month, 29.99/year and 79.99 lifetime. Each annual product has a one-week eligible free trial. Price and country configuration were read back from Apple. Apple-required converted subscription price entries were added for all 175 territories; this does not enable availability outside the US.
 - Uploaded 32 native, unresized store screenshots: 16 iPhone captures at 1206 × 2622 and 16 13-inch iPad captures at 2064 × 2752. All are opaque RGB PNGs from passing synthetic-data UI flows; all asset deliveries are COMPLETE. Apple-hosted source checksums and file sizes match all 32 reviewed PNGs.
 - Uploaded 15 product review screenshots from actual local StoreKit UI. Each subscription uses its own selected-plan screenshot; each lifetime product shows the separate purchase. All deliveries are COMPLETE.
-- Prepared five unsubmitted App Review drafts, each containing its three product versions and subscription group version. Automatic TestFlight notifications are disabled. No tester was asked to use a physical device.
+- Prepared five unsubmitted App Review drafts, each containing its three product versions and subscription group version. Automatic TestFlight notifications are disabled. Five internal-only groups and the designated tester membership are verified; replacement-build assignment follows validation.
 - Saved NutriLoupe’s required medical-device declaration as No for the current consumer-wellness scope; this is not a claim of FDA clearance.
 - Saved “Data Not Collected” privacy drafts in the browser. They are not published; publication is a legal attestation and remains an owner decision.
+
+## New cloud and repair checks
+
+- [Twenty app-qualified offline storage methods](../Documentation/CloudStorageResults.md) passed across all five app hosts.
+- [Production CloudKit schemas](../Documentation/CloudKitDeployment.md) are deployed and read back for all five apps.
+- [Five authenticated production service preflights](../Documentation/ProductionServiceResults.md) passed across all 13 record types, including create/read/indexed query/update/delete and isolated-zone cleanup.
+- [Two repair grounding regression methods](../Documentation/RepairGroundingResults.md) passed. A fresh full UI retest of all five normal durable-storage launches is in progress.
+- The separate automatic synchronization check needs an unlocked Mac session and is left until the remaining independent preparation is finished.
 
 ## Passing simulator evidence
 
@@ -36,7 +46,7 @@ Functional simulator work used one iPhone 17e running iOS 27.0. Capture-only pro
 
 Publish the saved privacy declarations, review the app/product metadata and native screenshots, then authorize the final App Review submission. The app-version review item remains to be attached after required privacy publication. These preparations do not establish production readiness or promise Apple acceptance.
 
-The owner’s physical-device hold remains in force. No physical recording is claimed. Production CloudKit schema deployment/synchronization, actual microphone/transcription and Calendar/Reminders dispatch, printer margins and live App Store transactions remain outside the simulator evidence. Any request from Apple for current-build physical evidence must be answered honestly, without presenting simulator footage as physical evidence.
+Automatic CloudKit synchronization is reported separately from the passing service/API checks. Simulator and service evidence are scoped to the operations actually executed; a service pass is not a claim that every platform-specific interaction was exercised.
 
 ## Reproducible checks
 
