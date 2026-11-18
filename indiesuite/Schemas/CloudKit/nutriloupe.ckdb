@@ -1,0 +1,67 @@
+DEFINE SCHEMA
+
+    RECORD TYPE CD_FoodScanRecord (
+        CD_aiPlainEnglishVerdict         STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_aiPlainEnglishVerdict_ckAsset ASSET,
+        CD_allergenAlertsCSV             STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_allergenAlertsCSV_ckAsset     ASSET,
+        CD_cleanLabelScore               INT64 QUERYABLE SORTABLE,
+        CD_detectedSeedOilsCSV           STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_detectedSeedOilsCSV_ckAsset   ASSET,
+        CD_entityName                    STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_flaggedAdditivesJSON          STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_flaggedAdditivesJSON_ckAsset  ASSET,
+        CD_id                            STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_moveReceipt                   BYTES QUERYABLE SORTABLE,
+        CD_moveReceipt_ckAsset           ASSET,
+        CD_novaGroup                     INT64 QUERYABLE SORTABLE,
+        CD_parsedIngredientsCSV          STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_parsedIngredientsCSV_ckAsset  ASSET,
+        CD_productOrDishName             STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_productOrDishName_ckAsset     ASSET,
+        CD_rawIngredientText             STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_rawIngredientText_ckAsset     ASSET,
+        CD_scannedAt                     TIMESTAMP QUERYABLE SORTABLE,
+        "___createTime"                  TIMESTAMP,
+        "___createdBy"                   REFERENCE,
+        "___etag"                        STRING,
+        "___modTime"                     TIMESTAMP,
+        "___modifiedBy"                  REFERENCE,
+        "___recordID"                    REFERENCE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world"
+    );
+
+    RECORD TYPE CD_SymptomReactionLog (
+        CD_entityName          STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_food                STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_id                  STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_loggedAt            TIMESTAMP QUERYABLE SORTABLE,
+        CD_moveReceipt         BYTES QUERYABLE SORTABLE,
+        CD_moveReceipt_ckAsset ASSET,
+        CD_severityScore       INT64 QUERYABLE SORTABLE,
+        CD_symptomType         STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_symptomType_ckAsset ASSET,
+        "___createTime"        TIMESTAMP,
+        "___createdBy"         REFERENCE,
+        "___etag"              STRING,
+        "___modTime"           TIMESTAMP,
+        "___modifiedBy"        REFERENCE,
+        "___recordID"          REFERENCE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world"
+    );
+
+    RECORD TYPE Users (
+        "___createTime" TIMESTAMP,
+        "___createdBy"  REFERENCE,
+        "___etag"       STRING,
+        "___modTime"    TIMESTAMP,
+        "___modifiedBy" REFERENCE,
+        "___recordID"   REFERENCE,
+        roles           LIST<INT64>,
+        GRANT WRITE TO "_creator",
+        GRANT READ TO "_world"
+    );

@@ -1,0 +1,70 @@
+DEFINE SCHEMA
+
+    RECORD TYPE CD_ActionCommitment (
+        CD_calendarItemIdentifier         STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_calendarItemIdentifier_ckAsset ASSET,
+        CD_dueDate                        TIMESTAMP QUERYABLE SORTABLE,
+        CD_entityName                     STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_id                             STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_isDispatchedToSystem           INT64 QUERYABLE SORTABLE,
+        CD_meeting                        STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_moveReceipt                    BYTES QUERYABLE SORTABLE,
+        CD_moveReceipt_ckAsset            ASSET,
+        CD_ownerName                      STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_ownerName_ckAsset              ASSET,
+        CD_priorityOrder                  INT64 QUERYABLE SORTABLE,
+        CD_sourceQuote                    STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_sourceQuote_ckAsset            ASSET,
+        CD_taskDescription                STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_taskDescription_ckAsset        ASSET,
+        "___createTime"                   TIMESTAMP,
+        "___createdBy"                    REFERENCE,
+        "___etag"                         STRING,
+        "___modTime"                      TIMESTAMP,
+        "___modifiedBy"                   REFERENCE,
+        "___recordID"                     REFERENCE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world"
+    );
+
+    RECORD TYPE CD_MeetingBriefSession (
+        CD_attendeeCount                  INT64 QUERYABLE SORTABLE,
+        CD_averageHourlyRate              DOUBLE QUERYABLE SORTABLE,
+        CD_durationSeconds                DOUBLE QUERYABLE SORTABLE,
+        CD_entityName                     STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_executiveSummary               STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_executiveSummary_ckAsset       ASSET,
+        CD_id                             STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_moveReceipt                    BYTES QUERYABLE SORTABLE,
+        CD_moveReceipt_ckAsset            ASSET,
+        CD_rawTranscript                  STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_rawTranscript_ckAsset          ASSET,
+        CD_recordedAt                     TIMESTAMP QUERYABLE SORTABLE,
+        CD_tensionOrAlignmentScore        DOUBLE QUERYABLE SORTABLE,
+        CD_title                          STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_title_ckAsset                  ASSET,
+        CD_unresolvedBlockersJSON         STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_unresolvedBlockersJSON_ckAsset ASSET,
+        "___createTime"                   TIMESTAMP,
+        "___createdBy"                    REFERENCE,
+        "___etag"                         STRING,
+        "___modTime"                      TIMESTAMP,
+        "___modifiedBy"                   REFERENCE,
+        "___recordID"                     REFERENCE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world"
+    );
+
+    RECORD TYPE Users (
+        "___createTime" TIMESTAMP,
+        "___createdBy"  REFERENCE,
+        "___etag"       STRING,
+        "___modTime"    TIMESTAMP,
+        "___modifiedBy" REFERENCE,
+        "___recordID"   REFERENCE,
+        roles           LIST<INT64>,
+        GRANT WRITE TO "_creator",
+        GRANT READ TO "_world"
+    );

@@ -1,0 +1,92 @@
+DEFINE SCHEMA
+
+    RECORD TYPE CD_RepairEstimateAudit (
+        CD_createdAt           TIMESTAMP QUERYABLE SORTABLE,
+        CD_entityName          STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_id                  STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_moveReceipt         BYTES QUERYABLE SORTABLE,
+        CD_moveReceipt_ckAsset ASSET,
+        CD_sourceText          STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_sourceText_ckAsset  ASSET,
+        CD_title               STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_title_ckAsset       ASSET,
+        "___createTime"        TIMESTAMP,
+        "___createdBy"         REFERENCE,
+        "___etag"              STRING,
+        "___modTime"           TIMESTAMP,
+        "___modifiedBy"        REFERENCE,
+        "___recordID"          REFERENCE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world"
+    );
+
+    RECORD TYPE CD_RepairLineItem (
+        CD_audit                            STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_benchmarkSource                  STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_benchmarkSource_ckAsset          ASSET,
+        CD_entityName                       STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_fairPriceBenchmark               DOUBLE QUERYABLE SORTABLE,
+        CD_id                               STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_moveReceipt                      BYTES QUERYABLE SORTABLE,
+        CD_moveReceipt_ckAsset              ASSET,
+        CD_plainEnglishMechanicNote         STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_plainEnglishMechanicNote_ckAsset ASSET,
+        CD_quotedLaborCost                  DOUBLE QUERYABLE SORTABLE,
+        CD_quotedPartsCost                  DOUBLE QUERYABLE SORTABLE,
+        CD_serviceDescription               STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_serviceDescription_ckAsset       ASSET,
+        CD_triageCategoryRaw                STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_triageCategoryRaw_ckAsset        ASSET,
+        CD_userDecisionRaw                  STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_userDecisionRaw_ckAsset          ASSET,
+        "___createTime"                     TIMESTAMP,
+        "___createdBy"                      REFERENCE,
+        "___etag"                           STRING,
+        "___modTime"                        TIMESTAMP,
+        "___modifiedBy"                     REFERENCE,
+        "___recordID"                       REFERENCE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world"
+    );
+
+    RECORD TYPE CD_VehicleProfile (
+        CD_allowedTotalMiles          DOUBLE QUERYABLE SORTABLE,
+        CD_currentOdometerMiles       DOUBLE QUERYABLE SORTABLE,
+        CD_displayName                STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_displayName_ckAsset        ASSET,
+        CD_entityName                 STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_estimatedPrivatePartyValue DOUBLE QUERYABLE SORTABLE,
+        CD_id                         STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_leaseEnd                   TIMESTAMP QUERYABLE SORTABLE,
+        CD_leaseOverageFeePerMile     DOUBLE QUERYABLE SORTABLE,
+        CD_leaseResidualBuyoutPrice   DOUBLE QUERYABLE SORTABLE,
+        CD_leaseStart                 TIMESTAMP QUERYABLE SORTABLE,
+        CD_leaseStartingOdometerMiles DOUBLE QUERYABLE SORTABLE,
+        CD_moveReceipt                BYTES QUERYABLE SORTABLE,
+        CD_moveReceipt_ckAsset        ASSET,
+        CD_vin                        STRING QUERYABLE SEARCHABLE SORTABLE,
+        CD_vin_ckAsset                ASSET,
+        "___createTime"               TIMESTAMP,
+        "___createdBy"                REFERENCE,
+        "___etag"                     STRING,
+        "___modTime"                  TIMESTAMP,
+        "___modifiedBy"               REFERENCE,
+        "___recordID"                 REFERENCE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world"
+    );
+
+    RECORD TYPE Users (
+        "___createTime" TIMESTAMP,
+        "___createdBy"  REFERENCE,
+        "___etag"       STRING,
+        "___modTime"    TIMESTAMP,
+        "___modifiedBy" REFERENCE,
+        "___recordID"   REFERENCE,
+        roles           LIST<INT64>,
+        GRANT WRITE TO "_creator",
+        GRANT READ TO "_world"
+    );
