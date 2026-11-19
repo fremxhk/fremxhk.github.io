@@ -6,14 +6,14 @@ Updated 19 November 2026. The revised eight-app suite is **in validation**, with
 
 | App | Revised build | Storage |
 | --- | --- | --- |
-| VaultGlass | 5 | Private CloudKit with separate local fallback |
+| VaultGlass | 5 | Private CloudKit with durable local cache |
 | BioPulse Local | 7 | On-device protected health storage |
-| ClauseShield | 4 | Private CloudKit with separate local fallback |
-| DeductGlass | 3 | Private CloudKit with separate local fallback |
-| EchoBrief | 3 | Private CloudKit with separate local fallback |
+| ClauseShield | 4 | Private CloudKit with durable local cache |
+| DeductGlass | 3 | Private CloudKit with durable local cache |
+| EchoBrief | 3 | Private CloudKit with durable local cache |
 | NutriLoupe | 3 | On-device protected health storage |
-| TorqueShield | 3 | Private CloudKit with separate local fallback |
-| RecallGlass | 4 | Private CloudKit with separate local fallback |
+| TorqueShield | 3 | Private CloudKit with durable local cache |
+| RecallGlass | 4 | Private CloudKit with durable local cache |
 
 The [consumer research and acceptance criteria](ConsumerReadinessResearch.md) explain the implemented search, full recovery, correction and draft-protection changes. The [consumer guide](ConsumerGuide.md) describes supported workflows and limits. US prices are $0.99 monthly, $5.99 annual and $14.99 lifetime per app; all 24 saved prices were read back. Eligible annual purchases retain a one-week trial. Prices displayed in the app come from StoreKit.
 

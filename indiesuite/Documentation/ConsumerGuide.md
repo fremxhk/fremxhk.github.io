@@ -72,7 +72,7 @@ These are recordkeeping tools and estimates for professional review, not filed r
 3. Open each commitment and check its owner/task/source wording. Set a due date yourself when the source only gives relative wording. Confirm the task before explicitly adding it to your system Reminders or Calendar. The app does not message participants.
 4. Export the meeting PDF or a complete archive. Canceling a nonempty composer asks whether to keep editing or discard it; swiping does not silently discard the draft.
 
-Speech recognition requires supported on-device recognition. Temporary capture is removed when the composer closes; an exported archive preserves saved transcript records, rather than a permanent audio recording.
+Speech input in EchoBrief and RecallGlass currently requests the English (U.S.) recognizer and requires supported on-device recognition. Pasted text remains an alternative when speech is unavailable. Temporary capture is removed when the composer closes; an exported archive preserves saved transcript records, rather than a permanent audio recording.
 
 ## NutriLoupe
 
