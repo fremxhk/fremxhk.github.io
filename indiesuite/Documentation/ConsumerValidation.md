@@ -1,6 +1,14 @@
 # Consumer revision validation
 
-Updated 19 November 2026. This is an in-progress evidence inventory, not a release-readiness declaration. The new consumer candidates have not yet been submitted.
+Updated 20 November 2026. This is an in-progress evidence inventory, not a release-readiness declaration. The new consumer candidates have not yet been submitted.
+
+## Current preparation checkpoint
+
+The 20 November regression batch passed 31 core methods (`Consumer-Core-20261120-014229`), all 33 evaluation methods across six isolated launches (`Consumer-Evaluations-Isolated-20261120-015006`), and 20 offline cloud/storage methods across five app hosts (`Batch2-CloudReadiness-20261120-020242`), each with zero failures/skips and unchanged application/configuration inputs during its run. These counts describe separate targets; repeated profile executions are not additional distinct methods.
+
+The current iPhone Release cohort passed all 13 methods, and its 16 main-flow screenshots were manually inspected. The iPad attempt passed its first four workflows, then failed when XCTest reported critical SpringBoard and backboardd process crashes. That result is retained as failed/interrupted, not accepted as a completed UI pass. A clean task-owned iOS 27.2 iPad fixture of the same 13-inch model is prepared for the full retry; it is never run alongside another simulator owned by this task.
+
+App Store Connect now reports the existing ClauseShield 1.0.0/build 3 as live. Its consumer revision therefore has a new 1.0.1 update draft, with manual release and factual update notes saved/read back. The project version and package validators now resolve this per-app version. Because this changes the configuration fingerprint, the final complete validation queue runs against the new frozen inputs; the preceding results remain associated with their actual configuration. Revised candidates remain unsubmitted.
 
 ## Focused source checks
 
