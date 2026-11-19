@@ -1,0 +1,94 @@
+# Consumer regression checkpoint
+
+20 November 2026. **84 distinct methods passed, zero failures or skips**, against the current application/configuration inputs. This is a partial regression checkpoint, not a release-readiness declaration. Complete current phone/tablet workflows, accessibility, purchase UI and screenshot review remain required.
+
+The signed subscription boundary/refund and accelerated monthly-expiry methods each exercise eight app namespaces. Parameter cases and repeated runs do not increase the distinct-method count. These local StoreKit tests are separate from live App Store payments.
+
+| Target-qualified method | Result | Result bundle |
+| --- | --- | --- |
+| `DeductGlassCloudReadinessTests/CloudReadinessTests/test01CloudKitModelConstraintsAndManifest` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/DeductGlass.xcresult` |
+| `DeductGlassCloudReadinessTests/CloudReadinessTests/test02SQLiteDurabilityRelationshipsAttachmentsAndCascade` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/DeductGlass.xcresult` |
+| `DeductGlassCloudReadinessTests/CloudReadinessTests/test03SignedOutFallbackUsesDurableLocalStore` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/DeductGlass.xcresult` |
+| `DeductGlassCloudReadinessTests/CloudReadinessTests/test04LegacyLocalStoreAdoptsCloudCacheWithoutLosingRecords` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/DeductGlass.xcresult` |
+| `EchoBriefCloudReadinessTests/CloudReadinessTests/test01CloudKitModelConstraintsAndManifest` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/EchoBrief.xcresult` |
+| `EchoBriefCloudReadinessTests/CloudReadinessTests/test02SQLiteDurabilityRelationshipsAttachmentsAndCascade` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/EchoBrief.xcresult` |
+| `EchoBriefCloudReadinessTests/CloudReadinessTests/test03SignedOutFallbackUsesDurableLocalStore` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/EchoBrief.xcresult` |
+| `EchoBriefCloudReadinessTests/CloudReadinessTests/test04LegacyLocalStoreAdoptsCloudCacheWithoutLosingRecords` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/EchoBrief.xcresult` |
+| `IndieSuiteEvaluationsTests/EntitlementConcurrencyTests/testMultipleWindowsShareFiveReservationsAndFailedWorkReleasesSlot` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/AppIntentsVerificationTests/structuredIntentResultsWithSeededLocalModels()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/authenticatedArchiveRoundTripAndWrongPassword()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/cloudCompatibleSchemaAndFullArchiveRecords()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/depreciationAndWarrantyDates()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/exactSuppliedPhenoAgeEquationAndMissingValues()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/historyDoesNotUseFutureReadings()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/receiptFactsOverrideUnsupportedModelValues()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/scannedImageOnlyPDFUsesOCR()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/syntheticDocumentsThroughLivePipeline()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/unitNormalization()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/FoundationModelsEvaluationTests/weightedRiskAndOmissionsAndDiff()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/allRequiredMarkersRejectMissingNonfiniteAndNegativeValues()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/canonicalUnitAliasesAndEquivalentMeasurements()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/defensiveRiskBoundsAndProtectiveClauses()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/diffReconstructsBothVersionsWithRepeatedParagraphs()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/encryptedArchiveKeyMatchesPlatformPBKDF2()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/encryptedArchivesAuthenticateHeadersAndCiphertext()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/invalidVisionInputFailsCleanly()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/labAndContractArchivesPreserveAttachmentsAndDecisions()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/malformedAndIncompleteDocumentsDoNotInventFacts()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/multipagePDFRetainsFinalRecord()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/physicianPreparationAlwaysHasFiveDistinctQuestions()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/receiptTotalsExcludeSubtotalAndDatesAreValidated()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/textAccentPaletteMaintainsContrastOnCardsAndBadges()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftNeverInventsAnUnrecordedSerial()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftRepairsIncompleteHardwareModelResponse()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/ProductionRegressionTests/warrantyDraftRetainsCompleteDocumentedBodyAndRepairsChecklist()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/DocumentsAndRegression.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/acceleratedMonthlyTermExpiresWithoutManualRefresh(bundle:)` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/RealMonthlyTerm.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/fifteenBatch2ProductsAndVerifiedLifetimeEntitlements()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/CatalogFive.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/nineProductsAndVerifiedLifetimeEntitlements()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/CatalogThree.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/pendingDeclinedAndFailedPurchasesDoNotUnlock()` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/PendingAndErrors.xcresult` |
+| `IndieSuiteEvaluationsTests/IndieSuiteEvaluations/StoreKitVerificationTests/subscriptionExpiryAndLifetimeRefundRevokeAccess(bundle:)` | Passed | `TestResults/Consumer-Evaluations-Isolated-20261120-030815/ExpiryAndRefund.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/allFiveBackupsPreserveEveryScalarAttachmentAndRelationship()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/anOversizedBackupCannotBeExportedAsAnUnimportableFile()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/csvPreservesQuotedUnicodeAndBlocksFormulaCells()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/editedContractWordingFeedsAcceptedDraftWithoutChangingEvidence()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/expenseCSVReimportsQuotedHeadersCRLFAndRejectsUnsupportedCurrencyWithoutPartialSave()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/labCorrectionValidatesUnitsUpdatesDerivedValuesAndClearsStaleSummary()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/manualStudyCardsPreserveOrResetHistoryOnlyWhenChosen()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/meetingEditsKeepTranscriptCommitmentsAndCostAssumptions()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/mergeKeepsEditedExistingRecordsAndRejectsBrokenArchivesAtomically()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/repairCorrectionsValidateNumbersAndKeepDecisionAndSource()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/repeatedMealsDoNotReuseSymptomsAndCorrectionsRecomputeIngredients()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/savedExpenseCalendarDatesDoNotChangeWhenDeviceTimeZoneChanges()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ConsumerReadinessTests/searchUsesEveryWordAndHandlesAccentsWhitespaceAndEmptyQueries()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/EvidenceExportTests/binderIncludesEverySourcePDFPageAndRotation()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/EvidenceExportTests/binderPreservesSourceTextAndProvidesFullPageImageEvidence()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ExpenseMigrationTests/earlierArchiveWithoutCalendarDateStillImports()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/ExpenseMigrationTests/earlierSQLiteStoreKeepsEveryReceiptAndAmountWhenDateFieldIsAdded()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/HealthStorageAndBackupTests/clinicianPrepPreferencesUseAValidatedWhitelist()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/HealthStorageAndBackupTests/concurrentWindowsShareOnePersistentContainer()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/HealthStorageAndBackupTests/healthCachesReopenWithoutCloudKitAndRequestBackupExclusion()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/HealthStorageAndBackupTests/studioPreferencesRestoreOnlyWhenSelectedAndNeverGrantPurchases()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test01_VaultGlass_EndToEndAndDepreciation()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test02_BioPulseLocal_UnitNormalizationAndPhenoAge()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test03_ClauseShield_RiskScoringAndVersionDiff()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test04_DeductGlass_DualMethodTaxOptimizerAndAuditBinder()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test05_EchoBrief_MeetingBurnRateAndCommitmentExtraction()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test06_NutriLoupe_NOVAScorerAndBayesianTriggerRanker()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test07_TorqueShield_VINCheckDigitAndEstimateRedliner()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test08_RecallGlass_AcademicFSRS5AndSemanticGrader()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test09_RecallGlass_CorporateSpeechToCueCardCutoutPDFImposition()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `IndieSuiteSequentialQATests/SequentialWorkspaceQASuite/test10_RepairGenerationPreservesQuotedFactsAndSafetyTriage()` | Passed | `TestResults/Consumer-Core-20261120-030212/Core.xcresult` |
+| `NutriLoupeCloudReadinessTests/CloudReadinessTests/test01CloudKitModelConstraintsAndManifest` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/NutriLoupe.xcresult` |
+| `NutriLoupeCloudReadinessTests/CloudReadinessTests/test02SQLiteDurabilityRelationshipsAttachmentsAndCascade` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/NutriLoupe.xcresult` |
+| `NutriLoupeCloudReadinessTests/CloudReadinessTests/test03SignedOutFallbackUsesDurableLocalStore` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/NutriLoupe.xcresult` |
+| `NutriLoupeCloudReadinessTests/CloudReadinessTests/test04LegacyLocalStoreAdoptsCloudCacheWithoutLosingRecords` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/NutriLoupe.xcresult` |
+| `RecallGlassCloudReadinessTests/CloudReadinessTests/test01CloudKitModelConstraintsAndManifest` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/RecallGlass.xcresult` |
+| `RecallGlassCloudReadinessTests/CloudReadinessTests/test02SQLiteDurabilityRelationshipsAttachmentsAndCascade` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/RecallGlass.xcresult` |
+| `RecallGlassCloudReadinessTests/CloudReadinessTests/test03SignedOutFallbackUsesDurableLocalStore` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/RecallGlass.xcresult` |
+| `RecallGlassCloudReadinessTests/CloudReadinessTests/test04LegacyLocalStoreAdoptsCloudCacheWithoutLosingRecords` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/RecallGlass.xcresult` |
+| `TorqueShieldCloudReadinessTests/CloudReadinessTests/test01CloudKitModelConstraintsAndManifest` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/TorqueShield.xcresult` |
+| `TorqueShieldCloudReadinessTests/CloudReadinessTests/test02SQLiteDurabilityRelationshipsAttachmentsAndCascade` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/TorqueShield.xcresult` |
+| `TorqueShieldCloudReadinessTests/CloudReadinessTests/test03SignedOutFallbackUsesDurableLocalStore` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/TorqueShield.xcresult` |
+| `TorqueShieldCloudReadinessTests/CloudReadinessTests/test04LegacyLocalStoreAdoptsCloudCacheWithoutLosingRecords` | Passed | `TestResults/Batch2-CloudReadiness-20261120-031945/TorqueShield.xcresult` |
+
+All twelve result bundles passed the source-provenance, exact-count, zero-failure/skip and blocking-audio-warning checks. Simulator execution was sequential on the iOS 27.0 fixture. Production CloudKit SDK-client checks are reported separately in [ProductionMirroringResults.md](ProductionMirroringResults.md). Retained failed UI attempts and remaining work are described in [ConsumerValidation.md](ConsumerValidation.md).
