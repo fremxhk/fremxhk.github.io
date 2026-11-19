@@ -18,7 +18,7 @@
 
 ## Configuration retained
 
-Base apps are free. Each app offers monthly $4.99 USD, annual $29.99 USD with a one-week eligible USA introductory trial, and lifetime $79.99 USD products. Paid-product availability remains USA only. Converted prices in other pricing territories do not establish availability there. Automatic tester notifications remain disabled.
+Base apps are free. Each app offers monthly $0.99 USD, annual $5.99 USD with a one-week eligible USA introductory trial, and lifetime $14.99 USD products. Paid-product availability remains USA only. Converted prices in other pricing territories do not establish availability there. Automatic tester notifications remain disabled.
 
 No developer-operated login or backend is required. Each app can generate its synthetic sample locally. Optional synchronization uses the user’s private iCloud container. Production CloudKit schema/two-device behavior and the other validation limits remain documented in [ProductionReadiness.md](../Documentation/ProductionReadiness.md); submission is not a certification of those unverified behaviors.
 
