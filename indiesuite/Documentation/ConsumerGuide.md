@@ -43,7 +43,7 @@ The app does not send a reply, sign an agreement or provide jurisdiction-wide le
 
 ## DeductGlass
 
-1. Add a receipt, CSV or source text. Review merchant/date/amount/category and enter the business purpose and any relevant attendees before marking evidence verified.
+1. Add a receipt, CSV or source text. Review merchant/date/amount/category and enter the business purpose and any relevant attendees before marking evidence verified. Editing those facts clears the earlier verification; verify the corrected evidence again before export.
 New records retain their source calendar date when the device time zone changes. Earlier records offer **Confirm calendar date** after you verify the receipt; their original stored timestamp is retained.
 2. Select tax year and jurisdiction in **Tax profile & method comparison**. If multiple saved plans arrive through backup/iCloud, use **Active workspace** to choose the assumptions; saved plans are not silently overwritten.
 3. US comparisons use the explicit year/distance/cost assumptions. Singapore is a separate recordkeeping workflow; US formulas do not apply to it. Stored amounts are USD, with no currency conversion.
