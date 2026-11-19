@@ -3,7 +3,7 @@
     "productId": "com.indiesuite.recallglass.pro.monthly",
     "name": "RecallGlass Pro Monthly",
     "type": "AUTO_RENEWABLE_SUBSCRIPTION",
-    "usdPrice": "4.99",
+    "usdPrice": "0.99",
     "subscriptionPeriod": "ONE_MONTH",
     "introductoryOffer": null,
     "description": "Additional on-device AI actions"
@@ -12,7 +12,7 @@
     "productId": "com.indiesuite.recallglass.pro.annual",
     "name": "RecallGlass Pro Annual",
     "type": "AUTO_RENEWABLE_SUBSCRIPTION",
-    "usdPrice": "29.99",
+    "usdPrice": "5.99",
     "subscriptionPeriod": "ONE_YEAR",
     "introductoryOffer": {
       "mode": "FREE_TRIAL",
@@ -25,7 +25,7 @@
     "productId": "com.indiesuite.recallglass.pro.lifetime",
     "name": "RecallGlass Pro Lifetime",
     "type": "NON_CONSUMABLE",
-    "usdPrice": "79.99",
+    "usdPrice": "14.99",
     "subscriptionPeriod": null,
     "introductoryOffer": null,
     "description": "Additional AI actions. One-time unlock."
