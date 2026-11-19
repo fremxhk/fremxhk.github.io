@@ -4,6 +4,12 @@ Applies to the consumer expansion candidates: VaultGlass 5, BioPulse Local 7, Cl
 
 All eight apps work without creating a developer account. Document recognition and supported generation happen on device. The six non-health apps support optional private iCloud synchronization with a durable local cache. BioPulse Local and NutriLoupe keep health records on device, without automatic CloudKit synchronization. An internet connection is needed for Apple purchases and iCloud transport. On-device model or speech availability depends on the device, language and system configuration. The supported text workflows remain available when a model is unavailable.
 
+## Document limits and coverage
+
+PDF text/OCR import accepts at most 100 pages. OCR can miss text, so compare extracted facts with the original document. On-device generation uses an initial context of up to 14,000 characters; its document-evidence tool returns at most 12,000 characters per query. Model output is not proof that every page, clause or relevant fact was checked. Use focused excerpts for long documents and review the remaining original material yourself.
+
+DeductGlass, EchoBrief, NutriLoupe, TorqueShield and RecallGlass reject analysis source text longer than 12,000 characters; divide longer material into suitable excerpts. These analysis limits are separate from the 100 MB complete-backup limit. Saved originals and complete archives serve different purposes from generated summaries.
+
 ## Saved records, backups and Pro
 
 - Use the library's Search field to match multiple words across supported record fields. Clear it to return to the full library. VaultGlass's archived items are separate from active inventory and can be restored from Insurance Ledger.
