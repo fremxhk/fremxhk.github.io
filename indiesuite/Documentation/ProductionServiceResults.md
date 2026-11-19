@@ -1,3 +1,5 @@
+> **19 November 2026 consumer revision:** Fresh direct production service checks passed for all six cloud-enabled apps: VaultGlass (2 record types), ClauseShield (2), DeductGlass (2), EchoBrief (2), TorqueShield (3) and RecallGlass (4), totaling 15 types. Each created/read/queried/updated/deleted its own synthetic records and deleted its isolated test zone. Current source health policy keeps BioPulse Local and NutriLoupe on-device. The five-app report below records earlier implementation history, including NutriLoupe; it does not describe the new health-storage policy. Automatic mirroring remains a separate unfinished check; see [consumer validation](ConsumerValidation.md).
+
 # Production CloudKit service checks
 
 The five app-specific production service preflights passed on 18 November 2026. A Mac Catalyst test client was signed for each app’s own bundle identifier, private container and **Production** CloudKit environment; signature and environment checks ran before execution. These are authenticated service checks, not execution of the iOS distribution IPA.

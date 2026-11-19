@@ -1,3 +1,5 @@
+> **19 November 2026 consumer revision:** VaultGlass and ClauseShield’s production schemas were deployed through the CloudKit Console, and DeductGlass’s `sourceText`/`transactionDateISO` fields and associated asset/index fields were deployed additively. The console confirmed Changes Deployed for each operation. Current production schema exports are versioned in `Schemas/CloudKit/vaultglass.ckdb`, `clauseshield.ckdb` and `deductglass.ckdb`. EchoBrief, TorqueShield and RecallGlass retain their deployed schemas. BioPulse Local and NutriLoupe now use on-device health storage; the retained NutriLoupe schema is historical and is not used by the consumer health candidate. Direct service preflights passed across the six active cloud containers; automatic mirroring checks remain in progress.
+
 # CloudKit deployment evidence
 
 Production schemas for the five new apps were deployed through Apple’s CloudKit Console on 18 November 2026. Each additive deployment was confirmed by the console, followed by a production export readback. These exports contain schema definitions only; no records, credentials or account identifiers are included.
