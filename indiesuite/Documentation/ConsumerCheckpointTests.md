@@ -1,6 +1,6 @@
-# Consumer regression checkpoint
+# Earlier consumer regression checkpoint
 
-20 November 2026. **84 distinct methods passed, zero failures or skips**, against the current application/configuration inputs. This is a partial regression checkpoint, not a release-readiness declaration. Complete current phone/tablet workflows, accessibility, purchase UI and screenshot review remain required.
+20 November 2026. **84 distinct methods passed, zero failures or skips**, against source `7e6bdbf`, before the shared PDF word-wrap correction. This is historical regression evidence, not a current release pass or readiness declaration. The corrected production source requires complete validation and screenshot review.
 
 The signed subscription boundary/refund and accelerated monthly-expiry methods each exercise eight app namespaces. Parameter cases and repeated runs do not increase the distinct-method count. These local StoreKit tests are separate from live App Store payments.
 
