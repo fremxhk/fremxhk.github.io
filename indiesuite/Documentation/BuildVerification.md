@@ -1,6 +1,6 @@
 # Current consumer build verification
 
-2026-11-24. All eight revised production archives and IPAs passed identity, deep/strict signature, version/build, minimum OS, privacy-manifest and entitlement checks. All eight uploaded builds processed to VALID and are selected in unsubmitted App Review drafts.
+2026-11-24. All eight revised production archives and IPAs passed identity, deep/strict signature, version/build, minimum OS, privacy-manifest and entitlement checks. All eight uploaded builds processed to VALID and are selected and submitted for App Review.
 
 | App | Build | Archive and production export | Local IPA SHA-256 |
 | --- | --- | --- | --- |

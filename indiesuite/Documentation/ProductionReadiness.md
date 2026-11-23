@@ -1,17 +1,17 @@
-# Consumer release preparation
+# Consumer App Review submission
 
-2026-11-24: **Prepared for App Review submission.** All revised candidates remain unsubmitted and use automatic release after approval. Availability and paid products are USA-only.
+2026-11-24: **Submitted for App Review.** All eight revised candidates have been submitted for App Review, with automatic release after approval. Availability and paid products are USA-only.
 
 | App | Version / build | Processing | Review preparation |
 | --- | --- | --- | --- |
-| VaultGlass | 1.0.0 / 5 | VALID, selected | Ready for Review draft; unsubmitted |
-| BioPulse Local | 1.0.0 / 7 | VALID, selected | Ready for Review draft; unsubmitted |
-| ClauseShield | 1.0.1 / 4 | VALID, selected | Ready for Review draft; unsubmitted |
-| DeductGlass | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
-| EchoBrief | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
-| NutriLoupe | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
-| TorqueShield | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
-| RecallGlass | 1.0.0 / 4 | VALID, selected | Ready for Review draft; unsubmitted |
+| VaultGlass | 1.0.0 / 5 | VALID, selected | WAITING_FOR_REVIEW; submitted |
+| BioPulse Local | 1.0.0 / 7 | VALID, selected | WAITING_FOR_REVIEW; submitted |
+| ClauseShield | 1.0.1 / 4 | VALID, selected | WAITING_FOR_REVIEW; submitted |
+| DeductGlass | 1.0.0 / 3 | VALID, selected | WAITING_FOR_REVIEW; submitted |
+| EchoBrief | 1.0.0 / 3 | VALID, selected | WAITING_FOR_REVIEW; submitted |
+| NutriLoupe | 1.0.0 / 3 | VALID, selected | WAITING_FOR_REVIEW; submitted |
+| TorqueShield | 1.0.0 / 3 | VALID, selected | WAITING_FOR_REVIEW; submitted |
+| RecallGlass | 1.0.0 / 4 | VALID, selected | WAITING_FOR_REVIEW; submitted |
 
 ## Completed evidence
 
@@ -25,6 +25,6 @@
 
 ## Submission scope
 
-The revised drafts remain unsubmitted with automatic release after approval; no public release was performed.
+Apple received the revised submissions. Automatic release after approval is enabled; see SubmissionStatus.md for the recorded review states.
 
 The [consumer guide](ConsumerGuide.md) states supported inputs, corrections, recovery and explicit coverage limits. The [research](ConsumerReadinessResearch.md) explains the completed feature/pricing decisions. The suite does not claim comprehensive laboratory/legal coverage, clinical validation, vehicle history, market-price feeds or guaranteed extraction accuracy. Source review, corrections and portable records remain available. App Review approval and customer feedback are subsequent outcomes, not guarantees inferred from a test pass.
