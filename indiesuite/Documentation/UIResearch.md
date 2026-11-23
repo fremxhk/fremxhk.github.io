@@ -48,6 +48,22 @@ Evaluate meaningful outcomes separately for each app: a receipt saved with usabl
 
 The workspace currently performs local QA telemetry only. This research does not add analytics transmission, engagement tracking, participant outreach or a recurring notification campaign. Future measurement should be explicit and consented where appropriate.
 
-## Implemented previews
+## Current native previews
 
-Native simulator captures: [VaultGlass dashboard](Previews/VaultGlass-Dashboard.png), [receipt result](Previews/VaultGlass-Receipt.png), [BioPulse dashboard](Previews/BioPulse-Dashboard.png), [lab detail](Previews/BioPulse-Panel.png), [ClauseShield playbook](Previews/ClauseShield-Playbook.png), [audit](Previews/ClauseShield-Audit.png), and [negotiation draft](Previews/ClauseShield-Pushback.png). See [Validation.md](Validation.md) for the passing checks and limits.
+Review the [complete eight-app flow gallery](https://fremxhk.github.io/indiesuite/#flows), including the laboratory charts, receipt facts, supporting evidence and contract review screens. The current original-app PNGs are [VaultGlass dashboard](Previews/Refined/VaultGlass-Dashboard-Refined.png), [receipt](Previews/Refined/VaultGlass-Receipt-Refined.png), [BioPulse dashboard](Previews/Refined/BioPulse-Dashboard-Refined.png), [lab panel](Previews/Refined/BioPulse-Panel-Refined.png), [ClauseShield playbook](Previews/Refined/ClauseShield-Playbook-Refined.png), [clause review](Previews/Refined/ClauseShield-Clause-Review.png) and [negotiation draft](Previews/Refined/ClauseShield-Pushback-Refined.png). [Current validation and limits](ConsumerValidation.md) distinguish completed results from retained diagnostics.
+
+## Native tablet refinement — 20 November 2026
+
+The current tablet audit exposed clipped horizontal playbook chips in ClauseShield. A native “Review as” picker now presents the same role choices within the sidebar and makes the selected role explicit. This change passed the complete current-source regression and native screenshot review; the validation ledger records the exact scope.
+
+VaultGlass's inventory uses lazy view construction. Apple's [reordering guidance](https://developer.apple.com/documentation/swiftui/reordering-items-in-lists-stacks-grids-and-custom-layouts) includes `LazyVStack` with the native reordering modifiers. Framework support does not replace validation of this app's persisted ordering.
+
+Tablet UI automation must locate native top-tab buttons and use the actual presented form or sidebar viewport. Window-wide gestures can hit the presenting content or the empty detail column and give misleading coverage. Text contrast measurements must distinguish antialiased glyph edges from solid ink; native audit timeouts remain separately disclosed in the validation ledger.
+
+## Storefront screenshot specifications
+
+Apple's [current screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/), checked on 20 November 2026, require Dynamic Island medium-display iPhone and 13-inch iPad images for this suite. The current native, opaque PNGs use listed dimensions of 1206 × 2622 and 2064 × 2752 respectively. Native rendering, manual image review and App Store media processing are separate verified checks.
+
+## Largest-text visual refinement
+
+Manual dark-mode review found clipped multi-line action titles and focus labels despite passing scoped automated audits. The five newer apps now give accessibility-size action titles their full wrapping width. BioPulse wraps its selected focus marker, decorative next-action icons stay within their bounds, and VaultGlass stacks its inventory heading and count at accessibility sizes. All 24 replacement dark/largest-text captures were reviewed separately from the normal storefront images. The [validation ledger](ConsumerValidation.md) retains the visually failed run and the completed current-source evidence; automated contrast results alone are not treated as a clipping check.

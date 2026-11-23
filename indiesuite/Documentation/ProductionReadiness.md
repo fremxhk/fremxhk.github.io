@@ -1,39 +1,30 @@
-# Consumer release readiness
+# Consumer release preparation
 
-Updated 19 November 2026. The revised eight-app suite is **in validation**, with manual release and USA-only availability. Revised candidates have not been submitted. Compilation, earlier uploads and historical test results do not establish readiness of these revisions.
+2026-11-24: **Prepared for App Review submission.** All revised candidates remain unsubmitted and use automatic release after approval. Availability and paid products are USA-only.
 
-## Candidate scope
+| App | Version / build | Processing | Review preparation |
+| --- | --- | --- | --- |
+| VaultGlass | 1.0.0 / 5 | VALID, selected | Ready for Review draft; unsubmitted |
+| BioPulse Local | 1.0.0 / 7 | VALID, selected | Ready for Review draft; unsubmitted |
+| ClauseShield | 1.0.1 / 4 | VALID, selected | Ready for Review draft; unsubmitted |
+| DeductGlass | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| EchoBrief | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| NutriLoupe | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| TorqueShield | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| RecallGlass | 1.0.0 / 4 | VALID, selected | Ready for Review draft; unsubmitted |
 
-| App | Revised build | Storage |
-| --- | --- | --- |
-| VaultGlass | 5 | Private CloudKit with durable local cache |
-| BioPulse Local | 7 | On-device protected health storage |
-| ClauseShield | 4 | Private CloudKit with durable local cache |
-| DeductGlass | 3 | Private CloudKit with durable local cache |
-| EchoBrief | 3 | Private CloudKit with durable local cache |
-| NutriLoupe | 3 | On-device protected health storage |
-| TorqueShield | 3 | Private CloudKit with durable local cache |
-| RecallGlass | 4 | Private CloudKit with durable local cache |
+## Completed evidence
 
-The [consumer research and acceptance criteria](ConsumerReadinessResearch.md) explain the implemented search, full recovery, correction and draft-protection changes. The [consumer guide](ConsumerGuide.md) describes supported workflows and limits. US prices are $0.99 monthly, $5.99 annual and $14.99 lifetime per app; all 24 saved prices were read back. Eligible annual purchases retain a one-week trial. Prices displayed in the app come from StoreKit.
+- All 121 distinct target-qualified methods passed, with zero failures/skips in current completed bundles. Native iPhone/iPad profiles and local purchase checks ran sequentially. [Every method](ConsumerTestInventory.md) · [Scope and retained diagnostics](ConsumerValidation.md).
+- All six cloud-enabled apps passed five separate-process production SDK synchronization phases each, covering 15 record types and independent cleanup. Signed SDK-client checks are distinguished from iOS IPA execution. [Production lifecycle inventory](ProductionMirroringResults.md).
+- Both health apps use protected on-device storage, without CloudKit synchronization. Migration, encrypted archives, atomic merges, backup limits and supported preference restoration were verified. [Storage policy](HealthStoragePolicy.md).
+- All eight signed archives/production exports passed validators, processed to VALID and were selected. [Package fingerprints](BuildVerification.md).
+- All 44 native storefront PNGs and 24 product-review PNGs were reviewed, delivered COMPLETE and matched Apple's source checksums/file sizes. Native dimensions and opaque pixels are preserved. Additional workflow/access captures remain linked in the gallery.
+- All 24 US product prices were saved/read back: $0.99/month, $5.99/year and $14.99 lifetime per app. Eligible annual trials remain one week. Metadata, privacy publication, content rights, age information, review contacts, account-free sample instructions and required health declarations are saved. Existing approved purchase versions are retained; pending versions are attached with the current app versions.
+- All eight current builds are assigned to existing designated-tester internal groups and are IN_BETA_TESTING. Public links and automatic notifications are disabled.
 
-## Evidence already completed
+## Submission scope
 
-- Production schemas and direct service lifecycle checks cover all 15 record types across the six cloud-enabled apps. All six also passed five separate-process SDK synchronization phases: create/export, independent import, update, independent updated import and deletion/cleanup. These are signed Mac Catalyst clients using actual model sources, not execution of the iOS distribution IPAs. See [the full inventory](ProductionMirroringResults.md).
-- Complete portable archives cover all eight apps. The five new formats preserve 13 model types and 122 scalar fields, attachments and child relationships. Focused tests cover atomic merging, duplicate/dangling references, incompatible formats, preference whitelists, encryption and the 100 MB boundary.
-- PDF regression checks and independent rendered-page review caught and corrected missing source-page heading/footer glyphs. Original source PDF pages remain selectable vector content, including page rotation.
-- Focused StoreKit checks passed signed-period boundaries and lifetime refunds for all eight namespaces. Real accelerated monthly terms also expired correctly with the default system clock. Cached access now enforces the verified expiration without waiting for an SDK refresh.
-- All eight app records passed the required metadata-field audit; all 24 product review notes were saved and read back. Privacy declarations are published. Health-app storage/protection declarations were separately verified.
+The revised drafts remain unsubmitted with automatic release after approval; no public release was performed.
 
-## Remaining release gates
-
-The [current validation ledger](ConsumerValidation.md) distinguishes completed focused tests from full regression gates. A failed or unfinished attempt is never counted as a pass, repeated runs do not increase the number of distinct methods, and skips do not count as tested.
-
-1. Complete current sequential native iPhone/iPad workflows, dark/largest-text checks, paid UI, core, evaluations and app-host storage regressions with source hashes recorded.
-2. Visually review and export current native storefront screenshots and all product review images; preserve native dimensions and opaque pixels.
-3. Produce, sign and verify all eight revised archives and distribution exports, then obtain valid processed App Store builds.
-4. Select current builds, verify current metadata, screenshot delivery, TestFlight assignments and unsubmitted review drafts. Replace earlier review candidates only after their replacements are verified.
-5. Publish the final method inventory, screenshots and readiness evidence to GitHub and verify the remote commit and public files.
-6. Resolve the existing Mac/Vision storefront availability scope before the final readiness decision; current automated consumer UI evidence targets iPhone/iPad.
-
-The suite does not claim clinical validation, comprehensive legal coverage, a vehicle history service, universal laboratory-marker support or guaranteed error-free extraction. Consumers can inspect sources, correct supported facts and export their records. AI interpretation, symptom associations and comparisons have explicit limits. A finite validation program cannot guarantee that no customer will ever report a problem.
+The [consumer guide](ConsumerGuide.md) states supported inputs, corrections, recovery and explicit coverage limits. The [research](ConsumerReadinessResearch.md) explains the completed feature/pricing decisions. The suite does not claim comprehensive laboratory/legal coverage, clinical validation, vehicle history, market-price feeds or guaranteed extraction accuracy. Source review, corrections and portable records remain available. App Review approval and customer feedback are subsequent outcomes, not guarantees inferred from a test pass.

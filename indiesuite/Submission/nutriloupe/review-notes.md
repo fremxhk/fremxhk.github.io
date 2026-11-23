@@ -10,3 +10,8 @@ Preparation for version 1.0.0. No developer registration or login is required.
 6. **Rights and regulated activity:** Educational organization only. This app does not diagnose conditions, certify allergens or food safety, or recommend treatment or an elimination diet. Ingredient-only processing classification is provisional. Symptom associations do not establish causation; consult a qualified clinician for health decisions. Users provide their own material; synthetic examples are generated locally. No regulated professional service, professional credential, certification or protected third-party content license is claimed. There are no app accounts or public user-content feeds.
 
 Health records use an on-device SwiftData store, with no automatic CloudKit mirroring or iCloud/push entitlement. Health-data directories request exclusion from system backup. Complete health archives require a user-chosen passphrase; users explicitly choose any export destination.
+## Evidence
+
+Current consumer candidate: 1.0.0 (build 3), processed VALID and selected for this app version. The current suite passed 121 distinct target-qualified methods; repeated device/profile executions do not increase that count.
+
+[Passing method inventory](../../Documentation/ConsumerTestInventory.md) · [Validation scope](../../Documentation/ConsumerValidation.md) · [Reviewed app flows](https://fremxhk.github.io/indiesuite/#flows) · [Signed build fingerprints](../../Documentation/BuildVerification.md).

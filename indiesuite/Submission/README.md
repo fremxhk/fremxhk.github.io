@@ -1,35 +1,24 @@
-# App Store submission status
+# Eight-app App Store preparation
 
-**All three apps were submitted to App Review on 17 November 2026 and verified as Waiting for Review.** Release is manual after approval; no public release was performed.
+Verified 2026-11-24. **Prepared for App Review submission. Revised builds remain unsubmitted; release is automatic after approval.**
 
-| App | Version | Build | Submission time (Hong Kong) | Verified review state |
-| --- | --- | --- | --- | --- |
-| VaultGlass | 1.0.0 | 4 | 17 Nov 2026, 19:15:28 | Waiting for Review |
-| BioPulse Local | 1.0.0 | 6 | 17 Nov 2026, 19:15:38 | Waiting for Review |
-| ClauseShield | 1.0.0 | 3 | 17 Nov 2026, 19:15:49 | Waiting for Review |
+| App | Version / build | Processing | Review preparation |
+| --- | --- | --- | --- |
+| VaultGlass | 1.0.0 / 5 | VALID, selected | Ready for Review draft; unsubmitted |
+| BioPulse Local | 1.0.0 / 7 | VALID, selected | Ready for Review draft; unsubmitted |
+| ClauseShield | 1.0.1 / 4 | VALID, selected | Ready for Review draft; unsubmitted |
+| DeductGlass | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| EchoBrief | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| NutriLoupe | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| TorqueShield | 1.0.0 / 3 | VALID, selected | Ready for Review draft; unsubmitted |
+| RecallGlass | 1.0.0 / 4 | VALID, selected | Ready for Review draft; unsubmitted |
 
-## Submitted package
+All required English metadata, account-free sample instructions, review contacts, age/content-rights declarations, privacy publication and current signed builds are saved. Base apps are free; USA-only Pro products are $0.99 monthly, $5.99 annual and $14.99 lifetime per app, with an eligible annual one-week trial. All 24 US product prices, eight free base prices and eight annual trial offers were read back. The Shared Location and Dating and Relationships descriptors introduced by Apple on 19 November 2026 were both saved false and read back for all eight apps, preserving their existing age answers. No global price/availability expansion is implied.
 
-- Each app version is included with its monthly subscription, annual subscription, lifetime purchase and subscription-group version: nine purchase products and three groups in total.
-- Data Not Collected privacy responses were published for all three after explicit confirmation of Apple’s publication agreement. Content rights are saved as Does Not Use Third-Party Content.
-- Six-point review notes, account-free sample instructions, private review contacts, selected builds and manual release settings were saved and verified. Notes accurately disclose that no additional physical testing or current-build physical recording is available.
-- Eleven native-size App Store screenshots and nine IAP review images were prepared and delivered. The required slots use actual 1206 × 2622 iPhone and 2064 × 2752 iPad captures.
-- The existing [51-method simulator inventory](../Documentation/TestResults.md), [nine-case eight-app pipeline report](../Documentation/Batch2TestResults.md), [version-qualified physical baseline](../Documentation/PhysicalTestResults.md) and [signed package fingerprints](../Documentation/BuildVerification.md) remain unchanged. Metadata submission did not create new test passes.
+The 44 native storefront and 24 selected-plan product images are COMPLETE and checksum/size matched. Each app version is attached to an unsubmitted review draft with its pending product/group versions; already approved versions are retained. The eight current builds are IN_BETA_TESTING for the designated existing internal groups; public links and automatic notifications remain disabled.
 
-## Configuration retained
+[Full passing test inventory](../Documentation/ConsumerTestInventory.md) · [Consumer workflows and limits](../Documentation/ConsumerGuide.md) · [Signed build fingerprints](../Documentation/BuildVerification.md) · [Production synchronization](../Documentation/ProductionMirroringResults.md) · [Release scope](../Documentation/ProductionReadiness.md).
 
-Base apps are free. Each app offers monthly $0.99 USD, annual $5.99 USD with a one-week eligible USA introductory trial, and lifetime $14.99 USD products. Paid-product availability remains USA only. Converted prices in other pricing territories do not establish availability there. Automatic tester notifications remain disabled.
+The revised drafts remain unsubmitted with automatic release after approval; no public release was performed.
 
-No developer-operated login or backend is required. Each app can generate its synthetic sample locally. Optional synchronization uses the user’s private iCloud container. Production CloudKit schema/two-device behavior and the other validation limits remain documented in [ProductionReadiness.md](../Documentation/ProductionReadiness.md); submission is not a certification of those unverified behaviors.
-
-## Evidence scope
-
-No physical device was accessed for this submission. Historical phone results remain associated with their actual older builds. The reviewer notes do not substitute simulator captures for a requested physical recording. Any subsequent App Review request must be answered with the evidence actually available.
-
-Apple’s earlier metadata blockers—unpublished privacy answers and missing content rights—were resolved. Server submission acceptance and Waiting for Review were verified for all three apps. App Review approval and public availability remain separate outcomes.
-
-See the [submission checklist](PreparationChecklist.md) and each app’s saved review notes for the submitted information.
-
-## Five additional apps — preparation only
-
-DeductGlass, EchoBrief, NutriLoupe, TorqueShield and RecallGlass now have their own App Store records and VALID version 1.0.0 build 1 uploads. They remain unsubmitted with manual release selected. See [Batch 2 preparation](Batch2Preparation.md) for metadata, assets, tests and remaining publication steps. The physical-device hold remains in force.
+Earlier submissions and build evidence are historical and are not substituted for these replacements. API keys, review contact details, signing files, IPAs and raw diagnostics remain private.

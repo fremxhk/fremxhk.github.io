@@ -1,6 +1,6 @@
 # Consumer launch pricing
 
-App Store Connect saved/read-back date: **19 November 2026**. All 24 US product prices were verified against their actual Apple price points. Free base app pricing and USA-only availability are retained. A price in an unavailable territory does not enable sales there.
+App Store Connect current-price read-back date: **20 November 2026**. All 24 US product prices were verified against their actual Apple price points. Free base app pricing and USA-only availability are retained. A price in an unavailable territory does not enable sales there.
 
 | App | Monthly | Annual | Lifetime, once |
 | --- | ---: | ---: | ---: |
@@ -15,6 +15,6 @@ App Store Connect saved/read-back date: **19 November 2026**. All 24 US product 
 
 Amounts are USD per app, not a suite-wide license. The eligible annual introductory offer remains one week; Apple determines eligibility. Subscriptions renew unless canceled. Customers see StoreKit's current localized price before purchase. Existing lifetime entitlements continue to unlock their app; no new product namespace or entitlement replacement is introduced.
 
-The local StoreKit catalog and submission product manifests use the same prices. New candidate paywalls put lifetime before the native subscription chooser and explain the free quota and continued access to saved records. Those UI changes require their own new build validation; server-side pricing success alone does not validate an app binary.
+The local StoreKit catalog and submission product manifests use the same prices. New candidate paywalls put lifetime before the native subscription chooser and explain the free quota and continued access to saved records. Those UI changes passed their current candidate checks; server-side pricing success is recorded separately from binary validation.
 
 The [research and cost rationale](ConsumerReadinessResearch.md) compares current primary-source listings and accounts for Apple commissions. No claim of 100% net profit or guaranteed market share is made. Current sales availability is USA only; previously configured non-US price points are not advertised as the new launch prices.

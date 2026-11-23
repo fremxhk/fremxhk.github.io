@@ -1,6 +1,6 @@
 # IndieSuite consumer workflow guide
 
-Applies to the consumer expansion candidates: VaultGlass 5, BioPulse Local 7, ClauseShield 4, DeductGlass/EchoBrief/NutriLoupe/TorqueShield 3, RecallGlass 4. These builds are under validation; this guide is not a claim that they have been released.
+Applies to the consumer expansion candidates: VaultGlass 5, BioPulse Local 7, ClauseShield 4, DeductGlass/EchoBrief/NutriLoupe/TorqueShield 3, RecallGlass 4. These candidates have completed their documented validation and distribution preparation; they have not been released.
 
 All eight apps work without creating a developer account. Document recognition and supported generation happen on device. The six non-health apps support optional private iCloud synchronization with a durable local cache. BioPulse Local and NutriLoupe keep health records on device, without automatic CloudKit synchronization. An internet connection is needed for Apple purchases and iCloud transport. On-device model or speech availability depends on the device, language and system configuration. The supported text workflows remain available when a model is unavailable.
 

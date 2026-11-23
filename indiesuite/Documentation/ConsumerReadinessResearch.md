@@ -1,6 +1,6 @@
 # Consumer completeness and launch pricing
 
-Research and implementation review: 19 November 2026. Covers all eight apps. This is a release work plan and evidence ledger, not a declaration that unfinished candidates have passed QA.
+Research and implementation review: 19 November 2026. Covers all eight apps. This records the research and selected feature decisions; completed validation and release scope are reported separately in ProductionReadiness.md.
 
 ## Findings from primary sources
 

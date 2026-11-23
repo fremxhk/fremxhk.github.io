@@ -10,3 +10,8 @@ Review package: version 1.0.0. No app registration or login is required.
 6. **Rights and regulated activity:** Educational organization and estimates only. It does not diagnose, treat or prevent disease. Reference intervals are illustrative, not individualized clinical thresholds. Follow your clinician and laboratory instructions. PhenoAge is an estimate, not a clinical assessment. No professional credential, regulatory authorization or third-party content license is claimed. Synthetic QA documents are generated locally; users import their own files.  There are no accounts or publicly shared user-content feeds, so account deletion and public-content reporting/blocking flows do not apply.
 
 Health records use an on-device SwiftData store, with no automatic CloudKit mirroring or iCloud/push entitlement. Health-data directories request exclusion from system backup. Complete health archives require a user-chosen passphrase of at least 12 characters; users explicitly choose any export destination.
+## Evidence
+
+Current consumer candidate: 1.0.0 (build 7), processed VALID and selected for this app version. The current suite passed 121 distinct target-qualified methods; repeated device/profile executions do not increase that count.
+
+[Passing method inventory](../../Documentation/ConsumerTestInventory.md) · [Validation scope](../../Documentation/ConsumerValidation.md) · [Reviewed app flows](https://fremxhk.github.io/indiesuite/#flows) · [Signed build fingerprints](../../Documentation/BuildVerification.md).
