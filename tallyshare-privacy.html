@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TallyShare Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #090a0f;
+      --card: #121520;
+      --border: #1e2438;
+      --accent: #10b981;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+    body { background: var(--bg); color: var(--text); line-height: 1.7; padding: 40px 20px; }
+    .container { max-width: 800px; margin: 0 auto; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 36px 32px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; color: #fff; }
+    .updated { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
+    h2 { font-size: 18px; font-weight: 700; color: #fff; margin: 28px 0 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+    p, li { font-size: 15px; color: #d1d5db; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 16px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .nav-back { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 20px; font-size: 14px; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="nav-back">← Back to Overview</a>
+    <h1>TallyShare Privacy Policy</h1>
+    <div class="updated">Last updated: November 2026</div>
+
+    <p>TallyShare is built on a privacy-first architecture. We do not operate developer-hosted servers that collect your expenses, receipts, contacts, or financial activity. The app contains no advertising and does not use third-party analytics or ad tracking SDKs.</p>
+
+    <h2>1. On-Device Receipt &amp; Voice Processing</h2>
+    <p>Camera receipt scans, photo imports, PDF invoices, Vision OCR text extraction, voice speech recognition, and Apple Intelligence structured parsing execute locally on your device. Audio and receipt images are never uploaded to third-party AI APIs.</p>
+
+    <h2>2. iCloud &amp; CloudKit Sync (Personal Transfer &amp; Shared Groups)</h2>
+    <ul>
+      <li>Your personal ledger, monthly budgets, card fee profiles, and preferences sync privately inside your own iCloud Private Database via Apple CloudKit so migrating to a new device restores automatically.</li>
+      <li>When you explicitly invite friends into a shared group using iCloud sharing, group expenses and balances sync inside an encrypted CloudKit Shared Zone accessible only to accepted group participants.</li>
+    </ul>
+
+    <h2>3. Optional Daily Currency Exchange Rates</h2>
+    <p>TallyShare bundles an offline exchange-rate baseline and performs zero background network calls by default. Only if you explicitly toggle on "Auto-Refresh Exchange Rates Daily" (or tap Refresh Now), the app downloads public USD reference tables from ExchangeRate-API (with Frankfurter Central Bank fallback). No personal identifiers, expenses, or ledger amounts are ever sent in these requests.</p>
+
+    <h2>4. Purchases &amp; Encrypted Backups</h2>
+    <p>The optional $0.99 Lifetime unlock is processed exclusively by Apple through StoreKit 2. Optional offline <code>.tallysharebackup</code> exports are protected locally using AES-256-GCM encryption with your chosen passphrase.</p>
+
+    <h2>5. Contact</h2>
+    <p>For privacy questions or support, email <a href="mailto:fremxhk@gmail.com">fremxhk@gmail.com</a>.</p>
+  </div>
+</body>
+</html>
